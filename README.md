@@ -62,7 +62,7 @@ This mod is inspired by:
 
 ## Language
 
-> Available in: 
+Available in: 
 - English
 - German
 - French
