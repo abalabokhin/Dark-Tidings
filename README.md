@@ -6,9 +6,9 @@
 
 Far off the coast of Amn lies the isolated island of **Irphong**. Its only notable feature is the **Sea Tower**, a magical lighthouse that marks the northern end of Asavir's Channel and guides sailors through treacherous waters.
 
-For thousands of years, the magical beacon of the Sea Tower of Irphong has burned steadily—until now. The light has gone out, and with it, rumors have returned: of pirates, Dragon Turtles, Krakens, and older secrets lurking in the dark shallows.
+For thousands of years, the magical beacon of the Sea Tower of Irphong has burned steadily—until now. The light has gone out, and with it, rumors have returned: Of pirates, Dragon Turtles, Krakens, and older secrets lurking in the dark shallows.
 
-There is only one way to uncover the mystery: **sail to Irphong** and discover what extinguished the light of the Sea Tower.
+There is only one way to uncover the mystery: **Sail to Irphong** and discover what extinguished the light of the Sea Tower.
 
 ---
 
@@ -21,7 +21,7 @@ There is only one way to uncover the mystery: **sail to Irphong** and discover w
 - Playable from the start of the game  
 - Available in **English, German, French, Polish, and Chinese**
 
-> Some optional content requires a **mage, bard, cleric, druid, shaman, or sorcerer** in your party.
+> To access certain optional content, your party should include at least one spellcasting class—a mage, bard, cleric, druid, shaman, or sorcerer.
 
 The adventure begins in **Athkatla’s Docks District**, in the tavern **Sea’s Bounty**.
 
@@ -54,8 +54,8 @@ After downloading, extract the archive into your game’s main directory and fol
 
 ### BG2EE / EET / BGT:
 1. Extract the mod archive into your game’s installation folder (where `CHITIN.KEY` is located).  
-2. You should now see the folder **darktidings** and the file **setup-darktidings.exe** in your game directory.  
-3. Run `setup-darktidings.exe` and follow the on-screen instructions.  
+2. You should now see the folder **Tidings** and the file **setup-Tidings.exe** in your game directory.  
+3. Run `setup-Tidings.exe` and follow the on-screen instructions.  
 
 ### Vanilla BG2-ToB:
 If you are using the original **non-EE version** of Baldur’s Gate II, you must install the following mods **before installing Dark Tidings**:
@@ -83,7 +83,9 @@ This mod and all its contents may not be copied, modified, distributed, or used 
 ## Credits
 
 **Acifer** – Writer, artist, designer and programming
-**Sirick** – English version   
+
+**Sirick** – English version 
+**Shai Hulud** - German EE compatible version  
 **Lava** – Additional help, ideas, beta testing  
 **Morywen** – Beta testing
 
