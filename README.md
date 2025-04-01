@@ -75,6 +75,15 @@ For full documentation, see the official Readme:
 
 ---
 
+## Walkthrough
+
+Need help completing the mod or exploring all optional paths?  
+Check out the detailed walkthrough written by **Ineth** on the BG Wiki:
+
+[**Dark Tidings Walkthrough at the BG Wiki**](https://baldursgate.fandom.com/wiki/Dark_Tidings_walkthrough)
+
+---
+
 ## License
 
 **© 2025 Acifer – All Rights Reserved**  
