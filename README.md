@@ -14,6 +14,21 @@ There is only one way to uncover the mystery: **Sail to Irphong** and discover w
 
 ---
 
+## Table of Contents
+
+- [Features](#features)
+- [Compatibility](#compatibility)
+- [Language](#Language)
+- [Download](#download)
+- [Installation](#installation)
+- [Readme (PDF)](#readme-pdf)
+- [Walkthrough](#walkthrough)
+- [License](#license)
+- [Credits](#credits)
+- [Feedback & Support](#feedback--support)
+
+---
+
 ## Features
 
 - New areas to discover  
@@ -42,6 +57,17 @@ This mod is inspired by:
 - Enhanced Edition Trilogy (EET)
 
 ---
+
+---
+
+## Language
+
+> Available in: 
+- English
+- German
+- French
+- Polish
+- Chinese
 
 ## Download
 
