@@ -1,0 +1,37 @@
+IF
+	Global("Crystal","ACDT41",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Crystal","ACDT41",1)
+		OpenDoor("DOOR01")
+		TriggerActivation("Info_Exit_Shadows",FALSE)
+END
+
+IF
+	Dead("AC#DTTH1")
+	OpenState("DOOR02",FALSE)
+THEN
+	RESPONSE #100
+		OpenDoor("DOOR02")
+		TriggerActivation("Info_Exit_Shadows",FALSE)
+END
+
+IF
+	PartyHasItem("AC#DTDIA")  // Lichtedelstein
+	Global("Crystal","ACDT41",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Crystal","ACDT41",2)
+		CloseDoor("DOOR01")
+		CloseDoor("DOOR02")
+		TriggerActivation("Info_Exit_Shadows",TRUE)
+		ContainerEnable("Crystal_con",FALSE)
+		AmbientActivate("Crystal_glow",FALSE)
+		AmbientActivate("Dark_cloud",FALSE)
+		SoundActivate("Altar",FALSE)
+		PlaySound("EFF_M10")
+		CreateCreature("AC#DTTH1",[1247.428],3)
+		EraseJournalEntry(@13000)
+		AddJournalEntry(@13001,QUEST)
+END
+

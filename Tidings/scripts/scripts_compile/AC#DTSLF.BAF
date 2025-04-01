@@ -1,0 +1,7 @@
+IF
+	HPGT(Myself,66)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("AC#DT73",Myself)  // No such index
+END
+

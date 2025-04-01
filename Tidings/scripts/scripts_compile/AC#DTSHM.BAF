@@ -1,0 +1,28 @@
+IF
+	HitBy([PC],FIRE)
+THEN
+	RESPONSE #100
+		ApplySpellRES("AC#DTHR",Myself)  // Unsichtbarkeit aufheben
+		StartTimer(1,12)
+		AttackReevaluate(NearestEnemyOf(Myself),12)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	TimerExpired(1)
+THEN
+	RESPONSE #100
+		StartTimer(1,6)
+		DisplayString(Myself,19944)  // Im Schatten verstecken gelungen
+		ApplySpell(Myself,WIZARD_INVISIBILITY)  // SPWI206.SPL (Unsichtbarkeit)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		SetNumTimesTalkedTo(1)
+		StartTimer(1,6)
+END
+

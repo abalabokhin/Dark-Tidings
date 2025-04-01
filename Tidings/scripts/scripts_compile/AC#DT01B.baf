@@ -1,0 +1,62 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+	PartyHasItem("AC#DTCRC")
+	Global("Barnacles","ACDT01",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1020)
+		EraseJournalEntry(@10011)
+		AddJournalEntry(@10012,QUEST)
+		SetGlobal("Barnacles","ACDT01",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+	Global("Barnacles","ACDT01",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1017)
+		SetGlobal("Barnacles","ACDT01",1)
+		SetGlobal("AC#DT_Crabclaw","GLOBAL",1)
+		AddJournalEntry(@10010,QUEST)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+	Global("Barnacles","ACDT01",1)
+	!PartyHasItem("AC#DTCRC")
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1018)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+	Global("Barnacles","ACDT01",1)
+	PartyHasItem("AC#DTCRC")
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1019)
+		CreateVisualEffectObject("ICMAGICH",Myself)
+		SetGlobal("AC#DT_Crabclaw","GLOBAL",10)
+		EraseJournalEntry(@10012)
+		EraseJournalEntry(@10011)
+		EraseJournalEntry(@10010)
+		TakePartyItem("AC#DTCRC")
+		DestroyItem("AC#DTCRC")
+		OpenDoor("Door02")
+		TriggerActivation(Myself,FALSE)
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,20)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)
+END
+

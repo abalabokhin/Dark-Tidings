@@ -1,0 +1,89 @@
+IF
+	Global("Prep","ACDT10",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACDT10",1)
+		AmbientActivate("Portal",FALSE)
+		SoundActivate("Portal-sound",FALSE)
+		SoundActivate("Portal_whisper",FALSE)
+		TriggerActivation("Tracdt22",FALSE)
+END
+
+IF
+	Global("Shadowstuff","ACDT10",0)
+	PartyHasItemIdentified("AC#DTSPD")  // Shadowstuff
+THEN
+	RESPONSE #100
+		SetGlobal("Shadowstuff","ACDT10",1)
+		ActionOverride(Player1,DisplayStringHead(Player1,@1008))
+		DisplayStringHeadOwner("AC#DTSPD",@1008)
+		TakePartyItem("AC#DTSPD")  // Shadowstuff
+		DestroyItem("AC#DTSPD")  // Shadowstuff
+END
+
+IF
+	GlobalLT("AC#DT_OtherSide","GLOBAL",3)
+	Global("ACDT_SecretDoor","ACDT10",0)
+	Contains("AC#DTSBL","Bookshelf")  // Schattenziegel
+	!HasItemEquiped("AC#DTCH2",Player1)  // Kultistenhelm
+	!HasItemEquiped("AC#DTCH2",Player2)  // Kultistenhelm
+	!HasItemEquiped("AC#DTCH2",Player3)  // Kultistenhelm
+	!HasItemEquiped("AC#DTCH2",Player4)  // Kultistenhelm
+	!HasItemEquiped("AC#DTCH2",Player5)  // Kultistenhelm
+	!HasItemEquiped("AC#DTCH2",Player6)  // Kultistenhelm
+THEN
+	RESPONSE #100
+		SetGlobal("AC#DT_OtherSide","GLOBAL",3)
+		DisplayString("Bookshelf",@1009)
+		Wait(1)
+		DisplayString("DOOR02",@1010)
+		EraseJournalEntry(@12000)
+		EraseJournalEntry(@12001)
+		AddJournalEntry(@12002,QUEST)
+END
+
+IF
+	Global("ACDT_SecretDoor","ACDT10",0)
+	Contains("AC#DTSBL","Bookshelf")  // Schattenziegel
+	OR(6)
+		HasItemEquiped("AC#DTCH2",Player1)  // Kultistenhelm
+		HasItemEquiped("AC#DTCH2",Player2)  // Kultistenhelm
+		HasItemEquiped("AC#DTCH2",Player3)  // Kultistenhelm
+		HasItemEquiped("AC#DTCH2",Player4)  // Kultistenhelm
+		HasItemEquiped("AC#DTCH2",Player5)  // Kultistenhelm
+		HasItemEquiped("AC#DTCH2",Player6)  // Kultistenhelm
+THEN
+	RESPONSE #100
+		SetGlobal("ACDT_SecretDoor","ACDT10",1)
+		PlaySound("ACT_09")
+		DetectSecretDoor("DOOR02")
+		ActionOverride("Bookshelf",DestroyItem("AC#DTSBL"))
+		Unlock("DOOR02")
+END
+
+IF
+	Global("ACDT22_Access","ACDT10",0)
+	PartyHasItem("AC#DTDIA")  // Lichtedelstein
+THEN
+	RESPONSE #100
+		OpenDoor("DOOR01")
+		TriggerActivation("Tracdt22",TRUE)
+		TriggerActivation("Tracdt21",FALSE)
+		SetGlobal("ACDT22_Access","ACDT10",1)
+END
+
+IF
+	Global("ACDT_SecretDoor","ACDT10",1)
+	OpenState("DOOR02",TRUE)
+THEN
+	RESPONSE #100
+		SetGlobal("ACDT_SecretDoor","ACDT10",2)
+		AmbientActivate("Portal",TRUE)
+		SoundActivate("Portal-sound",TRUE)
+		SoundActivate("Portal_whisper",TRUE)
+		EraseJournalEntry(@12001)
+		EraseJournalEntry(@12002)
+		AddExperienceParty(1000)
+		AddJournalEntry(@12003,QUEST)
+END
+

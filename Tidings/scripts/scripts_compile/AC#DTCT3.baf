@@ -1,0 +1,25 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+        FadeToColor([30.0],0)
+        Wait(2)
+		LeaveAreaLUAPanic("AR0300","ACDTLS",[4338.3033],5)
+		LeaveAreaLUA("AR0300","ACDTLS",[4340.3035],5)
+		ActionOverride(Player2,LeaveAreaLUA("AR0300","ACDTLS",[4336.3031],3))
+		ActionOverride(Player3,LeaveAreaLUA("AR0300","ACDTLS",[4332.3039],6))
+		ActionOverride(Player4,LeaveAreaLUA("AR0300","ACDTLS",[4345.3032],7))
+		ActionOverride(Player5,LeaveAreaLUA("AR0300","ACDTLS",[4337.3035],9))
+		ActionOverride(Player6,LeaveAreaLUA("AR0300","ACDTLS",[4341.3030],5))
+		Wait(1)
+		CreateCreature("AC#DTJH3",[4400.3046],7)  // Jhanex #3
+		FadeFromColor([20.0],0)
+		//EndCutSceneMode()
+		MultiPlayerSync()
+		ActionOverride("AC#DTJH3",StartDialogNoSet([PC]))
+END
+
+
+
+

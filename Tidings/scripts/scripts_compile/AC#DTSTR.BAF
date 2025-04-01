@@ -1,0 +1,73 @@
+IF
+	HitBy([PC],FIRE)
+THEN
+	RESPONSE #100
+		ApplySpellRES("AC#DTHR",Myself)  // Unsichtbarkeit aufheben
+		AttackReevaluate(NearestEnemyOf(Myself),12)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	GlobalGT("Invisible","LOCALS",1)
+	OR(2)
+		StateCheck(Myself,STATE_INVISIBLE)
+		StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	HPLT(Myself,50)
+THEN
+	RESPONSE #100
+		Wait(6)
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),12)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	OR(2)
+		StateCheck(Myself,STATE_INVISIBLE)
+		StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	HPLT(Myself,50)
+	Global("Invisible","LOCALS",1)
+THEN
+	RESPONSE #100
+		Wait(12)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HPLT(Myself,20)
+	HPGT(Myself,0)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	Global("Invisible","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Invisible","LOCALS",1)
+		DisplayString(Myself,19944)  // Im Schatten verstecken gelungen
+		ApplySpellRES("AC#DTHS",Myself)  // Unsichtbarkeit
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HPLT(Myself,20)
+	HPGT(Myself,0)
+	Delay(12)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	GlobalGT("Invisible","LOCALS",0)
+	GlobalLT("Invisible","LOCALS",3)
+THEN
+	RESPONSE #100
+		IncrementGlobal("Invisible","LOCALS",1)
+		DisplayString(Myself,19944)  // Im Schatten verstecken gelungen
+		ApplySpellRES("AC#DTHS",Myself)  // Unsichtbarkeit
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+

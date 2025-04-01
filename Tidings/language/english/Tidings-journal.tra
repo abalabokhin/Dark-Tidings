@@ -1,0 +1,111 @@
+// Journal Entries
+
+// Quest start
+
+@10000 = ~Dark Tidings
+
+I have been sent to Irphong Island to search for the cause of the lighthouse's extinguished magic fire. A mage named Thalass is waiting for me in the Docks district at the small lighthouse with a crew to embark on the short voyage to the island.~
+
+@10001 = ~Dark Tidings
+
+Shortly after disembarking on Irphong Island, we were attacked by a group of sea trolls, apparently led by a sea hag. Since all the sailors are dead, I have to look for another way to leave the island. Only an experienced sailor would be able to steer the intact boat through the shallows off the island back to Athkatla. If I could get the beacon working again, however, other ships would perhaps take notice of me and bring me away from the island again. Therefore, I should try hard to get the magical beacon to shine again. But first I have to find out why the light has gone out at all.~ 
+
+@10002 = ~Dark Tidings
+
+What a success! The magical light of the lighthouse has caused a group of sailors from a passing ship to disembark on the island. They will take me back to Athkatla and are waiting at the boat I arrived with.~
+
+@10003 = ~Dark Tidings
+
+I have returned to Athkatla. Now I should head to the "Sea's Bounty" tavern and claim my well-deserved reward from the mage Thalass.~
+
+@10004 = ~Dark Tidings
+
+My adventure about Irphong Island ends with the reward I received from the mage Thalass. I will not set foot on a cursed island again so soon!~
+
+@10010 = ~Access into the tower
+
+The entrance to Irphong lighthouse is blocked by numerous barnacles. I have to find something that will allow me to get in, because I can't use magic or weapons to get past.~
+
+@10011 = ~The crab claw
+
+In the possession of the Siren leader I found the claw of a giant crab. Even though I don't yet know what it's good for, I'm sure that the siren didn't keep such an item for no reason.~
+
+@10012 = ~Access into the tower
+
+I think I have something that could help me open the entrance into the tower: The claws of a giant crab.~
+
+@12000 = ~The 'other side'
+
+I found a note from a strange cultist inside the lighthouse, mentioning that there was an 'other side' within the tower. The note also mentioned a 'shadow brick' and a ritual. I should keep an eye out for more clues as to what this is all about.~
+
+@12001 = ~The 'other side'
+
+In the basement of the lighthouse I found a brick made of shadow. It seems to belong in some part of a wall.~
+
+@12002 = ~The 'other side'
+
+I found a good spot to place the shadow brick. This is a good beginning in my search for the 'other side'.~
+
+@12003 = ~The 'other side'
+
+I found an old passageway inside the lighthouse that contains some kind of portal. Might this portal take me to the 'other side'? There is only one way to figure it out.~
+
+@12004 = ~The 'other side'
+
+I stepped through the portal and arrived in a strange, shadowy parallel universe of Irphong Island.~
+
+@13000 = ~The Luminous Crystal
+
+On the top floor of the lighthouse, a device seems to be controlling the illumination of the lighthouse. But the crystal responsible for it is missing. If I can find it, I can reactivate the beacon.~
+
+@13001 = ~The Luminous Crystal
+
+I found The Luminous Crystal on an old altar in the Plane of Shadows. Now I have to put it back into the socket of the lighthouse on the top floor.~
+
+@13010 = ~The Luminous Crystal
+
+The Luminous Crystal is back in its intended place. If I wish, I can see the glow of the sea tower from the roof. Hopefully, passing ships will soon take notice of me so that I can leave the island again.~
+
+@18000 = ~The undead watcher
+
+I met an undead ghost in a small chamber in the north-east part of Irphong Island, who claimed to have been the last lighthouse keeper on the island. He kept repeating that I should meet him 'on the other side' - whatever that means.~ 
+
+@18001 = ~The undead watcher
+
+I met an undead ghost in a dark alternative realm of Irphong Island who claimed to have been the last lighthouse keeper on the island. He asked me to recover the lighthouse's crystal from the temple of an evil god in the east of the area and then to seek it out again.~ 
+
+@18002 = ~The undead watcher
+
+I met the island's undead lighthouse keeper again in a dark alternative realm on the island of Irphong. He asked me to recover the lighthouse's luminous crystal from the temple of an evil god in the east of the area and then seek it out again.~
+
+@18010 = ~The ritual
+
+After recovering the Luminous Crystal from the temple, the undead watcher appeared again. He asked me to perform a ritual in the cellar beneath the lighthouse containing this strange stone in order to stop the black magic emanating from this place. To do this, I also need to use the crystal. Unfortunately, it is uncertain whether the crystal will be destroyed by the ritual. Since the crystal is also used to make the lighthouse glow again, I have to think carefully whether it is worth the risk to me. After all, making the lighthouse glow will be the only way to get other ships to notice me so that I can get off the island again. The ghost also mentioned that I could meet him again on Irphong Island in his chamber in the east of the island, as he exists on both planes at the same time.~ 
+
+@18011 = ~The ritual
+
+After I recovered The Luminous Crystal from the temple, an undead watchman appeared who claimed to have been the last lighthouse keeper on the island. He asked me to perform a ritual in the cellar beneath the lighthouse containing this strange stone in order to stop the black magic emanating from this place. To do this, I must also use the crystal. Unfortunately, it is unclear whether the crystal will be destroyed by the ritual. Since the crystal is also used to make the lighthouse glow again, I have to think carefully whether it is worth the risk to me. Because the glow of the lighthouse will be the only way to attract other ships to me so that I can leave the island again. The ghost also mentioned that I could also meet him on Irphong Island in a chamber in the east of the island, as he exists on both planes at the same time.~
+
+@18012 = ~The ritual
+
+I have to decide whether to perform the ritual in the basement of the lighthouse with the help of the Luminous Crystal or simply put the Luminous Crystal in the socket and leave the island. Unfortunately, it is uncertain whether the crystal will be destroyed by the ritual. Since the crystal is also used to make the lighthouse glow again, I have to think carefully whether it is worth the risk to me. Because the glow of the lighthouse will be the only way to draw the attention of other ships to me so that I can disappear from the island again.~
+
+@18013 = ~The ritual
+
+I have placed the crystal in the socket without completing the ritual in the cellar. Since the crystal can no longer be removed, I am unable to perform the ritual. I should look for a way to get off the island.~
+
+@18014 = ~The ritual
+
+I have finished the ritual. Hopefully I will be able to recover the Luminous Crystal so that I can put it in the socket of the lighthouse on the top floor.~
+
+@18015 = ~The ritual
+
+The Luminous Crystal seems to have survived the finished ritual unscathed. Now I have to put it in the lighthouse socket on the top floor.~
+
+@18016 = ~The ritual
+
+I was able to both shut down the unholy site beneath the lighthouse and put the crystal back in the lighthouse's socket. With this, the dark shadows hanging over the island should be gone once and for all.~
+
+
+ 
+

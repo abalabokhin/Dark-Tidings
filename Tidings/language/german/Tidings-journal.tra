@@ -1,0 +1,111 @@
+// Journal Entries
+
+// Quest start
+
+@10000 = ~Dunkle Gezeiten
+
+Ich soll auf der Insel Irphong nach der Ursache für das erloschene magische Feuer des Leuchtturmes suchen. Ein Magier namens Thalass wartet im Hafenviertel am Leuchtturm mit einer Crew auf mich, um die kurze Reise zu dem Eiland zu beginnen.~
+
+@10001 = ~Dunkle Gezeiten
+
+Kurz nach der Landung auf der Insel Irphong wurden wir auch schon von einer Gruppe Seetrolle überfallen, die allem Anschein nach von einer Meerhexe angeführt wird. Da alle Seeleute tot sind, muss ich nach einer anderen Möglichkeit suchen, die Insel wieder zu verlassen. Nur ein erfahrener Seemann wäre nämlich imstande, das intakte Boot durch die Untiefen vor der Insel zurück nach Athkatla zu lenken. Wenn ich jedoch den Leuchtturm wieder in Gang setzen könnte, würden vielleicht andere Schiffe auf mich aufmerksam werden, um mich wieder von dem Eiland wegzubringen. Ich sollte also alles daransetzen, das magische Leuchtfeuer wieder zum Strahlen zu bringen. Dafür muss ich aber erst einmal herausfinden, weshalb das Licht überhaupt erloschen ist.~ 
+
+@10002 = ~Dunkle Gezeiten
+
+Es hat geklappt! Das magische Licht des Leuchtturmes hat dazu geführt, dass eine Gruppe Matrosen eines vorbeifahrenden Schiffes auf der Insel gelandet ist. Sie können mich wieder zurück nach Athkatla bringen und warten unten an dem Boot, mit dem ich hergekommen bin.~
+
+@10003 = ~Dunkle Gezeiten
+
+Ich bin wieder in Athkatla gelandet. Nun sollte ich in die Taverne "Seeschatz" gehen und mir meine wohlverdiente Belohnung von dem Magier Thalass abholen.~
+
+@10004 = ~Dunkle Gezeiten
+
+Mit der Belohnung, die ich von dem Magier Thalass erhalten habe, endet mein Abenteuer um die Insel Irphong. So schnell werde ich keinen Fuß mehr auf eine verfluchte Insel setzen!~
+
+@10010 = ~Zugang in den Turm
+
+Der Eingang in den Leuchtturm von Irphong ist von unzähligen Seepocken versperrt. Ich muss etwas finden, mit dem ich mir den Zugang freischaffen kann, da ich hier weder mit Magie noch mit Waffengewalt weiterkomme.~
+
+@10011 = ~Die Krabbenschere
+
+Ich habe im Besitz der Anführerin der Sirenen die Schere einer Riesenkrabbe gefunden. Auch, wenn ich noch nicht weiß, wozu sie nütze ist, bin ich mir sicher, dass die Sirene solch einen Gegenstand nicht ohne Grund aufbewahrt hat.~
+
+@10012 = ~Zugang in den Turm
+
+Ich glaube, ich besitze etwas, mit dessen Hilfe ich den Zugang in den Turm öffnen könnte: Die Schere einer Riesenkrabbe.~
+
+@12000 = ~Die 'andere Seite'
+
+Im Inneren des Leuchtturmes habe ich bei einem merkwürdigen Kultisten eine Notiz gefunden, die erwähnt, dass es in dem Leuchtturm eine 'andere Seite' gäbe. Auch von einem 'Schattenstein' und einem Ritual war die Rede. Ich sollte nach weiteren Hinweisen Ausschau halten, was es damit auf sich hat.~
+
+@12001 = ~Die 'andere Seite'
+
+Im Keller des Leuchtturmes habe ich einen Ziegelstein aus Schatten gefunden. Er scheint in irgendein Mauerteil zu gehören.~
+
+@12002 = ~Die 'andere Seite'
+
+Ich habe einen guten Platz gefunden, in den ich den Schattenziegel setzen konnte. Dies ist ein guter Anfang auf meiner Suche nach der 'anderen Seite'.~
+
+@12003 = ~Die 'andere Seite'
+
+Ich habe einen alten Durchgang im Leuchtturminneren gefunden, der eine Art Portal enthält. Könnte mich dieses Portal auf die 'andere Seite' bringen, welche die Kultisten in ihrer Notiz erwähnt haben? Es gibt nur eine Möglichkeit, das herauszufinden.~
+
+@12004 = ~Die 'andere Seite'
+
+Ich bin durch das Portal getreten und in einer seltsamen, schattenhaften Parallelwelt der Insel Irphong angekommen.~
+
+@13000 = ~Der Leuchtkristall
+
+Auf dem obersten Stockwerk des Leuchtturmes ist ein Gerät installiert, welches allem Anschein nach die Beleuchtung des Turmes steuert. Der dafür verantwortliche Stein fehlt aber. Wenn ich diesen finde, kann ich das Leuchtfeuer wieder in Gang setzen.~
+
+@13001 = ~Der Leuchtkristall
+
+Auf einem alten Altar in der Schattenebene habe ich den Leuchtkristall gefunden. Nun muss ich diesen zurück in die Fassung des Leuchtturmes im obersten Stock setzen.~
+
+@13010 = ~Der Leuchtkristall
+
+Der Leuchtkristall sitzt wieder an seinem bestimmungsgemäßen Ort. Wenn ich möchte, kann ich mir das Leuchten des Seeturmes vom Dach aus ansehen. Hoffentlich werden bald vorbeifahrende Schiffe auf mich aufmerksam, damit ich die Insel wieder verlassen kann.~
+
+@18000 = ~Der untote Wächter
+
+Ich habe in einer kleinen Kammer im Nordosten der Insel Irphong einen untoten Geist getroffen, der von sich behauptete, der letzte Leuchtturmwärter der Insel gewesen zu sein. Er wiederholte ständig, ich solle ihn "auf der anderen Seite" treffen - was immer das bedeuten mag.~ 
+
+@18001 = ~Der untote Wächter
+
+Ich bin in einer dunklen Parallelwelt der Insel Irphong einem untoten Geist begegnet, der von sich behauptete, der letzte Leuchtturmwärter der Insel gewesen zu sein. Er bat mich, den Leuchtkristall des Turmes aus dem Tempel eines bösen Gottes im Osten des Gebietes zu bergen und ihn dann wieder aufzusuchen.~ 
+
+@18002 = ~Der untote Wächter
+
+Ich bin in einer dunklen Parallelwelt der Insel Irphong erneut dem untoten Leuchtturmwärter der Insel begegnet. Er bat mich, den Leuchtkristall des Turmes aus dem Tempel eines bösen Gottes im Osten des Gebietes zu bergen und ihn dann wieder aufzusuchen.~
+
+@18010 = ~Das Ritual
+
+Nachdem ich den Leuchtkristall aus dem Tempel geborgen habe, ist wieder der untote Wächter erschienen. Er bat mich, im Keller unter dem Leuchtturm, in dem dieser merkwürdige Stein steht, ein Ritual durchzuführen, um die schwarze Magie, die von diesem Ort ausgeht, zu unterbinden. Dafür muss ich auch den Kristall einsetzen. Leider ist unklar, ob der Kristall durch das Ritual zerstört wird. Da der Kristall auch dazu verwendet wird, um den Leuchtturm wieder zum Strahlen zu bringen, muss ich mir gut überlegen, ob es mir das Risiko wert ist. Denn das Strahlen des Leuchtturmes wird die einzige Möglichkeit sein, andere Schiffe auf mich aufmerksam zu machen, um wieder von der Insel zu verschwinden. Der Geist erwähnte noch, dass ich ihn auch auf der Insel Irphong in seiner Kammer im Osten der Insel wiedertreffen könne, da er auf beiden Ebenen gleichzeitig existiere.~ 
+
+@18011 = ~Das Ritual
+
+Nachdem ich den Leuchtkristall aus dem Tempel geborgen habe, ist ein untoter Wächter erschienen, der von sich behauptete, der letzte Leuchtturmwärter der Insel gewesen zu sein. Er bat mich, im Keller unter dem Leuchtturm, in dem dieser merkwürdige Stein steht, ein Ritual durchzuführen, um die schwarze Magie, die von diesem Ort ausgeht, zu unterbinden. Dafür muss ich auch den Kristall einsetzen. Leider ist unklar, ob der Kristall durch das Ritual zerstört wird. Da der Kristall auch dazu verwendet wird, um den Leuchtturm wieder zum Strahlen zu bringen, muss ich mir gut überlegen, ob es mir das Risiko wert ist. Denn das Strahlen des Leuchtturmes wird die einzige Möglichkeit sein, andere Schiffe auf mich aufmerksam zu machen, um wieder von der Insel zu verschwinden. Der Geist erwähnte noch, dass ich ihn auch auf der Insel Irphong in einer Kammer im Osten der Insel treffen könne, da er auf beiden Ebenen gleichzeitig existiere.~
+
+@18012 = ~Das Ritual
+
+Ich muss mir überlegen, ob ich das Ritual im Keller des Leuchtturmes mit Hilfe des Leuchtkristalles ausführe oder einfach den Leuchtkristall in die Fassung setze und von der Insel verschwinde. Leider ist unklar, ob der Kristall durch das Ritual zerstört wird. Da der Kristall auch dazu verwendet wird, um den Leuchtturm wieder zum Strahlen zu bringen, muss ich mir gut überlegen, ob es mir das Risiko wert ist. Denn das Strahlen des Leuchtturmes wird die einzige Möglichkeit sein, andere Schiffe auf mich aufmerksam zu machen, um wieder von der Insel zu verschwinden.~
+
+@18013 = ~Das Ritual
+
+Ich habe den Kristall in die Fassung gesetzt ohne das Ritual im Keller zu vollenden. Da sich der Kristall nicht mehr entfernen lässt, kann ich das Ritual nicht mehr durchführen. Ich sollte schauen, dass ich eine Möglichkeit finde, von der Insel zu verschwinden.~
+
+@18014 = ~Das Ritual
+
+Ich habe das Ritual durchgeführt. Hoffentlich finde ich den Leuchtkristall wieder, um ihn in die Fassung des Leuchtturmes im obersten Stock setzen zu können.~
+
+@18015 = ~Das Ritual
+
+Der Leuchtkristall scheint das vollendete Ritual unbeschadet überstanden zu haben. Nun muss ich ihn in die Fassung des Leuchtturmes im obersten Stock setzen.~
+
+@18016 = ~Das Ritual
+
+Ich konnte sowohl den unheiligen Ort unter dem Leuchtturm deaktivieren als auch den Kristall wieder in Fassung des Leuchtturmes zurück setzen. Damit sollten die dunklen Schatten über der Insel ein für alle mal verschwunden sein.~
+
+
+ 
+

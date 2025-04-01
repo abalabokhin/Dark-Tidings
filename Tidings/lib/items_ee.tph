@@ -1,0 +1,166 @@
+// Ring of Constitution
+COPY ~Tidings/itm/AC#DTRI1.itm~         ~override~
+  SAY NAME2 @2000
+  SAY DESC @2001
+
+// cloak of elemental shadow
+COPY ~Tidings/itm/AC#DTSDC.itm~         ~override~
+  SAY NAME1 @2002
+  SAY NAME2 @2003
+  SAY UNIDENTIFIED_DESC @2004
+  SAY DESC @2005
+
+// arrow of darkness
+COPY ~Tidings/itm/item_ee/AC#DTAR1.itm~         ~override~
+  SAY NAME2 @2006
+  SAY DESC @2007
+  
+// arrow of disease
+COPY ~Tidings/itm/item_ee/AC#DTAR2.itm~         ~override~
+  SAY NAME2 @2008
+  SAY DESC @2009
+  
+// black pearl
+COPY ~Tidings/itm/AC#DTBLP.itm~         ~override~
+  SAY NAME2 @2010
+  SAY DESC @2011
+
+ /*
+// Potion of dispelling magic - not used anymore
+COPY ~Tidings/itm/AC#DTP33.itm~         ~override~
+  SAY NAME2 @2012
+  SAY DESC @2013
+*/
+// Poisoned potion of healing
+COPY ~Tidings/itm/AC#DTP52.itm~         ~override~
+  SAY NAME2 @2014
+  SAY DESC @2015
+// Shadow stone
+COPY ~Tidings/itm/AC#DTSBL.itm~         ~override~
+  SAY NAME2 @2016
+  SAY DESC @2017
+
+// Book of rituals
+COPY ~Tidings/itm/AC#DTRIT.itm~         ~override~
+  SAY NAME2 @2018
+  SAY DESC @2019
+
+// Book of darkness
+COPY ~Tidings/itm/AC#DTBK4.itm~         ~override~
+  SAY NAME2 @2020
+  SAY DESC @2021
+
+// cultist's helmet # (critical item)
+COPY ~Tidings/itm/AC#DTCH2.itm~         ~override~
+  SAY NAME1 @2022
+  SAY NAME2 @2022
+  SAY DESC @2023
+
+// cultist's helmet #2 (non-critical item)
+COPY ~Tidings/itm/AC#DTCHM.itm~         ~override~
+  SAY NAME1 @2022
+  SAY NAME2 @2022
+  SAY DESC @2024
+
+// cultist's note in ACDT30 (shadow plane)
+COPY ~Tidings/itm/AC#DT30N.itm~         ~override~
+  SAY NAME2 @2025
+  SAY DESC @2026
+
+// note in ACDT12 (3rd level of lighthouse)
+COPY ~Tidings/itm/AC#DT12N.itm~         ~override~
+  SAY NAME2 @2027
+  SAY DESC @2028
+
+// note in ACDT11 (2nd level of lighthouse)
+COPY ~Tidings/itm/AC#DT11N.itm~         ~override~
+  SAY DESC @2029
+
+// note in ACDT10 (first level of lighthouse)
+COPY ~Tidings/itm/AC#DT10N.itm~         ~override~
+  SAY DESC @2030
+
+// crab's claw
+COPY ~Tidings/itm/AC#DTCRC.itm~         ~override~
+  SAY NAME1 @2031
+  SAY NAME2 @2031
+  SAY DESC @2032
+
+// shadowsstuff, found in area ACDT10
+COPY ~Tidings/itm/AC#DTSPD.itm~         ~override~
+  SAY NAME1 @2033
+  SAY NAME2 @2034
+  SAY UNIDENTIFIED_DESC @2035
+  SAY DESC @2036
+
+// The laughing dentures
+COPY ~Tidings/itm/AC#DENTU.itm~         ~override~
+  SAY NAME1 @2037
+  SAY NAME2 @2038
+  SAY UNIDENTIFIED_DESC @2039
+  SAY DESC @2040
+
+
+// key for Brokus' chest
+COPY ~Tidings/itm/AC#DTKY1.itm~         ~override~
+  SAY NAME1 @2041
+  SAY NAME2 @2041
+  SAY DESC @2042
+  
+// key for cellar door,
+COPY ~Tidings/itm/AC#DTKY2.itm~         ~override~
+  SAY NAME1 @2043
+  SAY NAME2 @2043
+  SAY DESC @2044
+
+// Diary of Brokus, mage in area acil14
+COPY ~Tidings/itm/AC#DTBK2.itm~         ~override~
+  SAY NAME1 @2045
+  SAY NAME2 @2045
+  SAY DESC @2046
+
+// Diary of Brokus, warrior 2
+COPY ~Tidings/itm/AC#DTBK3.itm~         ~override~
+  SAY NAME1 @2047
+  SAY NAME2 @2047
+  SAY DESC @2048
+
+COPY_EXISTING ~Tidings/itm/AC#DTVER.itm~  ~override/AC#DTVER.itm~
+  SAY NAME1 @2049
+  SAY NAME2 @2050
+  SAY UNIDENTIFIED_DESC @2051
+  SAY DESC @2052
+ 
+COPY ~Tidings/itm/AC#DTBWL.itm~         ~override~
+  SAY NAME1 @2053
+  SAY UNIDENTIFIED_DESC @2054
+  SAY DESC @2055
+
+COPY ~Tidings/itm/AC#DTDIA.itm~         ~override~
+  SAY NAME1 @2056
+  SAY NAME2 @2056
+  SAY DESC @2057
+
+COPY ~Tidings/itm/AC#SC204.itm~         ~override~
+       SAY NAME1 @2058
+       SAY NAME2 @2058
+       SAY DESC @2059
+
+
+// Adding specific Spell and projectile for the water blade spell
+ADD_PROJECTILE      ~Tidings/pro/AC#WTSPR.PRO~ // Blue cone of cold projectile
+COPY ~Tidings/itm/AC#DTSWW.itm~         ~override~
+  SAY NAME2 @2060
+  SAY DESC @2061
+	WRITE_SHORT   0xd4 ~%AC#WTSPR%~
+        
+COPY ~Tidings/itm/AC#DTSW2.itm~         ~override~
+  SAY NAME2 @2064
+  SAY DESC @2065
+	WRITE_SHORT   0xd4 ~%AC#WTSPR%~
+
+// Scroll of Protection from poison
+COPY ~Tidings/itm/AC#SCRL2.itm~         ~override~
+  SAY NAME1 @2062
+  SAY NAME2 @2062
+  SAY DESC @2063

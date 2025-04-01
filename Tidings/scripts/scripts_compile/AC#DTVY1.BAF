@@ -1,0 +1,19 @@
+IF
+	Global("AC#DT_Plot","GLOBAL",10)
+	//GlobalGT("ACDT_Towerlight","GLOBAL",0)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	Delay(42)
+	See(Player1)
+	Global("AC#DT_Accept","GLOBAL",0)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1000) 
+	RESPONSE #100
+		DisplayStringHead(Myself,@1001)  
+END
+

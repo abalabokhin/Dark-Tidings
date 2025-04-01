@@ -1,0 +1,33 @@
+IF
+	Global("AllHostile","ACDT41",1)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	!See([PC])
+	OR(2)
+		SpellCast([GOODCUTOFF],WIZARD_CLOUDKILL)  // SPWI502.SPL (Todeswolke)
+		SpellCast([GOODCUTOFF],WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinkende Wolke)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,CLERIC_ZONE_OF_SWEET_AIR)  // SPPR318.SPL (Bereich der frischen Luft)
+		ReallyForceSpell(Myself,SPECIAL_SWEET_AIR)  // SPIN601.SPL (No such index)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HasItem("POTN17",[ANYONE])  // Heilungselixier
+	TookDamage()
+	StateCheck(Myself,STATE_POISONED)
+	OR(2)
+		SpellCast([GOODCUTOFF],WIZARD_CLOUDKILL)  // SPWI502.SPL (Todeswolke)
+		SpellCast([GOODCUTOFF],WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinkende Wolke)
+THEN
+	RESPONSE #100
+		UseItem("POTN17",[ANYONE])  // Heilungselixier
+		RunAwayFrom(LastSeenBy(Myself),6)
+END
+

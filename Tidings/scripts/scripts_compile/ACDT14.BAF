@@ -1,0 +1,18 @@
+IF
+	Global("created","ACDT14",0)
+THEN
+	RESPONSE #100
+		CreateCreatureImpassableAllowOverlap("skelded",[176.365],6)  // No such index
+		SetGlobal("created","ACDT14",1)
+END
+
+IF
+	Global("Opened_Chest","ACDT14",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Opened_Chest","ACDT14",2)
+		Unlock("Chest02")
+		TakePartyItem("AC#DTKY1")  // Brokus' Truhenschlüssel
+		DestroyItem("AC#DTKY1")  // Brokus' Truhenschlüssel
+END
+

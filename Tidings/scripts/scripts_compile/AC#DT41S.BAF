@@ -1,0 +1,44 @@
+IF
+	Allegiance(Myself,ENEMY)
+	Global("notalk","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("notalk","LOCALS",1)
+		DialogInterrupt(FALSE)
+END
+
+IF
+	Global("hostile","LOCALS",0)
+	Global("AllHostile","ACDT41",1)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		SetGlobal("hostile","LOCALS",1)
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(LastSeenBy(Myself),STATE_PANIC)
+	!GlobalTimerNotExpired("FearEffect","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("FearEffect","LOCALS",TWO_MINUTES)
+		ForceSpellRES("AC#DTSF",NearestEnemyOf(Myself))  // Furcht
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),45)
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+

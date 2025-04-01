@@ -1,0 +1,16 @@
+// Runestone Info Trigger
+IF
+	Clicked([ANYONE])
+	Global("AC#DT_Ritual_done","GLOBAL",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1032)  
+END
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1031)  // the runestone inscription
+END
+

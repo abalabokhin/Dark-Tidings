@@ -1,0 +1,33 @@
+IF
+	LevelGT(LastSummonerOf(Myself),15)
+	Global("AdjustLevel","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AdjustLevel","LOCALS",1)
+		ChangeAnimationNoEffect("AC#DTW16")  // Wasserelementar
+END
+
+IF
+	LevelGT(LastSummonerOf(Myself),11)
+	Global("AdjustLevel","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AdjustLevel","LOCALS",1)
+		ChangeAnimationNoEffect("AC#DTW12")  // Wasserelementar
+END
+
+IF
+	Global("AdjustLevel","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AdjustLevel","LOCALS",1)
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		CreateVisualEffectObject("AC#WEDEA",Myself)
+		DestroySelf()
+END
+

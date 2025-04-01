@@ -1,0 +1,19 @@
+/*
+IF
+	Global("AC#DT_yarn","AR0314",1)
+	!See("AC#DTVY1")
+THEN
+	  RESPONSE #100
+		StartDialogNoSet([PC])
+END
+*/
+
+IF
+	GlobalGT("AC#DT_Accept","GLOBAL",0)
+	Global("AC#DT_yarn","GLOBAL",0)
+THEN
+	  RESPONSE #100
+	  Wait(2)
+	SetGlobal("AC#DT_yarn","GLOBAL",1)
+	  StartDialogNoSet([PC])
+END

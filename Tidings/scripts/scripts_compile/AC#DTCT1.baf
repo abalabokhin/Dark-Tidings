@@ -1,0 +1,33 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		MoveViewPoint([4328.3039],SLOW)
+		ActionOverride("AC#DTVY1",EscapeArea())
+		ActionOverride("AC#DTSA1",MoveToPoint([4328.3039]))
+		ActionOverride("AC#DTSA2",MoveToPoint([4328.3039]))
+		ActionOverride("AC#DTSA3",MoveToPoint([4328.3039]))
+		ActionOverride(Player2,MoveToPoint([4328.3039]))
+		ActionOverride(Player3,MoveToPoint([4328.3039]))
+		ActionOverride(Player4,MoveToPoint([4328.3039]))
+		ActionOverride(Player5,MoveToPoint([4328.3039]))
+		ActionOverride(Player6,MoveToPoint([4328.3039]))
+		FadeToColor([30.0],0)
+		Wait(2)
+		LeaveAreaLUAPanic("ACDT01","ACDTLS",[2882.1107],0)
+		LeaveAreaLUA("ACDT01","ACDTLS",[2882.1107],0)
+		ActionOverride(Player2,LeaveAreaLUA("ACDT01","ACDTLS",[2882.1107],0))
+		ActionOverride(Player3,LeaveAreaLUA("ACDT01","ACDTLS",[2882.1107],0))
+		ActionOverride(Player4,LeaveAreaLUA("ACDT01","ACDTLS",[2882.1107],0))
+		ActionOverride(Player5,LeaveAreaLUA("ACDT01","ACDTLS",[2882.1107],0))
+		ActionOverride(Player6,LeaveAreaLUA("ACDT01","ACDTLS",[2882.1107],0))
+		DayNight(NOON)
+		Wait(1)
+		FadeFromColor([20.0],0)
+		MultiPlayerSync()
+		SetGlobal("AC#DT_Ambush","GLOBAL",1)
+		Wait(2)
+		ActionOverride("AC#DTSA3",StartDialogNoSet([PC]))
+END
+

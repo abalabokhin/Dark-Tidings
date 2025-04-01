@@ -1,0 +1,36 @@
+IF
+	!See(NearestEnemyOf(Myself))
+	Global("AllHostile","ACDT20",1)
+	Global("Waterelemental","LOCALS",0)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1002)  // verwendet einen Gegenstand
+		CreateVisualEffect("SPPORTAL",[461.470])
+		SmallWait(28)
+		CreateCreature("AC#DTWEL",[461.470],8)  // Wasserelementar
+		MoveToPoint([290.382])
+		SetGlobal("Waterelemental","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Waterelemental","LOCALS",0)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,@1002)  // verwendet einen Gegenstand
+		CreateVisualEffect("SPPORTAL",[461.470])
+		SmallWait(28)
+		CreateCreature("AC#DTWEL",[461.470],8)  // Wasserelementar
+		SetGlobal("Waterelemental","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Song","LOCALS",0)
+	Range(NearestEnemyOf(Myself),12)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("AC#DTSS",NearestEnemyOf(Myself))  // Sirenengesang
+		SetGlobal("Song","LOCALS",1)
+END
+

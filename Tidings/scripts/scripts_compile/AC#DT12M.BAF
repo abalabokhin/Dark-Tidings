@@ -1,0 +1,172 @@
+IF
+	NumTimesTalkedTo(0)
+	See([PC])
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (Steinhaut)
+		StartDialogNoSet([PC])
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	TookDamage()
+	HaveSpell(CLERIC_SANCTUARY)  // SPPR109.SPL (Heiligtum)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_SANCTUARY)  // SPPR109.SPL (Heiligtum)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_SHADOW_DOOR)  // SPWI505.SPL (Phantomtor)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_SHADOW_DOOR)  // SPWI505.SPL (Phantomtor)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+	Global("Behavior","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Behavior","LOCALS",1)
+		Spell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_GREATER_MALISON)  // SPWI412.SPL (Größeres Unbehagen)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_GREATER_MALISON)  // SPWI412.SPL (Größeres Unbehagen)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_GREATER_COMMAND)  // SPPR512.SPL (Höherer Befehl)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_GREATER_COMMAND)  // SPPR512.SPL (Höherer Befehl)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	DifficultyGT(EASY)
+	HaveSpell(WIZARD_HOLD_PERSON)  // SPWI306.SPL (Personen festhalten)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (Personen festhalten)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HasItem("POTN18",Myself)  // Absorbtionstrank
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,46150)  // trinkt einen Trank
+		UseItem("POTN18",Myself)  // Absorbtionstrank
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	CheckStatLT(LastSeenBy(Myself),100,RESISTELECTRICITY)
+	HaveSpell(WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Blitzstrahl)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Blitzstrahl)
+END
+
+IF
+	See(SecondNearestEnemyOf(Myself))
+	CheckStatLT(LastSeenBy(Myself),100,RESISTELECTRICITY)
+	HaveSpell(WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Blitzstrahl)
+THEN
+	RESPONSE #100
+		Spell(SecondNearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Blitzstrahl)
+END
+
+IF
+	See(ThirdNearestEnemyOf(Myself))
+	CheckStatLT(LastSeenBy(Myself),100,RESISTELECTRICITY)
+	HaveSpell(WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Blitzstrahl)
+THEN
+	RESPONSE #100
+		Spell(ThirdNearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Blitzstrahl)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (Agannazars Hexerei)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (Agannazars Hexerei)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+	Global("Behavior","LOCALS",4)
+THEN
+	RESPONSE #100
+		SetGlobal("Behavior","LOCALS",5)
+		Spell(NearestEnemyOf(Myself),WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_FIREBALL)  // SPWI304.SPL (Feuerball)
+	!Range(NearestEnemyOf(Myself),6)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_FIREBALL)  // SPWI304.SPL (Feuerball)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_CONE_OF_COLD)  // SPWI503.SPL (Kältekegel)
+	!Range(NearestEnemyOf(Myself),4)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_CONE_OF_COLD)  // SPWI503.SPL (Kältekegel)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Blitzstrahl)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)  // SPWI308.SPL (Blitzstrahl)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (Agannazars Hexerei)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (Agannazars Hexerei)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_CHAOS)  // SPWI508.SPL (Chaos)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_CHAOS)  // SPWI508.SPL (Chaos)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoß)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoß)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

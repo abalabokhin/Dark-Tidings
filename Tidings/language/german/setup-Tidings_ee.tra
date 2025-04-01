@@ -1,0 +1,149 @@
+// Caution: This file is in UTF-8 format because it uses several special characters of non-english languages
+
+@0 = ~Dunkle Sirene~
+@1 = ~Untoter Wächter~
+@2 = ~Schlammform~
+@3 = ~Schattentroll~
+@4 = ~Viper~
+@5 = ~Schattenelementar~
+@6 = ~Dunkle Stimme~
+@7 = ~~ [AC#DT21C]
+@8 = ~Varrdig~
+@9 = ~Erdgeist~
+@10 = ~Schatten von <PLAYER1>~
+@11 = ~Schatten von <PLAYER2>~
+@12 = ~Schatten von <PLAYER3>~
+@13 = ~Schatten von <PLAYER4>~
+@14 = ~Schatten von <PLAYER5>~
+@15 = ~Schatten von <PLAYER6>~
+@16 = ~Schattenhaftes Wesen~
+@17 = ~Aspekt Tharizduns~
+@18 = ~~ [AC#DTTH1]
+@19 = ~~ [AC#DTTH3]
+@20 = ~~ [AC#DTTH1]
+@21 = ~~ [AC#DTTH4]
+@22 = ~~ [AC#DTTH5]
+@23 = ~Jhanex~
+@24 = ~Skara~
+@25 = ~Schwarzseher Brokus~
+@26 = ~Seemann Ahmer~
+@27 = ~Seemann Bog~
+@28 = ~Todesritter~
+@29 = ~Schreckenswache~
+@30 = ~Vergol~
+@31 = ~Schattendogge~
+@32 = ~Thalass~
+@33 = ~Nachtschwinge~
+@34 = ~Gracie~
+@35 = ~Darius~
+@36 = ~Die schwarze Molly~
+@37 = ~Wasser-Myrmidon~
+@38 = ~Wasserelementar~
+@39 = ~Niederer Wasserelementar~
+@40 = ~Ölschlick~
+@100 = ~Elementarbeherrschung~
+@101 = ~Kalte Aura~
+@102 = ~Scheußlicher Anblick~
+@103 = ~Schutz vor Gutem~
+@104 = ~Schauerliche Erscheinung~
+@105 = ~Tödlicher Blick~
+@106 = ~Nebelwolke~
+@107 = ~im Nebel verborgen~
+@108 = ~Nebelwolke
+
+Grad: 2
+Schule: Veränderung
+Reichweite: 27,5 m
+Dauer: 4 Runden
+Zeitaufwand: 2
+Bereich: 4,5 m Radius
+Rettungswurf: Nein
+
+Dieser Zauber erschafft einen dichten Nebel, der im Aussehen dem Zauber „Todeswolke“ des 5. Grades ähnelt. Allerdings bildet dieser Nebel eine wogende Masse geisterhafter, gelb-grüner Schwaden mit einem Durchmesser von 9 Metern, die nicht giftig sind, aber die Sicht verschleiern. Wesen, die sich im Nebel befinden, sind während der Wirkungsdauer blind. Außerdem besteht eine 50-prozentige Wahrscheinlichkeit, dass Wesen in der Wolke nicht zu erkennen sind und für eine Runde unsichtbar werden.~
+@109 = ~Explosion~
+@110 = ~Dunkle Aura~
+@111 = ~Sirenengesang~
+@112 = ~Heulen~
+@113 = ~Wasserelementar beschwören~
+@114 = ~Schutz vor Gift~
+@115 = ~Schutz vor Gift
+
+Grad: 2
+Schule: Bannzauber
+Reichweite: Berührung
+Dauer: 10 Runden
+Zeitaufwand: 3
+Bereich: 1 Wesen
+Rettungswurf: Nein
+
+Durch die Anwendung dieses Zaubers wird der Empfänger immun gegen Gifte, die über Kontakt mit der Haut, Verschlucken oder Stich verabreicht werden. Gifte anderer Arten wirken weiterhin normal auf das Wesen. Alle Gifte, die sich bereits im Körper befinden, wenn der Zauber gewirkt wird, sind ebenfalls nicht von diesem Zauberspruch betroffen.~
+@1000 = ~Die Stadt sucht nach fähigen Abenteurern, die seetauglich genug sind, auf das Meer hinauszusegeln!~
+@1001 = ~Finden sich in dieser Taverne denn keine Abenteurer für einen Auftrag für die Stadt?~
+@1002 = ~verwendet einen Gegenstand~
+@1003 = ~Schattenkontrolle~
+@1004 = ~Dieses Fass enthielt brennbares Öl. Es wurde offensichtlich in der Vergangenheit dazu benutzt, ein Signalfeuer auf dem Dach zu entzünden. Ihr könnt den Behälter näher untersuchen, wenn Ihr möchtet.~
+@1005 = ~Ihr füllt ein wenig Öl in eine Flasche.~
+@1006 = ~Das Fass ist jetzt leer.~
+@1007 = ~Das Fass ist beinahe leer. Ihr könnt damit kein Leuchtfeuer mehr entzünden. Das brennbare Öl könnte Euch aber dennoch im Kampf nützlich sein. Wenn Ihr wollt, könnt Ihr das Öl in ein Fläschchen füllen und an Euch nehmen.~
+@1008 = ~Die Schattensubstanz löst sich zwischen Euren Händen in Nichts auf.~ [EFF_E03]
+@1009 = ~Der Ziegelstein scheint ideal in das Fundament zu passen.~
+@1010 = ~Dieser Teil der Mauer enthält ein merkwürdiges Symbol, welches sich plötzlich ein wenig zu bewegen scheint. Mit Euren eigenen Augen könnt Ihr den Bereich aber nur schwer fixieren.~
+@1011 = ~Schatten von <PLAYER1>~
+@1012 = ~Schatten von <PLAYER2>~
+@1013 = ~Schatten von <PLAYER3>~
+@1014 = ~Schatten von <PLAYER4>~
+@1015 = ~Schatten von <PLAYER5>~
+@1016 = ~Schatten von <PLAYER6>~
+@1017 = ~Der Eingang in den Turm ist von unzähligen Seepocken versperrt.~
+@1018 = ~Je mehr Ihr versucht, die Seepocken mit Gewalt zu entfernen, desto mehr scheinen nachzurücken. Vielleicht gibt es ein anderes Hilfsmittel, um den Eingang freizulegen.~ [AC#DT01B]
+@1019 = ~Die Krabbenschere erstrahlt kurz in einem magischen Licht, der Zusammenhalt der Seepocken fällt in sich zusammen und gibt den Eingang frei.~ [AC#DT01C]
+@1020 = ~Der Eingang in den Turm ist von unzähligen Seepocken versperrt. Die Krabbenschere in Eurem Inventar beginnt plötzlich, sich zu bewegen – so, als wolle sie den Zugang freischneiden.~ [AC#TTC]
+@1021 = ~Eine Menge Schlamm und Erde liegt um diesen Runenstein herum verteilt. Als Druide erkennt Ihr, dass das Erdreich nicht von diesem Ort stammt und eine unnatürliche Aura ausstrahlt.~ ~Eine Menge Schlamm und Erde liegt um diesen Runenstein herum verteilt. Als Druidin erkennt Ihr, dass das Erdreich nicht von diesem Ort stammt und eine unnatürliche Aura ausstrahlt.~
+@1022 = ~Eine Menge Schlamm und Erde liegt um diesen Runenstein herum verteilt. Ihr erkennt, dass das Erdreich nicht von diesem Ort stammt.~
+@1023 = ~Eine Menge Schlamm und Erde liegt um diesen Runenstein herum verteilt.~
+@1024 = ~Eine Menge Luft strömt aus diesen seltsamen Gesteinsformationen hindurch in die Kammer. Die Luft wirkt einerseits sehr rein und konzentriert, riecht jedoch immer einmal wieder nach Fäulnis und Schwefel.~
+@1025 = ~Um diesen Runenstein sickert ständig Wasser aus unbekannter Quelle nach. Das Wasser hat eine merkwürdige Farbe und stinkt verunreinigt.~
+@1026 = ~Von diesem Runenstein geht eine unnatürliche Hitze aus.~
+@1030 = ~Auf diesem Runenstein wurde in Gemeinsprache eine lange Inschrift eingemeißelt. Wenn Ihr möchtet, könnt Ihr sie lesen.~
+@1031 = ~„Und das Ältere Elementarauge gebar vier Kinder.
+Das erste wollte alles verschlingen.
+Um es zu löschen erschuf es das zweite, doch dieses konnte sich nicht formen. 
+Drum erschuf es das dritte, doch dieses konnte sich nicht bewegen. 
+Schlussendlich erschuf es das vierte, doch es verflüchtigte sich ins Nichts. 
+Da erkannte der Dunkle Gott die Unvollkommenheit aller Dinge und schwor, alles wieder in den Urzustand völliger Finsternis zurückzusetzen.“~
+@1032 = ~Durch den Ausbruch magischer Energie ist der Runenstein derart beschädigt, dass man die Inschrift nicht mehr entziffern kann.~
+@1035 = ~Von diesem merkwürdigen Stein geht eine unheilvolle Aura aus. Ein unverständliches Gemurmel und Flüstern ist in seiner Nähe zu hören, und das Licht scheint sich an seinen Rändern in tiefstem Schwarz zu brechen.~
+@1036 = ~Durch das Deaktivieren der vier Runen wird es in der Kammer kühler und ungemütlicher. Ein merkliches Raunen geht nun von dem Stein aus.~
+@1037 = ~Von diesem merkwürdigen Stein geht nach wie vor eine unheilvolle Aura aus.~
+@1040 = ~Ein merkwürdiges Zeichen ist an diesem Stein angebracht. Es strahlt große Hitze aus. Ihr habt den Eindruck, als könne man das Zeichen berühren, um seinen Zustand zu verändern.~
+@1041 = ~Ihr berührt das Zeichen vorsichtig mit Eurer Hand. Beißende Hitze durchströmt Euch, doch dann erlischt die Rune und ist erkaltet.~
+@1042 = ~Die Rune ist erloschen und scheint keine Funktion mehr zu haben.~
+@1050 = ~Ein merkwürdiges Zeichen ist an diesem Stein angebracht. Es sieht sehr feucht aus. Ihr habt den Eindruck, als könne man das Zeichen berühren, um seinen Zustand zu verändern.~
+@1051 = ~Als Ihr das Zeichen berührt, geht eine feuchte Brise durch den Raum. Es scheint, als müsste man die Zeichen in einer bestimmten Reihenfolge berühren – und Ihr habt die falsche Wahl getroffen …~
+@1052 = ~Ihr berührt das Zeichen vorsichtig mit Eurer Hand. Das Wasser, das die Rune benetzte, verschwindet. Ihr scheint das Zeichen deaktiviert zu haben.~
+@1053 = ~Die Rune ist getrocknet und scheint keine Funktion mehr zu haben.~
+@1060 = ~Ein Zeichen in Form einer gezackten Spirale ist in diesen Stein geritzt. Es ist mit Schlamm bedeckt, der merkwürdig leuchtet. Ihr habt den Eindruck, als könne man das Zeichen berühren, um seinen Zustand zu verändern.~
+@1061 = ~Als Ihr das Zeichen berührt, geht eine starke Erschütterung durch den Raum. Es scheint, als müsste man die Zeichen in einer bestimmten Reihenfolge berühren – und Ihr habt die falsche Wahl getroffen …~
+@1062 = ~Ihr berührt das Zeichen vorsichtig mit Eurer Hand. Der Schlamm, der die Rune benetzte, verschwindet. Ihr scheint das Zeichen deaktiviert zu haben.~
+@1063 = ~Die Rune ist gesäubert und scheint keine Funktion mehr zu haben.~
+@1070 = ~Ein Zeichen in Form einer gezackten Spirale ist in diesen Stein geritzt. Ihr habt den Eindruck, als könne man das Zeichen berühren, um seinen Zustand zu verändern.~
+@1071 = ~Als Ihr das Zeichen berührt, strömen gelblich-giftige Gase aus dem Untergrund hervor. Es scheint, als müsste man die Zeichen in einer bestimmten Reihenfolge berühren – und Ihr habt die falsche Wahl getroffen …~
+@1072 = ~Ihr berührt das Zeichen vorsichtig mit Eurer Hand. Ihr scheint das Zeichen deaktiviert zu haben.~
+@1073 = ~Die Rune ist deaktiviert und scheint keine Funktion mehr zu haben.~
+@1080 = ~Ihr habt den ersten Zauber des Rituals gewirkt.~
+@1081 = ~Ihr habt den zweiten Zauber des Rituals gewirkt.~
+@1082 = ~Ihr habt den dritten Zauber des Rituals gewirkt.~
+@1085 = ~Die gewirkte Magie entlädt sich mit einem Knall und der Stein zerbirst in tausend Teile. Dann herrscht plötzlich Ruhe. Die Kammer kommt Euch nun viel heller vor.~
+@1090 = ~In der Mitte dieses Kristallapparates ist eine Fassung eingebaut, welche leer ist. Vermutlich muss dort ein Gegenstand eingesetzt werden, um das Leuchtfeuer zu aktivieren.~
+@1091 = ~Keiner der Gegenstände in Eurem Inventar scheint dafür geeignet, das Licht des Leuchtturmes zu entfachen.~
+@1092 = ~Ihr setzt den leuchtenden Kristall in die Fassung, und durch die verschiedenen Schliffe wird das Licht tausendfach reflektiert und nach oben ins Freie projiziert. Der große Kristall oben auf dem Dach sollte nun wieder in hellem, weithin sichtbarem Licht erstrahlen.~
+@1093 = ~Wenn Ihr den Kristall erneut in die Fassung setzt, wird es Euch nicht mehr möglich sein, diesen wieder zu entfernen. Ihr solltet Euch das weitere Vorgehen gut überlegen.~
+@1098 = ~Dicke Schwaden aus dunkelstem Schatten blockieren die Sicht. Wenn hier irgendwo der Ausgang sein sollte, könnt Ihr ihn derzeit nicht erkennen.~
+@1100 = ~Seht doch! Dort ist ein kleines Mädchen!~
+@1101 = ~Was zum …~
+@1102 = ~Bei Baelros! Es ist eine Meerhexe!~
+@1504 = ~Dieses Fass enthielt brennbares Öl. Es wurde offensichtlich in der Vergangenheit dazu benutzt, ein Signalfeuer zu entzünden. Ihr könnt den Behälter näher untersuchen, wenn Ihr möchtet.~
+@1505 = ~Ihr füllt ein wenig Öl in eine Flasche.~
+@1506 = ~Das Fass ist jetzt leer.~
+@1507 = ~Das Fass ist beinahe leer. Ihr könnt damit kein Leuchtfeuer mehr entzünden. Das brennbare Öl könnte Euch aber dennoch im Kampf nützlich sein.~
+@1510 = ~Dark Tidings~

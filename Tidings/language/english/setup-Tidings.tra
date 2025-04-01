@@ -1,0 +1,192 @@
+// setup-tidings tra file
+
+// creatures
+@0 = ~Dark Siren~
+@1 = ~Undead Guardian~
+@2 = ~Mudform~
+@3 = ~Shadow Troll~
+@4 = ~Viper~
+@5 = ~Shadow Elemental~
+@6 = ~Dark Voice~
+@7 = ~~ [AC#DT21C]
+@8 = ~Varrdig~
+@9 = ~Earth Weird~
+@10 = ~<PLAYER1>'s Shadow~
+@11 = ~<PLAYER2>'s Shadow~
+@12 = ~<PLAYER3>'s Shadow~
+@13 = ~<PLAYER4>'s Shadow~
+@14 = ~<PLAYER5>'s Shadow~
+@15 = ~<PLAYER6>'s Shadow~
+@16 = ~Shadow Shape~
+@17 = ~Aspect of Tharizdun~
+@18 = ~~ [AC#DTTH1]
+@19 = ~~ [AC#DTTH3]
+@20 = ~~ [AC#DTTH1]
+@21 = ~~ [AC#DTTH4]
+@22 = ~~ [AC#DTTH5]
+@23 = ~Jhanex~
+@24 = ~Skara~
+@25 = ~Blackseer Brokus~
+@26 = ~Seaman Ahmer~
+@27 = ~Seaman Bog~
+@28 = ~Death Knight~
+@29 = ~Dire Guard~
+@30 = ~Vergol~
+@31 = ~Shadow Mastiff~
+@32 = ~Thalass~
+@33 = ~Nightwing~
+@34 = ~Gracie~
+@35 = ~Darius~
+@36 = ~Black Molly~
+@37 = ~Water Myrmidon~
+@38 = ~Water Elemental~
+@39 = ~Lesser Water Elemental~
+@40   = ~Oil Ooze~
+
+// spells
+@100 = ~Elemental Domination~
+@101 = ~Cold Aura~
+@102 = ~Horrible Sight~
+@103 = ~Protection from Good~
+@104 = ~Scary Apparition~
+@105 = ~Deadly Stare~
+@106 = ~Fog Cloud~
+@107 = ~Hidden in the Mist~
+@108 = ~Fog Cloud 
+(Alteration)
+
+Level: 2
+Range: 90 ft.
+Duration: 4 rounds
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+This spell creates a dense mist similar in appearance to the 5th level spell "Cloudkill". However, this fog forms a a billowing mass of ghastly, yellowish-green vapours, measuring 40 feet x 20 feet x 20 feet, that are non-toxic but obscure vision. Creatures in the fog are blind for the duration of the effect. In addition, there is a 50% chance that creatures in the mist will be undetectable and become invisible for one round.~
+@109 = ~Explosion~
+@110 = ~Dark Aura~
+@111 = ~Siren Song~
+@112 = ~Howl~
+@113 = ~Summon Water Elemental~
+@114  = ~Protection from Poison~
+@115  = ~Protection from Poison 
+(Abjuration)
+
+Level: 2
+Range: Creature touched
+Duration: 10 rounds 
+Casting Time: 3
+Area of Effect: Creature touched
+Saving Throw: None
+
+By using this spell, the chosen creature gains immunity to poisons and venoms administered via contact with the skin, ingestion, sting, bite or weapon. Toxins of other types continue to affect the creature normally. Any poisons already in the body when the spell is cast are also unaffected by this spell.~
+
+// Script strings
+@1000 = ~The city is looking for capable adventurers who are seaworthy enough to sail out to sea!~
+@1001 = ~Aren't there any adventurers in this tavern to do a job for the city?~
+@1002 = ~Uses an item~
+@1003 = ~Shadow control~
+@1004 = ~This barrel contained flammable oil. It was apparently used in the past to light a signal fire on the roof. You can examine the container more closely if you like.~
+@1005 = ~You put some oil in a bottle.~
+@1006 = ~The barrel is empty now.~
+@1007 = ~The barrel is almost empty. There is no way you can light a beacon with it. However, the combustible oil could still be helpful in combat. You could gather the oil into a bottle and take it with you if you like.~
+@1008 = ~The shadow substance disintegrates into nothingness between your hands.~ [EFF_E03]
+@1009 = ~The brick seems to fit perfectly into the foundation.~
+@1010 = ~This part of the wall contains a strange symbol which suddenly seems to move, ever so slightly. With your bare eyes, however, it is difficult to focus on the spot.~
+
+@1011 = ~<PLAYER1>'s Shadow~
+@1012 = ~<PLAYER2>'s Shadow~
+@1013 = ~<PLAYER3>'s Shadow~
+@1014 = ~<PLAYER4>'s Shadow~
+@1015 = ~<PLAYER5>'s Shadow~
+@1016 = ~<PLAYER6>'s Shadow~
+
+@1017 = ~The entrance to the tower is blocked by countless barnacles~
+@1018 = ~The more you try to remove the barnacles by force, the more that seem to follow. Perhaps there is another way to clear the entrance.~ [AC#DT01B]
+@1019 = ~The crab claw briefly glows with a magical light, the cohesion of the barnacles collapsing to reveal the entrance.~ [AC#DT01C]
+@1020 = ~The entrance into the tower is blocked by countless barnacles. The crab claw in your inventory suddenly begins to move - as if to clear the entrance.~ [AC#TTC] 
+
+// Strings in Area ACDT21
+// Earth Info Trigger:
+@1021 = ~A lot of mud and earth is spread around this runestone. As a druid, you realise that the earth is not from this place and emits an unnatural aura.~
+@1022 = ~A lot of mud and earth lies scattered around this runestone. You realise that the earth is not from this place.~
+@1023 = ~A lot of mud and earth lies spread around this runestone.~
+
+// Air Info Trigger:
+@1024 = ~A lot of air is streaming through from these strange rock formations into the chamber. The air seems very pure and concentrated but smells of rot and sulphur every now and then.~
+
+// Water Info Trigger
+@1025 = ~Water from an unknown source constantly seeps around this runestone. The water has a strange colour and smells polluted.~
+
+// Fire Info Trigger
+@1026 = ~An unnatural heat emanates from this runestone.~
+
+// Runestone Info Trigger
+@1030 = ~There's a long inscription in common language carved on this runestone. If you wish, you can read it.~
+@1031 = ~"And the Elder Elemental Eye gave birth to four children.
+The first wanted to devour everything.
+To extinguish it he created the second, but this could not be shaped. 
+So he created the third, but it could not move. 
+Finally, he created the fourth, but it evaporated into nothingness. 
+Then the Dark God realised the imperfection of all things and swore to restore everything to its original state of total darkness."~
+@1032 = ~The runestone has been damaged by the burst of magical energy to such an extent that the inscription can no longer be deciphered.~
+
+// Shadowstone Info Trigger
+@1035 = ~An unholy aura emanates from this strange stone. An incomprehensible muttering and whispering can be heard nearby, and the light seems to refract at its edges into the deepest black.~
+@1036 = ~Disabling the four runes, the chamber grows cooler and more uncomfortable. A noticeable whisper now emanates from the stone.~
+@1037 = ~An ominous aura continues to emanate from this strange stone.~ 
+
+/// Fire Sigil Tigger
+@1040 = ~A strange sign is etched into this stone. It radiates great heat. You feel as if you can touch the sign to change its state.~
+@1041 = ~You touch the mark carefully with your hand. Scorching heat flows through you, but then the rune is extinguished and has grown cold.~
+@1042 = ~The rune is extinguished and seems to have no function anymore.~
+
+// Water Sigil Tigger
+@1050 = ~A strange sign is etched into this stone. It looks very damp. You feel as if you can touch the sign to change its condition.~
+@1051 = ~As you touch the sign, a humid breeze passes through the room. It seems as if you have to touch the signs in a certain order - and you have made the wrong choice....~
+@1052 = ~You touch the sign carefully with your hand. The water that was wetting the rune disappears. You seem to have deactivated the sign.~
+@1053 = ~The rune has dried and no longer seems to have any function.~
+
+// Earth Sigil Trigger
+@1060 = ~A sign in the shape of a jagged spiral is carved into this stone. It is covered with mud that glows strangely. You feel as if you can touch the mark to change its state.~
+@1061 = ~As you touch the sign, a strong vibration goes through the room. It seems as if you have to touch the signs in a certain order - and you have made the wrong choice....~
+@1062 = ~You touch the sign carefully with your hand. The mud that was moistening the rune disappears. You seem to have deactivated the mark.~
+@1063 = ~The rune is cleaned and no longer seems to have any function.~
+
+// Air Sigil Trigger
+@1070 = ~A sign in the form of a jagged spiral is carved into this stone. You feel as if you can touch the sign to change its state.~
+@1071 = ~As you touch the mark, yellowish poisonous gases gush out of the underground. It seems that you have to touch the signs in a certain order - and you have made the wrong choice...~
+@1072 = ~You touch the sign carefully with your hand. You seem to have deactivated the sign.~
+@1073 = ~The rune is deactivated and seems to have no function any more.~
+
+// Ritual in Area ACDT22
+@1080 = ~You have cast the first spell of the ritual.~
+@1081 = ~You have cast the second spell of the ritual.~
+@1082 = ~You have cast the third spell of the ritual.~
+
+@1085 = ~The magic you cast discharges with a blast and the stone shatters into a thousand pieces. Then suddenly there is silence. The chamber seems much brighter now.~
+
+// Crystal chamber ACDT13
+
+@1090 = ~You spot a socket amidst this crystal apparatus, but it's empty. Most likely an object has to be inserted there to activate the beacon.~
+@1091 = ~None of the items in your inventory seem to be suitable to light the beacon.~
+@1092 = ~You place the Luminous Crystal in the socket, and through its various cuts the light is reflected a thousand times and projected upwards into the open air. The big crystal on top of the roof should now shine again in bright light visible from afar.~
+@1093 = ~If you put the crystal into the socket again, it will not be possible for you to remove it again. You should think carefully about what to do next.~
+
+@1098 = ~Thick swathes of darkest shadow block your view. If the exit is somewhere here, you can't see it at the moment.~
+
+//cutscene in ACDT01
+@1100 = ~Look! There's a little girl!~
+@1101 = ~What the ...!~
+@1102 = ~By Baelros! It's a sea hag!~
+
+// Oil barrels in ACDT15
+
+@1504 = ~This barrel contained flammable oil. It was apparently used in the past to light a signal fire. You can examine the container more closely if you like.~
+@1505 = ~You put some oil in a bottle.~
+@1506 = ~The barrel is empty now.~
+@1507 = ~The barrel is almost empty. There is no way you can light a signal fire with it. However, the combustible oil could still be helpful in combat.~
+
+// New for v2.2
+
+@1510 = ~Dark Tidings~

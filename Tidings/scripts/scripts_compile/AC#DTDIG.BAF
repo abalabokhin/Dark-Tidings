@@ -1,0 +1,42 @@
+IF
+	OR(5)
+		Class(LastSeenBy(Myself),DRUID_ALL)
+		Class(LastSeenBy(Myself),CLERIC_ALL)
+		Class(LastSeenBy(Myself),BARD_ALL)
+		Class(LastSeenBy(Myself),MAGE_ALL)
+		Class(LastSeenBy(Myself),SORCERER)
+	!HasBounceEffects(LastSeenBy(Myself))
+	!GlobalTimerNotExpired("Missile","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Missile","LOCALS",THREE_ROUNDS)
+		ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoﬂ)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("Missile","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Missile","LOCALS",THREE_ROUNDS)
+		ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoﬂ)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Blur","LOCALS",0)
+	Delay(6)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_BLUR)  // SPWI201.SPL (Verschwimmen)
+		SetGlobal("Blur","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

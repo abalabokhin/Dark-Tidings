@@ -1,0 +1,25 @@
+IF
+	Global("ACDT_Towerlight","GLOBAL",1)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Song","LOCALS",0)
+	Range(NearestEnemyOf(Myself),12)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("AC#DTSS",NearestEnemyOf(Myself))  // Sirenengesang
+		SetGlobal("Song","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpellRES("AC#DTFC")  // Nebelwolke
+THEN
+	RESPONSE #100
+		SpellRES("AC#DTFC",NearestEnemyOf(Myself))  // Nebelwolke
+END
+

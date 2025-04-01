@@ -1,0 +1,10 @@
+// Shadowstone Tigger
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1037) 
+END
+
+
+

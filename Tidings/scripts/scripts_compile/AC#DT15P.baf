@@ -1,0 +1,50 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("Check_Barrel","ACDT15",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1504)
+		SetGlobal("Check_Barrel","ACDT15",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("GiveOil_02","ACDT15",0)
+	Global("Check_Barrel","ACDT15",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1507)
+		SetGlobal("GiveOil_02","ACDT15",1)
+		SetGlobal("Check_Barrel","ACDT15",2)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	GlobalLT("GiveOil_02","ACDT15",2)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1505)
+		GiveItemCreate("POTN13",LastTrigger,1,1,1)
+		IncrementGlobal("GiveOil_02","ACDT15",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("GiveOil_02","ACDT15",2)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1506)
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)
+END
+

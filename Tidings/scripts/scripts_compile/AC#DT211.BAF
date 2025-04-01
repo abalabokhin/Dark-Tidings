@@ -1,0 +1,43 @@
+// Earth Info Trigger
+IF
+	Clicked([ANYONE])
+	InParty("Jaheira")  // Jaheira
+	!Dead("Jaheira")  // Jaheira
+	!StateCheck("Jaheira",CD_STATE_NOTVALID)  // Jaheira
+	Global("JaheiraEarthNode","ACDT21",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1023) 
+		SetGlobal("JaheiraEarthNode","ACDT21",1) 
+		TriggerActivation("Info_Earth",FALSE) 
+END
+
+IF
+	Clicked([ANYONE])
+	Class(LastTrigger,DRUID_ALL)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1021)
+		TriggerActivation("Info_Earth",FALSE)   
+END
+
+IF
+	Clicked([ANYONE])
+	OR(3)
+	CheckStatGT(LastTrigger,17,INT)
+	CheckStatGT(LastTrigger,17,WIS)
+	CheckStatGT(LastTrigger,60,LORE)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1022) 
+		TriggerActivation("Info_Earth",FALSE)  
+END
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1023)
+		//TriggerActivation("Info_Earth",FALSE)
+END
+

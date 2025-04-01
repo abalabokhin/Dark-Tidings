@@ -1,0 +1,358 @@
+COPY ~Tidings/cre/copy~         ~override~
+
+COPY ~Tidings/cre/AC#DT30S.cre~ ~override~       // dark siren, inspired by the shade p192
+  SAY NAME1 @0 SAY NAME2 @0
+
+COPY ~Tidings/cre/AC#DT30G.cre~ ~override~       // undead lighthouse keeper in area acdt30
+  SAY NAME1 @1 SAY NAME2 @1
+
+COPY ~Tidings/cre/AC#DT18G.cre~ ~override~       // undead lighthouse keeper in area acdt18
+  SAY NAME1 @1 SAY NAME2 @1
+
+COPY ~Tidings/cre/AC#DTSLF.cre~ ~override~       // Earth weird's mud form
+  SAY NAME1 @2 SAY NAME2 @2
+
+COPY ~Tidings/cre/AC#DTST1.cre~ ~override~       // Shadow Troll; shadow template from "Manual of the planes 3.5", p. 190
+  SAY NAME1 @3 SAY NAME2 @3
+
+COPY ~Tidings/cre/AC#DTSN1.cre~ ~override~       // Viper 
+  SAY NAME1 @4 SAY NAME2 @4
+  
+  // for EE, patch animation
+    ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTSN1.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#SNAKE_SMALL~))
+    END
+  
+COPY ~Tidings/cre/AC#DT21X.cre~ ~override~       // Shadow elemental (source: Cormyr- the tearing of the weave p. 91, and Manual of the planes 3.5, p. 190 - shadow creatures)
+  SAY NAME1 @5 SAY NAME2 @5
+   // for EE, patch animation
+    ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DT21X.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#ELEMENTAL_WATER_LARGE~))
+    END
+
+COPY ~Tidings/cre/AC#DT21C.cre~ ~override~       // Dark voice
+  SAY NAME1 @6 SAY NAME2 @6
+  SAY INITIAL_MEETING   @7
+
+COPY ~Tidings/cre/AC#DTVDG.cre~ ~override~       // Varrdig, water grue
+  SAY NAME1 @8 SAY NAME2 @8
+  // for EE, patch animation
+    ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTVDG.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#VARRDIG~))
+    END
+
+COPY ~Tidings/cre/AC#DTEWD.cre~ ~override~       // Earth weird (Monstrous Compendium Annual Vol. I)
+  SAY NAME1 @9 SAY NAME2 @9
+  
+  // for EE, patch animation
+    ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTEWD.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#EARTH_WEIRD~))
+    END
+
+COPY ~Tidings/cre/AC#DTPL1.cre~ ~override~       // Shadow clone #1
+  SAY NAME1 @10 SAY NAME2 @10
+  
+  //_________________________________________________________________
+  // Copying the other shadow clones based on shadow creature#1
+  COPY ~Tidings/cre/AC#DTPL1.cre~ ~override/AC#DTPL2.cre~       // Shadow clone #2
+  SAY NAME1 @11 SAY NAME2 @11
+  WRITE_ASCII SCRIPT_OVERRIDE "AC#DTPL2" (8)
+  WRITE_ASCII 0x280 ~AC#DTPL2~ #32 // Death Variable
+  
+  COPY ~Tidings/cre/AC#DTPL1.cre~ ~override/AC#DTPL3.cre~       // Shadow clone #3
+  SAY NAME1 @12 SAY NAME2 @12
+  WRITE_ASCII SCRIPT_OVERRIDE "AC#DTPL3" (8)
+  WRITE_ASCII 0x280 ~AC#DTPL3~ #32 // Death Variable
+  
+  COPY ~Tidings/cre/AC#DTPL1.cre~ ~override/AC#DTPL4.cre~       // Shadow clone #4
+  SAY NAME1 @13 SAY NAME2 @13
+  WRITE_ASCII SCRIPT_OVERRIDE "AC#DTPL4" (8)
+  WRITE_ASCII 0x280 ~AC#DTPL4~ #32 // Death Variable
+  
+  COPY ~Tidings/cre/AC#DTPL1.cre~ ~override/AC#DTPL5.cre~       // Shadow clone #5
+  SAY NAME1 @14 SAY NAME2 @14
+  WRITE_ASCII SCRIPT_OVERRIDE "AC#DTPL5" (8)
+  WRITE_ASCII 0x280 ~AC#DTPL5~ #32 // Death Variable
+
+  COPY ~Tidings/cre/AC#DTPL1.cre~ ~override/AC#DTPL6.cre~       // Shadow clone #6
+  SAY NAME1 @15 SAY NAME2 @15
+  WRITE_ASCII SCRIPT_OVERRIDE "AC#DTPL6" (8)
+  WRITE_ASCII 0x280 ~AC#DTPL6~ #32 // Death Variable
+  //__________________________________________________________________
+
+COPY ~Tidings/cre/AC#DTTH2.cre~ ~override~       // Tharizdun's shady form
+  SAY NAME1 @16 SAY NAME2 @16
+
+COPY ~Tidings/cre/AC#DTTH1.cre~ ~override~       // Aspect of Tharizdun
+  SAY NAME1 @17 SAY NAME2 @17
+    SAY INITIAL_MEETING   @18
+    SAY SELECT_COMMON1 @18
+    SAY ATTACK2 @19
+    SAY BATTLE_CRY1 @20
+    SAY DAMAGE @21
+    SAY DYING @22
+    
+    // for EE, patch animation and effect
+    ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTTH1.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#TRANSCENDENT_ONE_PST~))
+    LPF DELETE_CRE_EFFECT INT_VAR opcode_to_delete=66 END // delete transparency effect since we don't need it in BG2EE
+    END
+    
+    // for classic BG2, patch animation
+    ACTION_IF (GAME_IS ~ToB BGT~) BEGIN
+    COPY_EXISTING ~AC#DTTH1.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~TRANSCENDENT_ONE_PST~))
+    END
+
+COPY ~Tidings/cre/AC#DTJHA.cre~ ~override~       // rescue team leader in front of tower
+  SAY NAME1 @23 SAY NAME2 @23
+  
+COPY ~Tidings/cre/AC#DTJH2.cre~ ~override~       // rescue team leader at the boat
+  SAY NAME1 @23 SAY NAME2 @23
+  
+COPY ~Tidings/cre/AC#DTJH3.cre~ ~override~       // rescue team leader in Athkatla
+  SAY NAME1 @23 SAY NAME2 @23
+/*
+// now in copy folder
+COPY ~Tidings/cre/AC#DT01S.cre~ ~override~       // Siren #1
+ADD_MEMORIZED_SPELL ~AC#DTFC~ #1 ~wizard~ ( 1 ) // Fog cloud
+*/
+COPY ~Tidings/cre/AC#DT20S.cre~ ~override~       // sirine crab queen
+  SAY NAME1 @24 SAY NAME2 @24 
+
+COPY ~Tidings/cre/AC#DT01M.cre~ ~override~       // mage Brokus (on top of seatower)
+  SAY NAME1 @25 SAY NAME2 @25
+  
+COPY ~Tidings/cre/AC#DT12M.cre~ ~override~       // mage Brokus (in Sea Hag's chamber)
+  SAY NAME1 @25 SAY NAME2 @25
+  ADD_MEMORIZED_SPELL ~SPWI308~ #2 ~wizard~ ( 1 ) // lightning bolt
+  ADD_MEMORIZED_SPELL ~SPWI412~ #3 ~wizard~ ( 1 ) // greater malison
+  ADD_MEMORIZED_SPELL ~SPPR109~ #0 ~priest~ ( 2 ) // sanctuary
+  ADD_MEMORIZED_SPELL ~SPPR314~ #2 ~priest~ ( 1 ) // unholy blight
+  ADD_MEMORIZED_SPELL ~SPPR512~ #4 ~priest~ ( 1 ) // greater command
+
+
+COPY ~Tidings/cre/AC#DTDR1.cre~ ~override~       // drunken sailor #1
+  SAY NAME1 @26 SAY NAME2 @26
+
+COPY ~Tidings/cre/AC#DTDR2.cre~ ~override~       // drunken sailor #2
+  SAY NAME1 @27 SAY NAME2 @27
+
+COPY ~Tidings/cre/AC#DTDKN.cre~ ~override~       // Deathknight
+  SAY NAME1 @28 SAY NAME2 @28
+  
+COPY ~Tidings/cre/AC#DTDIG.cre~ ~override~       // Direguard
+  SAY NAME1 @29 SAY NAME2 @29
+
+COPY ~Tidings/cre/AC#DTVER.cre~ ~override~       // Dark Lord Vergol
+  SAY NAME1 @30 SAY NAME2 @30
+/*
+ADD_MEMORIZED_SPELL ~SPPR102~ #0 ~priest~ ( 3 ) // command
+ADD_MEMORIZED_SPELL ~SPPR109~ #0 ~priest~ ( 2 ) // sanctuary
+ADD_MEMORIZED_SPELL ~SPPR111~ #0 ~priest~ ( 1 ) // armor of faith
+ADD_MEMORIZED_SPELL ~SPPR214~ #1 ~priest~ ( 1 ) // draw upon holy might
+ADD_MEMORIZED_SPELL ~SPPR416~ #3 ~priest~ ( 1 ) // cloak of fear
+ADD_MEMORIZED_SPELL ~SPPR511~ #4 ~priest~ ( 1 ) // slay living
+ADD_MEMORIZED_SPELL ~SPPR513~ #4 ~priest~ ( 1 ) // righteous magic
+ADD_MEMORIZED_SPELL ~SPPR698~ #5 ~priest~ ( 1 ) // blade barrier
+ADD_MEMORIZED_SPELL ~SPPR719~ #6 ~priest~ ( 1 ) // symbol: death
+*/
+
+COPY ~Tidings/cre/AC#DT30A.CRE~ ~override~ // Cultist in Area ACDT30 (plane of shadows)
+     //ADD_MEMORIZED_SPELL ~SPWI503~ #4 ~wizard~ ( 1 ) //  cone of cold
+     ADD_MEMORIZED_SPELL ~SPWI212~ #1 ~wizard~ ( 1 ) //  mirror image
+     ADD_MEMORIZED_SPELL ~SPWI306~ #2 ~wizard~ ( 1 ) //  hold person
+     
+COPY ~Tidings/cre/AC#DT30B.CRE~ ~override~ // Cultist in front of temple in Area ACDT30 (plane of shadows)
+     //ADD_MEMORIZED_SPELL ~SPWI412~ #3 ~wizard~ ( 1 ) // greater malison
+     //ADD_MEMORIZED_SPELL ~SPWI503~ #4 ~wizard~ ( 1 ) //  cone of cold
+     //ADD_MEMORIZED_SPELL ~SPWI212~ #1 ~wizard~ ( 1 ) //  mirror image
+     //ADD_MEMORIZED_SPELL ~SPWI306~ #2 ~wizard~ ( 1 ) //  hold person
+
+COPY ~Tidings/cre/AC#DT1PC.CRE~ ~override~ // Tharizdun priest #1: Vergol' personal healer
+
+/*
+ADD_MEMORIZED_SPELL ~SPPR108~ #0 ~priest~ ( 2 ) // remove fear
+ADD_MEMORIZED_SPELL ~SPPR113~ #0 ~priest~ ( 3 ) // doom
+ADD_MEMORIZED_SPELL ~SPPR212~ #1 ~priest~ ( 1 ) // slow poison
+ADD_MEMORIZED_SPELL ~SPPR208~ #1 ~priest~ ( 1 ) // hold person
+ADD_MEMORIZED_SPELL ~SPPR204~ #1 ~priest~ ( 1 ) // charm person
+ADD_MEMORIZED_SPELL ~SPPR315~ #2 ~priest~ ( 2 ) // cure medium wounds
+ADD_MEMORIZED_SPELL ~SPPR318~ #2 ~priest~ ( 2 ) // zone of sweet air
+ADD_MEMORIZED_SPELL ~SPPR314~ #2 ~priest~ ( 1 ) // unholy blight
+ADD_MEMORIZED_SPELL ~SPPR403~ #3 ~priest~ ( 1 ) // free action
+ADD_MEMORIZED_SPELL ~SPPR409~ #3 ~priest~ ( 1 ) // death ward
+*/
+
+COPY ~Tidings/cre/AC#DT2PC.CRE~ ~override~ // Tharizdun priest #2
+/*
+ADD_MEMORIZED_SPELL ~SPPR108~ #0 ~priest~ ( 2 ) // remove fear
+ADD_MEMORIZED_SPELL ~SPPR102~ #0 ~priest~ ( 3 ) // command
+ADD_MEMORIZED_SPELL ~SPPR211~ #1 ~priest~ ( 1 ) // silence 15 foot
+ADD_MEMORIZED_SPELL ~SPPR212~ #1 ~priest~ ( 1 ) // slow poison
+ADD_MEMORIZED_SPELL ~SPPR208~ #1 ~priest~ ( 1 ) // hold person
+ADD_MEMORIZED_SPELL ~SPPR204~ #1 ~priest~ ( 1 ) // charm person
+ADD_MEMORIZED_SPELL ~SPPR301~ #2 ~priest~ ( 1 ) // animate dead
+ADD_MEMORIZED_SPELL ~SPPR318~ #2 ~priest~ ( 2 ) // zone of sweet air
+ADD_MEMORIZED_SPELL ~SPPR416~ #3 ~priest~ ( 1 ) // cloak of fear
+*/
+COPY ~Tidings/cre/AC#DT3PC.CRE~ ~override~ // Tharizdun priest #3
+/*
+ADD_MEMORIZED_SPELL ~SPPR108~ #0 ~priest~ ( 2 ) // remove fear
+ADD_MEMORIZED_SPELL ~SPPR102~ #0 ~priest~ ( 3 ) // command
+ADD_MEMORIZED_SPELL ~SPPR211~ #1 ~priest~ ( 1 ) // Silence 15 foot
+ADD_MEMORIZED_SPELL ~SPPR212~ #1 ~priest~ ( 1 ) // slow poison
+ADD_MEMORIZED_SPELL ~SPPR208~ #1 ~priest~ ( 1 ) // hold person
+ADD_MEMORIZED_SPELL ~SPPR204~ #1 ~priest~ ( 1 ) // charm person
+ADD_MEMORIZED_SPELL ~SPPR301~ #2 ~priest~ ( 1 ) // animate dead
+ADD_MEMORIZED_SPELL ~SPPR318~ #2 ~priest~ ( 2 ) // zone of sweet air
+ADD_MEMORIZED_SPELL ~SPPR303~ #2 ~priest~ ( 1 ) // dispel magic
+ADD_MEMORIZED_SPELL ~SPPR416~ #3 ~priest~ ( 1 ) // cloak of fear
+*/
+COPY ~Tidings/cre/AC#DT4PC.CRE~ ~override~ // Tharizdun priest #4
+/*
+ADD_MEMORIZED_SPELL ~SPPR108~ #0 ~priest~ ( 2 ) // remove fear
+ADD_MEMORIZED_SPELL ~SPPR102~ #0 ~priest~ ( 3 ) // command
+ADD_MEMORIZED_SPELL ~SPPR212~ #1 ~priest~ ( 1 ) // slow poison
+ADD_MEMORIZED_SPELL ~SPPR208~ #1 ~priest~ ( 1 ) // hold person
+ADD_MEMORIZED_SPELL ~SPPR204~ #1 ~priest~ ( 1 ) // charm person
+ADD_MEMORIZED_SPELL ~SPPR301~ #2 ~priest~ ( 1 ) // animate dead
+ADD_MEMORIZED_SPELL ~SPPR318~ #2 ~priest~ ( 2 ) // zone of sweet air
+ADD_MEMORIZED_SPELL ~SPPR304~ #2 ~priest~ ( 1 ) // glyph of warding
+*/
+
+COPY ~Tidings/cre/AC#DT5PC.CRE~ ~override~ // Tharizdun priest #5: Vergol's vice CEO
+/*
+ADD_MEMORIZED_SPELL ~SPPR101~ #0 ~priest~ ( 1 ) // bless
+ADD_MEMORIZED_SPELL ~SPPR111~ #0 ~priest~ ( 1 ) // armor of faith
+ADD_MEMORIZED_SPELL ~SPPR203~ #1 ~priest~ ( 1 ) // chant
+ADD_MEMORIZED_SPELL ~SPPR208~ #1 ~priest~ ( 1 ) // hold person
+ADD_MEMORIZED_SPELL ~SPPR211~ #1 ~priest~ ( 1 ) // silence 15 foot
+ADD_MEMORIZED_SPELL ~SPPR310~ #2 ~priest~ ( 2 ) // miscast magic
+ADD_MEMORIZED_SPELL ~SPPR308~ #2 ~priest~ ( 2 ) // remove paralysis
+ADD_MEMORIZED_SPELL ~AC#DTPG~ #3 ~priest~ ( 1 ) // protection from good
+ADD_MEMORIZED_SPELL ~SPPR416~ #3 ~priest~ ( 1 ) // cloak of fear
+ADD_MEMORIZED_SPELL ~SPPR401~ #3 ~priest~ ( 1 ) // cure serious wounds
+ADD_MEMORIZED_SPELL ~SPPR508~ #4 ~priest~ ( 1 ) // chaotic commands
+ADD_MEMORIZED_SPELL ~SPPR514~ #4 ~priest~ ( 1 ) // mass cure
+ADD_MEMORIZED_SPELL ~SPPR505~ #4 ~priest~ ( 1 ) // true sight
+*/
+
+COPY ~Tidings/cre/AC#DTSHM.cre~ ~override~       // Shadow Mastiff
+  SAY NAME1 @31 SAY NAME2 @31
+   // for EE, patch animation
+    ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTSHM.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~WORG~))
+    LPF DELETE_CRE_EFFECT INT_VAR opcode_to_delete=66 END // delete transparency effect since we don't need it in BG2EE
+    END
+
+COPY ~Tidings/cre/AC#DTSM1.cre~ ~override~       // Shadow Mastiff (pack leader)
+  SAY NAME1 @31 SAY NAME2 @31
+   // for EE, patch animation
+    ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTSM1.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~WORG~))
+    LPF DELETE_CRE_EFFECT INT_VAR opcode_to_delete=66 END // delete transparency effect since we don't need it in BG2EE
+    END
+
+COPY ~Tidings/cre/AC#DTVY1.cre~ ~override~       // Thalass, quest start
+  SAY NAME1 @32 SAY NAME2 @32
+  
+COPY ~Tidings/cre/AC#DTVY2.cre~ ~override~       // Thalass, quest finish
+  SAY NAME1 @32 SAY NAME2 @32
+
+COPY ~Tidings/cre/AC#DTNWI.cre~ ~override~
+  SAY NAME1 @33 SAY NAME2 @33
+  // for EE, delete translucency effect
+    ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTTH1.cre~ ~override~
+    LPF DELETE_CRE_EFFECT INT_VAR opcode_to_delete=66 END // delete transparency effect since we don't need it in BG2EE
+    END
+    
+COPY ~Tidings/cre/AC#DT30F.cre~ ~override~       // Gracie, ghost 
+  SAY NAME1 @34 SAY NAME2 @34
+
+COPY ~Tidings/cre/AC#DTSA3.cre~ ~override~
+SAY NAME1 @35 SAY NAME2 @35
+
+COPY ~Tidings/cre/AC#DTSW0.CRE~ ~override~ // cutscene Sea Hag (girl form)in Area ACDT01
+  SAY NAME1 @36 SAY NAME2 @36
+  
+COPY ~Tidings/cre/AC#DTSW1.CRE~ ~override~ // cutscene Sea Hag (hag form)in Area ACDT01
+  SAY NAME1 @36 SAY NAME2 @36
+  ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTSW1.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#SEA_HAG~))
+    END
+
+COPY ~Tidings/cre/AC#DTSW2.CRE~ ~override~ // Sea Hag in Area ACDT01
+  SAY NAME1 @36 SAY NAME2 @36
+  ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTSW2.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#SEA_HAG~))
+    END
+/*
+ADD_MEMORIZED_SPELL ~SPWI118~ #0 ~wizard~ ( 4 ) // Chromatic Orb
+ADD_MEMORIZED_SPELL ~SPWI205~ #1 ~wizard~ ( 1 ) // Horror
+ADD_MEMORIZED_SPELL ~SPWI212~ #1 ~wizard~ ( 1 ) // Mirror image
+ADD_MEMORIZED_SPELL ~SPWI213~ #1 ~wizard~ ( 1 ) // Stinking cloud
+ADD_MEMORIZED_SPELL ~SPWI211~ #1 ~wizard~ ( 1 ) // Melf's acid arrow
+ADD_MEMORIZED_SPELL ~SPWI306~ #2 ~wizard~ ( 1 ) // Hold Person
+ADD_MEMORIZED_SPELL ~SPWI312~ #2 ~wizard~ ( 1 ) // Slow
+ADD_MEMORIZED_SPELL ~SPWI308~ #2 ~wizard~ ( 1 ) // Lightning bolt
+ADD_MEMORIZED_SPELL ~SPWI317~ #2 ~wizard~ ( 1 ) // ghost armor
+ADD_MEMORIZED_SPELL ~SPWI405~ #3 ~wizard~ ( 1 ) // Improved Invisibility
+ADD_MEMORIZED_SPELL ~SPWI408~ #3 ~wizard~ ( 1 ) // Stoneskin
+*/
+
+COPY ~Tidings/cre/AC#DTMYR.CRE~ ~override~
+  SAY NAME1 @37 SAY NAME2 @37
+
+COPY ~Tidings/cre/AC#DTWEL.CRE~ ~override~
+  SAY NAME1 @38 SAY NAME2 @38
+  // water elemental in areas acdt01 and acdt20
+    ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTWEL.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#ELEMENTAL_WATER_LARGE~))
+    END
+
+COPY ~Tidings/cre/AC#DTWE2.CRE~ ~override~
+  SAY NAME1 @38 SAY NAME2 @38
+  // water elemental (backup)
+    ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTWE2.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#ELEMENTAL_WATER_LARGE~))
+    END
+
+COPY ~Tidings/cre/AC#DTW12.CRE~ ~override~
+  SAY NAME1 @38 SAY NAME2 @38
+// water elemental 12 hit dice
+    ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTW12.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#ELEMENTAL_WATER_LARGE~))
+    END
+
+COPY ~Tidings/cre/AC#DTW16.CRE~ ~override~
+  SAY NAME1 @38 SAY NAME2 @38
+  // water elemental 16 hit dice
+    ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTW16.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#ELEMENTAL_WATER_LARGE~))
+    END
+
+COPY ~Tidings/cre/AC#DTWSU.CRE~ ~override~
+  SAY NAME1 @39 SAY NAME2 @39
+  // small water elemental
+    ACTION_IF (GAME_IS ~bg2ee eet~) BEGIN
+    COPY_EXISTING ~AC#DTWSU.cre~ ~override~
+    WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~AC#ELEMENTAL_WATER_SMALL~))
+    END
+
+COPY ~Tidings/cre/AC#DTOIO.CRE~ ~override~ // Oil ooze
+  SAY NAME1 @40 SAY NAME2 @40

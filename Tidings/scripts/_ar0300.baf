@@ -1,0 +1,35 @@
+IF
+  Global("AC#DT_Accept","GLOBAL",1)
+THEN
+    RESPONSE #100
+    SetGlobal("AC#DT_Accept","GLOBAL",2)
+    CreateCreature("AC#DTVY1",[3591.2961],0)
+    CreateCreature("AC#DTSA1",[3508.2997],8)
+    CreateCreature("AC#DTSA2",[3612.2994],8)
+    CreateCreature("AC#DTSA3",[3556.3011],8)
+END
+
+// OLD version:
+/*
+IF
+  Global("AC#DT_Accept","GLOBAL",1)
+  OR(2)
+  TimeOfDay(DAY)
+  TimeOfDay(MORNING)
+  OR(2)
+  Global("AC#DT_Night","GLOBAL",1)
+  !GlobalTimerNotExpired("AC#DT_Wait","GLOBAL")
+THEN
+    RESPONSE #100
+    SetGlobal("AC#DT_Accept","GLOBAL",2)
+    CreateCreature("AC#DTVY1",[3591.2961],0)
+    CreateCreature("AC#DTSA1",[3508.2997],8)
+    CreateCreature("AC#DTSA2",[3612.2994],8)
+    CreateCreature("AC#DTSA3",[3556.3011],8)
+END
+*/
+
+
+
+
+

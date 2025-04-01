@@ -1,0 +1,311 @@
+// encoding utf-8
+
+@2000 = ~Pierścień czystej krwi~
+@2001 = ~Nie jest łatwo stać się liszem, o czym przekonało się wielu nieumarłych magów, których próby zapewnienia sobie wiecznej egzystencji zakończyły się klęską. Mag Arcturus z Shoonach próbował zapobiec takiemu niepowodzeniu poprzez stworzenie tego właśnie pierścienia. W pracochłonnym procesie jego zaklinania użyto krwi trzech burzowych olbrzymów, a krasnoludzki mistrz jubilerski przyozdobił go rubinem. Nagrodą za wysiłek był pierścień, który miał ochronić Arcturusa przed nazbyt szkodliwymi efektami trującego naparu, jaki trzeba wypić w trakcie procesu przemiany w lisza.
+
+Kilka dni po próbie przemiany pewien kapłan Kelemvora ściągnął pierścień z palca martwego Arcturusa, zanim został on złożony do mauzoleum. Nawet jeśli pierścień nie działał tak, jak sobie życzył jego twórca, to w kolejnych stuleciach przysłużył się kościołowi Ilmatera, który przy jego użyciu pomagał chorym szybciej wrócić do zdrowia. Od tamtej pory zadaniem pierścienia było służyć dobru mieszkańców Faerûnu. Po dziś dzień pozostaje on symbolem czystości, zdrowia oraz witalności. Z rozmaitych powodów był też przez wielu poszukiwany i pożądany, choć nikt więcej nie okazał się na tyle nierozsądny, by użyć go w procesie przemiany w lisza.
+
+PARAMETRY:
+
+Specjalne:
+– Kondycja: +1
+
+Waga: 0~
+@2002 = ~Czarny płaszcz~ 
+@2003 = ~Zasłona duszącego mroku~
+@2004 = ~Ten płaszcz jest bardzo ciemny i wygląda nader złowieszczo.
+
+PARAMETRY:
+
+Waga: 3~ 
+@2005 = ~Płaszcz został uszyty z grubego, starego płótna i ma dziwnie postrzępione brzegi – jak gdyby skraje peleryny znikały z tego świata. Oferuje ochronę przed różnymi żywiołami oraz zwykłymi atakami, ale też wymaga od noszącego poniesienia znacznych kosztów. Jeśli nie powiedzie mu się rzut obronny przeciw śmierci, umrze już przy próbie założenia płaszcza. Jeśli rzut obronny się uda, przeżyje, ale musi się pogodzić z utratą część sił życiowych.
+
+Od płaszcza da się wyczuć zapach wilgotnej, grobowej ziemi. Wydaje się też bardzo stary – być może pochodzi z czasów, gdy bogowie Krain byli jeszcze młodzi, a Torilem rządziły inne, starsze byty. Dzieje tego ubioru, jak również tych, którzy go nosili, pozostają ukryte w mroku historii.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +2
+– Rzuty obronne: +1
+– Odporność na elektryczność: +30%
+– Odporność na zimno: +30%
+– Odporność na ogień: +30%
+– Punkty życia: -10
+– Natychmiastowa śmierć przy zakładaniu płaszcza (rzut obronny przeciw śmierci neguje)
+
+Waga: 3~
+@2006 = ~Strzała ciemności~
+@2007 = ~Kiedy strzała ta trafi przeciwnika, zostanie on oślepiony na czas jednej rundy, jeśli nie powiedzie mu się rzut obronny przeciw czarom.
+
+PARAMETRY:
+
+Specjalne:
+– Oślepienie na jedną rundę, po trafieniu (rzut obronny przeciw czarom neguje)
+
+Obrażenia: 1k6
+Typ obrażeń: pocisk
+Wyrzutnia: łuk
+
+Waga: 0~
+@2008 = ~Strzała choroby~
+@2009 = ~Strzała jest pokryta zakrzepłą krwią nieznanego stworzenia. Trafiony nią cel zostaje na cztery rundy zakażony chorobą i spowolniony.
+
+PARAMETRY:
+
+Specjalne:
+– Choroba na cztery rundy, po trafieniu
+– Spowolnienie na cztery rundy, po trafieniu
+
+Obrażenia: 1k6
+Typ obrażeń: pocisk
+Wyrzutnia: łuk
+
+Waga: 0~
+@2010 = ~Czarna perła~
+@2011 = ~Perły złożone są z warstw aragonitu boleśnie ułożonego wokół kawałeczka pyłku lub innej substancji drażniącej w ostrygach lub innych mięczakach. Powstająca w ten sposób perła daje bogate, głębokie lśnienie. Ta perła jest czarna, należy do jednej z najrzadszych i tym samym najcenniejszych odmian. Nie posiada magicznych właściwości, ale można ją sprzedać po dobrej cenie.
+
+PARAMETRY:
+
+Waga: 0~
+@2014 = ~Zatruta mikstura leczenia~ 
+@2015 = ~Mikstura ta wygląda, pachnie i smakuje jak mikstura leczenia bądź inny leczniczy napój. Zaklęcie identyfikacji pozwala jednak poznać jej prawdziwą naturę – w rzeczywistości jest to trucizna zakamuflowana iluzją. Jeśli ktoś mimo to zechce się jej napić, będzie otrzymywał po punkcie obrażeń od trucizny co sekundę przez trzy rundy.
+
+PARAMETRY:
+
+Specjalne:
+– Trucizna działa przez trzy rundy i zadaje 1 obrażenie co sekundę (bez rzutu obronnego)
+
+Waga: 1~
+@2016 = ~Cienista cegła~ 
+@2017 = ~Ta cegła jest przepojona najgłębszą czernią. Jej krawędzie są niewyraźne i zdają się rozmywać w powietrzu. Jest zimna w dotyku, a przy tym lekka jak piórko.
+
+PARAMETRY:
+
+Waga: 1~
+@2018 = ~Księga rytuałów~
+@2019 = ~Okładkę tej księgi zdobi jasne słońce. Choć wygląda na bardzo starą, jest zachowana w dobrym stanie. Dał ci ją nieumarły latarnik, który poprosił o odprawienie rytuału mającego na celu wyłączenie portalu do Planu Cieni oraz zapieczętowanie nieświętego miejsca ukrytego w piwnicach latarni. Księga zawiera ustęp poświęcony przeprowadzeniu rytuału:
+
+„By wpływy Starszego Oka Żywiołów, złego Tharizduna, z Krainy Światła wypędzić, władający magią tajemną albo objawioną postąpić musi wedle tego, co dalej się podaje. W miejscu najniższym, gdzie da się posłyszeć szepty Tharizduna i gdzie oddziaływa spaczona magia żywiołów, taki trzeba rytuał odczynić.
+
+Pierwej należy kryształ świetlisty pod nieświętym ołtarzem ułożyć. Po wtóre, pośrodku izby winien się ustawić biegły w sztuce magicznej, acz nie w tym istota rzeczy spoczywa, czy jest on magiem, czy klerykiem. Najpierwszy czar, jaki rzucić mu trzeba, to ochronny przed złem, by złe żywioły przystępu nie miały. Dalej, niech wypowie zaklęcie prawdziwego widzenia, by złe iluzje Tharizduna przejrzeć. Na koniec wreszcie musi się czyniący rytuał rozproszeniem magii posłużyć i zerwać tym sposobem magiczne więzy, co to splugawione miejsce energią karmić pomagają. Takoż się rytuał dopełni i mroczne poszeptywania Tharizduna na zawsze w tym miejscu zamilkną. Może jednakowoż i tak być, że się kryształ wskutek tego w proch obróci, co należy mieć za ofiarę konieczną, by zło Tharizduna, w mroku skąpane, raz jeszcze z Krainy Światła wypędzić.”.~
+@2020 = ~Ostatnia epoka wiecznego mroku~ 
+@2021 = ~Ta książka jest ozdobiona dziwną, postrzępioną spiralą. Zawiera liczne, mało czytelne runy, znaki i słowa w prastarych, dziś już nieznanych językach. Tylko kilka linijek napisano pismem i językiem, które są dla ciebie zrozumiałe:
+
+„Zakańczający, Starsze Oko Żywiołów, Mroczny Bóg, Cierpliwy, Ten Który Czeka, Przeklętnik, Ojciec Prastarego Zła, Autor Występku, Ten z Odwiecznej Ciemności, Pożeracz Światów, Pogardzany, Odwracacz – to tylko niektóre z wielu imion naszego wspaniałego Pana. Od tysięcy lat Mroczny Bóg czeka, przyczajony poza granicą rzeczywistości, uwięziony w krypcie wzniesionej rękami tych zazdrosnych uzurpatorów, którzy zajmują należny Jemu tron. Nasze starania w ciągu ostatnich stuleci doprowadziły do zniszczenia, rozkładu i strat, podczas gdy te pomniejsze moce starały się nas zmylić i poróżnić ze sobą. Bo widzicie, o wierni, Jego powrót oznacza ich koniec. Boją się Go. Tak jest, potężni Tyr i Lathander, nawet smutna Beshaba, wszyscy oni drżą na myśl o Jego rychłym przybyciu. Nadchodzi już czas, nadchodzi koniec, i naszym świętym obowiązkiem jest wprowadzić świat w ostatnią z epok i obrócić w ruiny wytwory fałszywych bogów. Tylko wtedy będziemy w stanie pojąć nieskazitelną naturę tego, co przyniesie ze sobą Wieczny Mrok.”.
+
+PARAMETRY:
+
+Waga: 3~
+@2022 = ~Hełm kultysty~ 
+@2023 = ~Ten hełm nie tyle pełni funkcję ochronną, co stanowi charakterystyczne nakrycie głowy członków nieznanego ci kultu. Ma ciemnofioletowy kolor i jest bogato zdobiony. Na obrzeżu hełmu znajduje się drobny grawerunek. Zostało tam napisane we wspólnym: „Wierni powinni nosić hełm, by okazała im się droga Starszego Oka Żywiołów”.
+
+PARAMETRY:
+
+Waga: 1~ 
+@2024 = ~Ten hełm nie tyle pełni funkcję ochronną, co stanowi charakterystyczne nakrycie głowy członków nieznanego ci kultu. Ma ciemnofioletowy kolor i jest bogato zdobiony.
+
+PARAMETRY:
+
+Waga: 1~
+@2025 = ~Notatka~ 
+@2026 = ~Masz za zadanie odbierać od sirin zauroczonych przez nie rozbitków. Prowadź ich następnie przed schody świątyni, gdzie będą czekać ofiarnicy. Siriny i trolle wydają się ulegać wpływowi równoległego świata i powoli przeistaczają się w cieniste wersje samych siebie. Być może w takiej postaci będą nam jeszcze bardziej użyteczne.
+
+– Prorok Zagłady Vergol~
+@2027 = ~Notatka Brokusa~
+@2028 = ~Zwiastunie klęski Brokusie, tobie, jako jednemu z mych najwierniejszych sług, powierzam najważniejsze zadanie w trakcie naszej świętej misji. Wraz z innymi zwiastunami przechodzę na drugą stronę. Ty tu zostań i zadbaj o to, by trolle, siriny i wiedźma pozostali nam przychylni. Pozostali przy życiu rozbitkowie mają zostać jak najszybciej zauroczeni przez siriny i dostarczani przez ciebie na drugą stronę, gdzie posłużą za ofiary. Jeśli na wyspie wylądują intruzi, musisz zamknąć przejście, by nie zostało odkryte. Przybysze powinni myśleć, że to wiedźma jest za wszystko odpowiedzialna.
+
+Jeśli więc będziesz zmuszony znów zapieczętować przejście, zrób tak:
+
+Zniszcz cienisty kamień, żeby tajemne przejście się zamknęło. Nowy kamień można później łatwo stworzyć w izbie rytualnej. Zamknij wejście do piwnicy i ukryj klucz, najlepiej w swoim kufrze. Wiedźma niech zablokuje wejście do wieży przy pomocy swojej nieczystej magii. Nie zapomnij o aktywowaniu pułapek w wieży! Kiedy niebezpieczeństwo minie, będziesz musiał ponownie odprawić rytuał, by pozyskać nowy cienisty kamień. Pamiętaj, że aby dostrzec kontury sekretnych drzwi, musisz mieć na głowie swój hełm. Zniszcz tę wiadomość po jej przeczytaniu.
+
+– Prorok Zagłady Vergol~
+@2029 = ~Oto nasz dogmat, nasza najgłębsza przysięga:
+
+„Światło musi zostać zgaszone, doskonałość zniszczona, porządek zniesiony, a duch rozdarty na części. A wtedy gdzieś, gdzie nie istnieją ani czas, ani przestrzeń, potężny byt poruszy się i usiłuje przebudzić. I nastaną czasy najczarniejszej ciemności.”.~
+@2030 = ~Gdzie jest dużo światła, będzie też wiele cieni.~
+@2031 = ~Szczypce kraba~
+@2032 = ~Te chwytaki wydają się być magicznie zmienionymi szczypcami wielkiego kraba. Przy ich pomocy powinno być możliwe odblokowanie wszelkich miejsc zajętych przez narośla pochodzenia morskiego.
+
+PARAMETRY:
+
+Waga: 18~
+@2033 = ~Czarna substancja~
+@2034 = ~Cienista substancja~
+@2035 = ~Brzegi tej kruchej substancji zdają się rozpływać i ginąć w cieniu.
+
+PARAMETRY:
+
+Waga: 1~
+@2036 = ~Te okruchy są pozostałością cienistej materii. Drobiny te zdają się być resztkami jakiegoś większego obiektu.
+
+PARAMETRY:
+
+Waga: 1~
+@2037 = ~Sztuczna szczęka~
+@2038 = ~Roześmiane kły~
+@2039 = ~Ta sztuczna szczęka wydaje się być wykonana z kości zwierząt.
+
+PARAMETRY:
+
+Waga: 1~
+@2040 = ~Jest to sztuczna szczęka legendarnego pirata Ormonda Dantego, który przed około stu laty siał niepokój na Wybrzeżu Mieczy. Ciężko doświadczony przez szkorbut, w późniejszych latach życia zamówił w gnomiej manufakturze te oto zęby z kości wieloryba. Jego mag okrętowy nałożył na nie pewne umagicznienia, nie mógł jednak nic zaradzić na cuchnący oddech i odrażający wygląd swego kapitana. Pirat był znany ze swojego tubalnego śmiechu, nawet w sytuacjach bez wyjścia, nie dziwne zatem, że i szczęka nabrała zdolności czasowego wytrącania z orientacji przeciwników w zasięgu słuchu.
+
+PARAMETRY:
+
+Specjalne:
+– Niewrażliwość na uroki i strach
+– Charyzma: -2
+
+Właściwości ładunków:
+– Śmiech Ormonda, raz dziennie
+Wszyscy przeciwnicy w zasięgu słuchu otrzymują karę -2 do wszystkich rzutów (w tym rzutów na trafienie) na pięć rund (bez rzutu obronnego)
+
+Waga: 1~
+@2041 = ~Klucz do skrzyni Brokusa~
+@2042 = ~Ten kunsztownie wykonany klucz wydaje się pasować do zamka którejś ze skrzyń.
+
+PARAMETRY:
+
+Waga: 0~
+@2043 = ~Klucz do piwnicy~
+@2044 = ~Zielonkawy, zmatowiały klucz, który wygląda, jakby przez długi czas był wystawiony na działanie wilgoci.
+
+PARAMETRY:
+
+Waga: 0~
+@2045 = ~Dziennik Brokusa~
+@2046 = ~Dziennik Brokusa
+
+3. Tarsak 1369
+Wyspa Irphong jest nasza! Po wylądowaniu na wyspie okazało się, że w jaskiniach osiedliło się plemię sirin. Przyrzekły wierność naszemu Mrocznemu Panu, po tym jak zabiliśmy dwie z nich. Mogą się nam jeszcze przydać. Paru głupców natychmiast ruszyło na poszukiwania skarbów, jakby po tych wszystkich stuleciach, kiedy wyspa była niezamieszkała, coś jeszcze miało na niej pozostać!
+
+12. Tarsak
+Prorok Zagłady Vergol przyzwał grupę morskich trolli, by piraci trzymali się z dala od tego miejsca. Przybyła również wiedźma morska, która urządziła się w górnej części wyspy. Nie wolno się jej przypatrywać, by nie zostać dotkniętym klątwą osłabienia. Jej napar jest jednak dość użyteczny. Przez większość czasu wędruje po wyspie pod postacią małej dziewczynki. Wszyscy gorączkowo szukamy przejścia na drugą stronę, ale jak dotąd nic nie znaleźliśmy.
+
+20. Tarsak
+Znaleźliśmy portal prowadzący na drugą stronę! Cały czas tu był, mieliśmy go przed oczami! Dawni kultyści zadali sobie wiele trudu, by ukryć go przed ciekawskimi spojrzeniami. Kiedy umieści się w skrytce odpowiedni przedmiot, mając na głowie hełm naszego kultu, przejście stanie otworem.
+
+1. Mirtul
+Braciom udało się wyjąć świetlny kryształ z gniazda na górnym piętrze latarni, po czym przenieśli go przez portal na drugą stronę. Wszystkich rozbitków wyrzuconych na plażę mam prowadzić na ofiarę. Co trzeciego musimy jednak oddawać trollom, wiedźmie i sirinom. Poza tym mam tu czekać i się ukrywać. Niech marynarze z przepływających obok wyspy statków wierzą, że za wszystkim stoją siriny i morska wiedźma.
+
+3. Mirtul
+Prorok Zagłady Vergol jest ciągle zajęty przygotowaniami do rytuału. Potrzebujemy więcej ofiar! W międzyczasie statki zaczęły unikać wyspy i powoli wszyscy stają się niespokojni...
+
+4. Mirtul
+Czuję, jak zaczyna ogarniać mnie szaleństwo. Czy to może wpływ naszego wyczekiwanego Boga? Nie wiem...
+
+PARAMETRY:
+
+Waga: 2~
+@2047 = ~Wizje Vergola~
+@2048 = ~Bóg w Łańcuchach, Przykute Zapomnienie, Mroczny Bóg...
+
+...woła mnie! Początkowo moje sny były bezładne i niejasne, ale teraz wydaje mi się, jakby sprzed moich oczu opadły zasłony. Jak to dobrze! Wreszcie nasza komórka kultu na coś się przyda. Jest pewna bezludna wyspa położona daleko na zachód od naszej ojczystej Chessenty. W pradawnych czasach oddawano tam hołd naszemu Panu Tharizdunowi. Gdy nastały kolejne pokolenia, jego kult został zakazany i ta mnogość ofiar, jaką przysporzyły naszemu Panu mielizny wyspy, wyczerpała się. Głupcy posadowili nawet na wyspie magiczną latarnię morską, by powstrzymać Pana Cieni. Misja, jaką w moich snach powierzył nam Pan, jest prosta: zabrać z latarni magiczny kryształ, odpieczętować prastare wejście do świata naszego Pana, wszystkich rozbitków składać w ofierze Starszemu Oku Żywiołów, bezczeszcząc przy tym latarnię, i w końcu przerwać więzy, które powstrzymują naszego Boga przed ponownym wkroczeniem do tego świata.
+
+A wtedy wreszcie spojrzenie Starszego Oka Żywiołów, naszego Pana Tharizduna, ponownie okryje wszystko wieczną ciemnością, a nam, jego najwierniejszym sługom, zapewni miejsce u jego boku.~
+@2049 = ~Święty symbol~
+@2050 = ~Święty symbol Vergola~
+@2051 = ~Wygląda to na jakiegoś rodzaju święty symbol nieznanego ci bóstwa.
+
+PARAMETRY:
+
+Waga: 1~
+@2052 = ~Symbol jest przedstawieniem bytu zwanego „Tharizdun”. Krąży wiele legend o tej istocie, która została uwięziona w nieznanym miejscu jeszcze przed początkiem znanego ci świata. W różnych częściach Krain manifestuje się jednak po dziś dzień wiele słabszych aspektów Tharizduna, usiłujących skłonić jego czcicieli do uwolnienia właściwego bóstwa.
+
+PARAMETRY:
+
+Waga: 1~
+@2053 = ~Brązowa czara~
+@2054 = ~Ta czara jest wykonana z brązu. Na jej brzegach widać niewyraźne plamy, jak gdyby często znajdowały się w niej duże ilości wody.
+
+PARAMETRY:
+
+Waga: 0~
+@2055 = ~Ta magiczna misa posiada znaczną moc, z której może korzystać jej właściciel. Pozwala mianowicie w pewnym stopniu sprawować kontrolę nad magicznymi stworzeniami, jakimi są żywiołaki wody. Jak to bywa z wszystkimi siłami żywiołów, ta moc może służyć zarówno dobru, jak i złu, zarówno porządkowi, jak i chaosowi. Z tego względu należy się obchodzić z tymi stworzeniami z dużą ostrożnością.
+
+PARAMETRY:
+
+Właściwości ładunków:
+– Sprowadzenie żywiołaka wody, raz dziennie
+Pozwala przywołać żywiołaka wody na pięć minut, którego moc zależy od poziomu użytkownika:
+Poziom 8-11: pomniejszy żywiołak wody o wytrzymałości 8 Kostek
+Poziom 12-15: żywiołak wody o wytrzymałości 12 Kostek
+Poziom 16. i wyższy: większy żywiołak wody o wytrzymałości 16 Kostek
+
+Waga: 0~
+@2056 = ~Świetlny kryształ~
+@2057 = ~Jest to klejnot, dzięki któremu na najwyższym piętrze latarni morskiej na Irphong płonie magiczne światło. Jego pochodzenie zostało wraz z upływem tysiącleci zapomniane, ale wydaje się starszy od pierwszych królestw ludzi w Środziemiu. Jego użycie w latarni na Irphong sięga czasów imperium Shoon, kiedy ludzie próbowali większość spraw w życiu rozwiązywać z pomocą magii.
+
+PARAMETRY:
+
+Waga: 1~
+@2058 = ~Chmura mgły~
+@2059 = ~Chmura mgły
+(Przemiany)
+
+Poziom: 2
+Zasięg: 30 metrów
+Czas działania: 4 rundy
+Czas rzucania: 2
+Obszar działania: w promieniu 5 metrów
+Rzut obronny: brak
+
+Czar ten tworzy obłok gęstej mgły przypominającej wyglądem Zabójczą chmurę z piątego poziomu. Jednakże powstała w ten sposób falująca chmura zielono-żółtych oparów o średnicy pięciu metrów nie jest trująca, lecz tylko uniemożliwia widzenie. Stworzenia, które znajdą się w chmurze, zostają oślepione na czas trwania zaklęcia. Istnieje też 50% szansa, że dostrzeżenie ich w chmurze stanie się na tyle utrudnione, że staną się na jedną rundę niewidzialne.~
+@2060 = ~Ostrze wody +2~
+@2061 = ~Ten długi miecz ma płynne, lekko zakrzywione ostrze. Na końcu rękojeści umieszczono zielono-niebieski klejnot, który podobnie jak cały wygląd miecza sugeruje jego powiązanie z żywiołem wody. Kiedy właściciel miecza trzyma go w ręku, jest w dużym stopniu chroniony przed zimnem. Poza tym miecz może raz dziennie wyrzucić z siebie strugę czystej wody, która zadaje 3k6 obrażeń każdemu na obszarze stożka o zasięgu piętnastu metrów.
+
+PARAMETRY:
+
+Specjalne:
+– Odporność na zimno: +40%
+– Struga wody, raz dziennie
+Struga wody zadaje 3k6 obrażeń obuchowych na obszarze stożka o zasięgu piętnastu metrów
+
+Obrażenia: 1k8 +2
+TraK0: +2
+Typ obrażeń: sieczne
+Opóźnienie: 3
+Rodzaj biegłości: miecz długi
+Typ broni: 1-ręczna
+
+Wymagania:
+- Siła: 6
+
+Waga: 3~
+@2062 = ~Ochrona przed trucizną~
+@2063 = ~Ochrona przed trucizną
+(Odrzucanie)
+
+Poziom: 2
+Sfera: Ochrona
+Zasięg: dotyk
+Czas działania: 10 rund 
+Czas rzucania: 5
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Dzięki temu zaklęciu wybrana istota staje się odporna na wszelkie trucizny, które mogą przeniknąć do organizmu przez ukłucie, połknięcie lub kontakt ze skórą. Toksyny innych rodzajów oddziałują na istotę w normalny sposób. Zaklęcie nie wpływa też na trucizny, które znajdują się w ciele w momencie rzucenia czaru.~
+@2064 = ~Ostrze wody +3~
+@2065 = ~Ten długi miecz ma płynne, lekko zakrzywione ostrze. Na końcu rękojeści umieszczono zielono-niebieski klejnot, który podobnie jak cały wygląd miecza sugeruje jego powiązanie z żywiołem wody. Kiedy właściciel miecza trzyma go w ręku, jest w dużym stopniu chroniony przed zimnem. Poza tym miecz może raz dziennie wyrzucić z siebie strugę czystej wody, która zadaje 4k6 obrażeń każdemu w odległości do piętnastu metrów.
+
+PARAMETRY:
+
+Specjalne:
+– Odporność na zimno: +50%
+– Trafiony sahuagin zostaje ogłuszony na jedną rundę
+
+Właściwości ładunków:
+– Struga wody, raz dziennie
+Struga wody zadaje 4k6 obrażeń obuchowych na obszarze stożka o zasięgu piętnastu metrów
+
+Obrażenia: 1k8 +3, +5 przeciw kuo-toa i sahuaginom
+TraK0: +3, +5 przeciw kuo-toa i sahuaginom
+Typ obrażeń: sieczne
+Opóźnienie: 3
+Rodzaj biegłości: miecz długi
+Typ broni: 1-ręczna
+
+Wymagania
+- Siła: 6
+
+Waga: 3~

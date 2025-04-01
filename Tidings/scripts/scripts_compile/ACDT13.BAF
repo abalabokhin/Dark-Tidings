@@ -1,0 +1,52 @@
+IF
+	Global("Prep","ACDT13",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACDT13",1)
+		SoundActivate("Crystal-sound",FALSE)
+END
+
+IF	
+	GlobalGT("ACDT_Towerlight","GLOBAL",0)
+	GlobalLT("Diamond_Journal","ACDT13",10)  
+THEN
+	RESPONSE #100
+		SetGlobal("Diamond_Journal","ACDT13",10)
+		EraseJournalEntry(@13001)
+		AddJournalEntry(@13010,QUEST_DONE)
+END
+
+IF
+	Global("Diamond","ACDT13",1)
+	Global("Diamond_Journal","ACDT13",0)
+	!PartyHasItem("AC#DTDIA")  
+THEN
+	RESPONSE #100
+		SetGlobal("Diamond_Journal","ACDT13",1)
+		AddJournalEntry(@13000,QUEST)
+END
+
+IF	
+	GlobalGT("ACDT_Towerlight","GLOBAL",0)
+	Global("Ritual_Warning","ACDT13",1)
+	Global("AC#DT_Ritual_done","GLOBAL",0) 
+THEN
+	RESPONSE #100
+		SetGlobal("Ritual_Warning","ACDT13",2)
+		EraseJournalEntry(@18012)
+		AddJournalEntry(@18013,QUEST_DONE)
+END
+
+IF	
+	GlobalGT("ACDT_Towerlight","GLOBAL",0)
+	GlobalLT("Ritual_Warning","ACDT13",2)
+	GlobalGT("AC#DT_Ritual_done","GLOBAL",0) 
+THEN
+	RESPONSE #100
+		SetGlobal("Ritual_Warning","ACDT13",2)
+		EraseJournalEntry(@18012)
+		EraseJournalEntry(@18015)
+		AddJournalEntry(@18016,QUEST_DONE)
+END
+
+

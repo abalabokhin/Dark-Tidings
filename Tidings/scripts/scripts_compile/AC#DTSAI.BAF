@@ -1,0 +1,18 @@
+IF
+	AreaCheck("AR0300")
+	Global("Face","LOCALS",0)
+THEN
+	RESPONSE #100
+		Wait(1)
+		FaceObject("AC#DTVY1")
+		SetGlobal("Face","LOCALS",1)
+END
+
+IF
+	AreaCheck("AR0300")
+	GlobalGT("AC#DT_Ambush","GLOBAL",0)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+

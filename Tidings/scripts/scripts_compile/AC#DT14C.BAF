@@ -1,0 +1,8 @@
+IF
+	Opened([ANYONE])
+	Global("Opened_Chest","ACDT14",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Opened_Chest","ACDT14",1)
+END
+

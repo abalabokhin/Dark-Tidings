@@ -1,0 +1,180 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		CreateVisualEffectObject("AC#DTTDT",Myself)
+		DestroySelf()
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Shadow_Copy","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpellRES("AC#DTSC",Myself)  // No such index
+		//DisplayString(Myself,105325)  // Schattenkontrolle
+		CreateVisualEffectObject("AC#DTHND",Player1)
+		CreateVisualEffectObject("AC#DTHND",Player2)
+		CreateVisualEffectObject("AC#DTHND",Player3)
+		CreateVisualEffectObject("AC#DTHND",Player4)
+		CreateVisualEffectObject("AC#DTHND",Player5)
+		CreateVisualEffectObject("AC#DTHND",Player6)
+		Wait(2)
+		CreateCreatureObjectCopy("AC#DTPL1",Player1,0,0,0)  // <PLAYER1>'s Schatten
+		CreateCreatureObjectCopy("AC#DTPL2",Player2,0,0,0)  // <PLAYER2>'s Schatten
+		CreateCreatureObjectCopy("AC#DTPL3",Player3,0,0,0)  // <PLAYER3>'s Schatten
+		CreateCreatureObjectCopy("AC#DTPL4",Player4,0,0,0)  // <PLAYER4>'s Schatten
+		CreateCreatureObjectCopy("AC#DTPL5",Player5,0,0,0)  // <PLAYER5>'s Schatten
+		CreateCreatureObjectCopy("AC#DTPL6",Player6,0,0,0)  // <PLAYER6>'s Schatten
+		SetGlobal("Shadow_Copy","LOCALS",1)
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+	See([GOODCUTOFF.0.ELEMENTAL.0.0.SUMMONED])
+	GlobalTimerExpired("Cast","LOCALS")
+THEN
+	RESPONSE #100
+		FaceObject(LastSeenBy(Myself))
+		ReallyForceSpellRES("AC#DTT3",LastSeenBy(Myself))  // Elementarbeherrschung
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+	RESPONSE #100
+		Continue()
+END
+/*
+IF
+	See(Player1)
+	HPLT(Myself,50)
+	Global("Teleport","LOCALS",0)
+	!Range(Player1,4)
+THEN
+	RESPONSE #100
+		SetGlobal("Teleport","LOCALS",1)
+		ReallyForceSpellRES("ac#dttp",Player1)  // Fehlerfreies Teleportieren
+END
+
+IF
+	See(Player2)
+	HPLT(Myself,50)
+	Global("Teleport","LOCALS",0)
+	!Range(Player2,4)
+THEN
+	RESPONSE #100
+		SetGlobal("Teleport","LOCALS",1)
+		ReallyForceSpellRES("ac#dttp",Player2)  // Fehlerfreies Teleportieren
+END
+
+IF
+	See(Player3)
+	HPLT(Myself,50)
+	Global("Teleport","LOCALS",0)
+	!Range(Player3,4)
+THEN
+	RESPONSE #100
+		SetGlobal("Teleport","LOCALS",1)
+		ReallyForceSpellRES("ac#dttp",Player3)  // Fehlerfreies Teleportieren
+END
+
+IF
+	See(Player4)
+	HPLT(Myself,50)
+	Global("Teleport","LOCALS",0)
+	!Range(Player4,4)
+THEN
+	RESPONSE #100
+		SetGlobal("Teleport","LOCALS",1)
+		ReallyForceSpellRES("ac#dttp",Player4)  // Fehlerfreies Teleportieren
+END
+
+IF
+	See(Player5)
+	HPLT(Myself,50)
+	Global("Teleport","LOCALS",0)
+	!Range(Player5,4)
+THEN
+	RESPONSE #100
+		SetGlobal("Teleport","LOCALS",1)
+		ReallyForceSpellRES("ac#dttp",Player5)  // Fehlerfreies Teleportieren
+END
+
+IF
+	See(Player6)
+	HPLT(Myself,50)
+	Global("Teleport","LOCALS",0)
+	!Range(Player6,4)
+THEN
+	RESPONSE #100
+		SetGlobal("Teleport","LOCALS",1)
+		ReallyForceSpellRES("ac#dttp",Player6)  // Fehlerfreies Teleportieren
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Teleport","LOCALS",1)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+		SetGlobal("Teleport","LOCALS",2)
+END
+*/
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+	!StateCheck(NearestEnemyOf(Myself),STATE_PANIC)
+	Delay(15)
+	GlobalTimerExpired("Cast","LOCALS")
+THEN
+	RESPONSE #100
+		ForceSpellRES("AC#DTTH",NearestEnemyOf(Myself))  // Scheu�licher Anblick
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(NearestEnemyOf(Myself),STATE_HELPLESS)
+	!StateCheck(NearestEnemyOf(Myself),STATE_PANIC)
+	Allegiance(Myself,ENEMY)
+	Global("Domination","LOCALS",0)
+	GlobalTimerExpired("Cast","LOCALS")
+THEN
+	RESPONSE #10
+		SetGlobal("Domination","LOCALS",1)
+		ForceSpell(NearestEnemyOf(Myself),VAMPIRE_DOMINATION)  // SPIN883.SPL (Beherrschung)
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	RandomNum(3,1)
+	!GlobalTimerNotExpired("Elemental_Force","LOCALS")
+	GlobalTimerExpired("Cast","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Elemental_Force","LOCALS",FOUR_ROUNDS)
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_CONE_OF_COLD)  // SPWI503.SPL (K�ltekegel)
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+	RESPONSE #50
+		SetGlobalTimer("Elemental_Force","LOCALS",FOUR_ROUNDS)
+		ReallyForceSpellRES("AC#DTSE",NearestEnemyOf(Myself))  // Erdbeben
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+	RESPONSE #100
+		SetGlobalTimer("Elemental_Force","LOCALS",FOUR_ROUNDS)
+		ForceSpellRES("AC#DTT7",Myself)  // Dunkle Aura
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

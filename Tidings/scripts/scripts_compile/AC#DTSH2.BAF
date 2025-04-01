@@ -1,0 +1,9 @@
+IF
+	OnCreation()
+	Global("Appear","LOCALS",0)
+THEN
+	RESPONSE #100
+		CreateVisualEffectObject("AC#DTFLS",Myself)
+		SetGlobal("Appear","LOCALS",1)
+END
+

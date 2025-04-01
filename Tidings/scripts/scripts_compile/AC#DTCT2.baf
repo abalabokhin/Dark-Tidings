@@ -1,0 +1,38 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		Wait(1)
+		CreateCreature("AC#DTSW0",[2534.1189],13) // Die schwarze Molly
+		ActionOverride("AC#DTSW0",MoveToPoint([2717.1192]))
+		Wait(3)
+		ActionOverride("AC#DTSA2",DisplayStringHead(Myself,@1100)) // Seht doch! Dort ist ein kleines M�dchen!
+		Wait(1)
+		ActionOverride("AC#DTSA2",MoveToObject("AC#DTSW0"))
+		Wait(1)
+		CreateVisualEffectObject("SPFLESHS","AC#DTSW0")
+		ActionOverride("AC#DTSW0",ChangeAnimationNoEffect("AC#DTSW1")) // Die schwarze Molly
+		ActionOverride("AC#DTSW1",Face(13))
+		SmallWait(10)
+		ActionOverride("AC#DTSA2",DisplayStringHead(Myself,@1101)) // Was zum ...!
+		SmallWait(10)
+		ActionOverride("AC#DTSW1",ReallyForceSpellRES("AC#DTS2","AC#DTSA2")) // T�dlicher Blick
+		Kill("AC#DTSA2")
+		SmallWait(5)
+		ActionOverride("AC#DTSA1",DisplayStringHead(Myself,@1102)) // Bei Baelros! Es ist eine Meerhexe!
+		Wait(1)
+		CreateCreatureObject("AC#DTTR1","AC#DTSA1",1,0,0)  // Meerestroll
+		CreateCreatureObject("AC#DTTR2","AC#DTSA3",1,0,0)  // Meerestroll
+		ActionOverride("AC#DTTR1",Attack("AC#DTSA1"))  // Seemann
+		ActionOverride("AC#DTTR2",Attack("AC#DTSA3"))  // Darius
+		StartCombatCounter()
+		ActionOverride("AC#DTSW1",CreateVisualEffectObject("SPFLESHS",Myself(Myself)))
+		SmallWait(5)
+		ActionOverride("AC#DTSW1",DestroySelf())
+		SetGlobal("Crew_Lost","ACDT01",1)
+		EndCutSceneMode()
+END
+
+
+
+

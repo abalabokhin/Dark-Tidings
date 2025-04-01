@@ -1,0 +1,18 @@
+IF
+	Global("Prep","ACDT11",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACDT11",1)
+		TriggerActivation("Tracdt19",FALSE)
+END
+
+IF
+	GlobalGT("AC#DT_Ritual_done","GLOBAL",0)
+	Global("Prep","ACDT11",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACDT11",2)
+		TriggerActivation("Tracdt19",TRUE)
+		TriggerActivation("Tracdt10",FALSE)
+END
+

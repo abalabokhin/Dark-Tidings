@@ -1,0 +1,18 @@
+IF
+	OR(2)
+		HitBy([ANYONE],FIRE)
+		HitBy([ANYONE],MAGICFIRE)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,WIZARD_FIREBALL)  // SPWI304.SPL (Feuerball)
+		Kill(Myself)
+		AddexperienceParty(500)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+

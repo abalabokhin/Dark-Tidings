@@ -1,0 +1,236 @@
+@2000 = ~Anneau du sang purifié~
+@2001 = ~Atteindre le lichéat n'est pas une tâche facile, et de nombreux aspirants mages morts-vivants ont échoué lamentablement dans leur tentative d'atteindre la vie éternelle. Le mage Arcturus de Shoonach a cherché à éviter l'échec en créant cet anneau. Il y intégra le sang de trois géants des tempêtes et demanda à un joaillier nain d'y ajouter un rubis en guise d'ornement. Ses efforts furent récompensés et l'anneau le protégerait des effets mortels du breuvage empoisonné nécessaire à l'obtention du lichéat, espérait-il.
+
+Quelques jours plus tard, un prêtre de Kelemvor retira l'anneau des doigts froids d'Arcturus avant qu'il ne soit enterré dans le mausolée. Même si l'anneau n'avait pas fonctionné comme prévu pour son créateur, il servit bien l'Église d'Ilmater durant les siècles qui suivirent, qui l'utilisait pour aider les malades et les mourants à se remettre plus rapidement de leurs maux. Dès lors, l'objet eut pour mission de servir le bien-être des peuples de Féérune. Aujourd'hui encore, l'anneau est un symbole de pureté, de santé et de vitalité, et il est recherché et convoité par de nombreuses personnes pour diverses raisons, bien que personne n'ait été assez fou pour l'utiliser à nouveau dans un rituel aussi puissant que l'obtention du lichéat.
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Constitution : +1
+
+Poids : 0~
+@2002 = ~Cape noire~
+@2003 = ~Voile de ténèbres étouffantes~
+@2004 = ~Cette cape est sombre et sinistre.~
+@2005 = ~Cette cape est tissée dans un vieux lin épais dont les bords semblent étrangement effilochés, comme si le contour de la cape s'effaçait de ce monde. Elle offre une protection contre de nombreux types de dégâts élémentaires et les attaques conventionnelles, mais son porteur doit en payer le prix fort : S'il échoue à un jet de sauvegarde contre la mort, il périra en essayant d'enfiler la cape. S'il réussit son jet de sauvegarde, il perd tout de même une partie de sa force vitale.
+La cape sent la terre humide et glauque et semble très ancienne - peut-être date-t-elle d'une époque où même les dieux des royaumes étaient encore jeunes et où d'autres êtres plus primitifs régnaient sur Toril. L'histoire de ce vêtement est aussi obscure que celle de son porteur.
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Classe d'armure : +2
+- Jets de sauvegarde : +1
+- Points de vie maximums : -10
+- Résistance aux dégâts élémentaires : +30 %
+- Tue instantanément le porteur (de niveau 6 ou supérieur) (jet de sauvegarde contre la mort pour annuler)
+
+Poids : 3~ // Revoir la dernière partie des statistiques
+@2006 = ~Flèche de Ténèbres~
+@2007 = ~Lorsque cette flèche est tirée sur un ennemi, celui-ci est aveuglé pendant un round s'il rate un jet de sauvegarde contre les sorts.
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Aveugle la cible pendant 1 round (jet de sauvegarde contre les sorts pour annuler)
+
+Dégâts : 1d6 (Projectile)
+Arme de trait : Arc
+
+Poids : 0~
+@2008 = ~Flèches de maladie~
+@2009 = ~Ces flèches sont recouvertes du sang coagulé d'une créature inconnue. Si un être est touché par cette flèche, il contractera une maladie.
+
+PARAMÈTRES : 
+
+Capacités de combat : 
+- Inocule une maladie qui ralentit la cible pendant 4 rounds
+
+Dégâts : 1d6 (Projectile)
+Arme de trait : Arc
+
+Poids : 0~
+@2010 = ~Perle noire~
+@2011 = ~Les perles sont constituées de plusieurs couches d'aragonite qui se forment dans les huîtres et autres mollusques autour d'un grain de sable ou d'un autre corps étranger. Les perles ont un magnifique éclat soyeux. Cette perle est une perle noire, l'une des variétés les plus rares et donc les plus précieuses. Elle n'a pas de propriétés magiques, mais peut être vendue à un bon prix.~
+/*
+@2012 = ~Potion of dispelling magic~
+@2013 = ~By consumption of this potion, all magical effects on the user are instantly dispelled - no matter if they are useful or harmful magical effects.~
+*/
+@2014 = ~Potion de guérison empoisonnée~
+@2015 = ~Cette potion a l'apparence, l'odeur et le goût d'une potion de guérison ou tout autre potion bénéfique. En réalité, il s'agit d'un poison déguisé au moyen d'une illusion. Un sort d'identification révèle sa véritable nature. Si vous buvez quand même la potion, vous subirez des dégâts de poison chaque seconde pendant trois rounds.~
+@2016 = ~Brique d'ombre~ // Shadow brick
+@2017 = ~Cette pierre est imprégnée d'une obscurité des plus profonde. Ses contours semblent se perdre dans le néant, elle est froide au toucher et légère comme une plume.~
+@2018 = ~Le livre des Rituels~
+@2019 = ~Un soleil éclatant orne la couverture de ce livre. Bien qu'il ait l'air très vieux, il semble encore en bon état. Le spectre gardien du phare vous l'a donné afin de l'utiliser pour accomplir un rituel visant à sceller le portail vers le Plan de l'Ombre et en terminer définitivement avec le lieu impie situé sous le phare. Le livre contient un passage sur la façon d'effectuer le rituel :
+  « Pour bannir du monde de la lumière l'influence maléfique de l'Œil Élémentaire Ancestral, le terrible Tharizdun, un utilisateur de magie arcanique ou divine doit procéder de la manière suivante. Sous le phare, à l'endroit où les murmures de Tharizdun peuvent être entendus, là où la magie élémentaire perverse est en vigueur, le rituel doit être exécuté.
+Tout d'abord, le Cristal de lumière doit être placé sous l'autel impie. Un expert en magie doit se tenir au centre de la pièce. Peu importe que le lanceur de sorts soit un mage ou un prêtre. Le premier sort qu'il doit lancer est « Protection contre le mal » afin d'éloigner les éléments maléfiques. Le deuxième sort à lancer est « Vision véritable » pour éliminer les illusions délétères de Tharizdun. Enfin, le ritualiste doit lancer « Dissipation de la magie » pour briser les liens magiques qui alimentent en énergie ce lieu maudit. Le rituel sera alors accompli et les sombres murmures de Tharizdun s'éteindront à jamais. Il se peut que le Cristal de lumière soit détruit par le rituel, mais c'est un sacrifice nécessaire pour bannir une fois de plus le mal et les ténèbres de Tharizdun du monde de la lumière. »~
+@2020 = ~Le Dernier Âge des Ténèbres Éternelles~
+@2021 = ~Ce livre est orné d'une étrange spirale dentelée. Il contient de nombreuses runes obscures, des signes et des mots issu de langues si anciennes qu'elles sont tombées dans l'oubli. Seules quelques lignes sont écrites sous une forme reconnaissable et dans un langage compréhensibles pour vous :
+« L'Exterminateur, l'Œil Élémentaire Ancestral, le Sombre Seigneur, Celui qui Attend, l'Attendu, l'Abomination, le Père du Mal primordial, le Créateur de Calamités, les Ténèbres éternelles, le Dévoreur de mondes, le Méprisé, le Malheureux... Ce ne sont là que quelques-uns des nombreux noms qui désignent notre glorieux Maître.
+ Pendant mille ans, le Sombre Seigneur a patienté, tapi au-delà des limites de la réalité, enfermé sous une voûte érigée par des mains jalouses, son trône légitime occupé par des usurpateurs. Au cours des derniers siècles, nos efforts ont conduit à la destruction, la décadence et la ruine, tandis que ces puissances inférieures ont cherché à nous confondre, à nous induire en erreur et à nous monter les uns contre les autres, car, voyez-vous, sa libération signifie leur fin. le puissant Tyr, le doucereux Lathandre, même le triste Beshaba, tous le craignent et tremblent devant son arrivée imminente. Le temps de la fin est proche, et il est de notre devoir sacré d'inaugurer le dernier âge de notre monde et de détruire les constructions des faux dieux. Ce n'est qu'alors que nous comprendrons la nature parfaite de tout ce qui est possible, grâce aux Ténèbres Éternelles. »~
+@2022 = ~Casque de Cultiste~
+@2023 = ~Ce casque n'est pas tant une protection qu'une coiffe d'un culte inconnu. Il est de couleur pourpre foncé et décoré de manière très élaborée. Le bord du casque est orné d'une fine broderie. En langage courant, on peut y lire : « Les fidèles doivent porter le casque, afin que la voie de l'Œil Élémentaire Ancestral puisse leur être révélée. »~
+@2024 = ~Ce casque n'est pas tant une protection qu'une coiffe d'un culte inconnu. Il est minutieusement décoré et de couleur pourpre foncé.~
+@2025 = ~Note~
+@2026 = ~Votre tâche consiste à recueillir les naufragés qui ont été charmés par les sirènes. Escortez-les jusqu'au temple où les serviteurs sacrificiels les attendent. Les sirènes et les trolls semblent être affectés par cet environnement alternatif et se transforment lentement en de sombres versions d'eux-mêmes. Peut-être nous seront-ils encore plus utiles de cette manière.
+
+- Vergol le « Songeur du Destin ».~
+@2027 = ~Note de Brokus~
+@2028 = ~Brokus Sombreaugure, c'est à toi, l'un de mes plus fidèles serviteurs, que je confie la tâche la plus importante de notre mission sacrée. Je passe de l'autre côté avec les autres prédicateurs de la fin. Assurez-vous que les trolls, les sirènes et la sorcière restent sous contrôle. Les naufragés survivants doivent être charmés par les sirènes le plus rapidement possible et amenés par vos soins sur l'autre rive en guise de sacrifices. Si des intrus débarquent sur l'île, vous devez sceller le passage afin qu'il ne soit pas découvert et leurs laisser croire que la sorcière est la seule responsable.
+  Si vous devez à nouveau sceller le passage, procédez comme suit : 
+  Détruisez la pierre d'ombre pour fermer le passage secret. Vous pourrez facilement générer une nouvelle pierre dans la chambre rituelle plus tard. Fermez la porte de la cave et cachez la clé, de préférence dans votre coffre. Laissez la sorcière obstruer l'entrée extérieure avec sa magie fétide. N'oubliez pas d'activer les pièges ! Une fois le danger écarté, vous devrez refaire le rituel pour obtenir une nouvelle pierre d'ombre. N'oubliez pas que vous devez porter votre casque de cultiste pour discerner les contours de la porte secrète.
+  Détruisez ce message après l'avoir lu.
+  
+  - Vergol le « Songeur du Destin ».~
+@2029 = ~Ceci est notre foi, notre serment absolu :
+  « La lumière doit être étouffée, la perfection doit être abolie, l'ordre doit être anéanti et l'esprit... L'esprit doit être brisé » 
+  C'est alors que quelque part dans le néant, là où ni le temps ni l'espace ne peuvent exister, un être tout puissant s'éveille et se meut. L'avènement de l'obscurité la plus noire est venue.~
+@2030 = ~« Quand il y a beaucoup de lumière, il y a aussi beaucoup d'ombre. »~
+@2031 = ~Pince de crabe~
+@2032 = ~Cette pince altérée par magie appartenaient autrefois à un crabe géant. Grâce à cet objet, il devrait être possible d'ouvrir des zones bloquées par toutes sortes de créatures marines.~
+@2033 = ~Substance noire~
+@2034 = ~Substance d'ombre~
+@2035 = ~Les bords de cette substance friable semblent se fondre et se perdre dans les ténèbres.~
+@2036 = ~Ces fragments sont des restes de matière d'ombre et semblent avoir fait partie d'un objet plus grand.~
+@2037 = ~Dentier~
+@2038 = ~Le dernier rire~
+@2039 = ~Ce dentier semble avoir été taillé dans des os d'animaux.~
+@2040 = ~Voici le dentier d'Ormond Dante, un célèbre pirate qui parcourait la Côte des Épées il y a une centaine d'années. Gravement marqué par le scorbut dans ses dernières années, il commanda ces dents, taillées dans de l'os de baleine, à une manufacture gnomique. Le magicien de son navire a appliqué quelques enchantements supplémentaires, mais même la magie n'a rien pu faire contre l'haleine rance et l'apparence épouvantable de son capitaine. Le pirate était connu pour son rire tonitruant dans les situations désespérées, il n'est donc pas surprenant que son dentier ait la capacité d'énerver les ennemis à portée de voix pendant un certain temps.
+
+PARAMÈTRES : 
+
+Capacités d'équipement : 
+- Protection contre les coups critiques
+- Charisme : -2
+- Immunité aux charmes et à la peur
+
+Capacité de charge :
+- Rire d'Ormond une fois par jour : tous les ennemis dans la zone subissent -2 au TAC0 et aux jets de sauvegarde pendant 5 rounds.
+
+Poids : 1~
+@2041 = ~Clé du coffre de Brokus~
+@2042 = ~Cette clé de facture élaborée semble appartenir à un coffre.~
+@2043 = ~Clé du sous-sol~
+@2044 = ~Une clé verdâtre qui donne l'impression d'avoir été exposée à l'humidité pendant une longue période.~
+@2045 = ~Journal de Brokus~
+@2046 = ~Journal de Brokus
+
+
+3. Tarsak 1369
+Irphong est à nous ! Nous avons débarqué sur l'île. Une tribu de Sirènes avait élu domicile dans les grottes, mais elles ont prêté allégeance à notre Sombre Seigneur après que nous ayons occis deux d'entre elles. Elles se révéleront sans doute utiles. Certains imbéciles se sont immédiatement mis en quête de trésors. Comme s'il en restait quelque chose après tous ces siècles où l'île a été inhabitée !
+
+12 Tarsak
+Vergol le « Songeur du Destin » a convoqué un groupe de trolls de mer sur l'île afin d'éloigner les pirates. La sorcière est également arrivée et s'est installée dans la partie supérieure de l'île et concocte des breuvages très utiles. Il ne faut pas la regarder sous peine d'être frappé par sa malédiction. La plupart du temps, elle se promène sur l'île sous la forme d'une petite fille. 
+Tout le monde cherche désespérément l'entrée de l'autre côté, mais nous n'avons encore rien découvert.
+
+20. Tarsak
+Nous avons trouvé le portail qui mène de l'autre côté ! Il était là, sous nos yeux depuis le début ! Les anciens cultistes avaient pris soin de le dissimuler aux regards indiscrets. Si vous placez l'objet approprié dans la cachette et portez le casque de notre culte, le passage apparaîtra clairement devant vous.
+
+1 Mirtul
+Les autres se sont emparés du Cristal de lumière, ils l'ont retiré de son socle au dernier étage du phare et sont passés de l'autre côté. Je dois personnellement amener devant eux tout naufragé qui s'échoue sur l'île afin de l'offrir en sacrifice. Un sur trois sera réservé pour nourrir les trolls, la sorcière et les sirènes. Je dois attendre et resté cacher. Les bateaux qui passent doivent croire que la sorcière et les sirènes sont les seules responsables.
+
+3. Mirtul
+Vergol le « Songeur du Destin » est toujours occupé à accomplir le rituel. Nous avons besoin de plus de victimes ! Les navires évitent l'île et tout le monde commence à s'agiter...
+
+4ème Mirtul
+Je sens la folie m'envahir. Est-ce l'oeuvre de notre Dieu tant désiré ? Je ne sais pas...
+
+~
+@2047 = ~Visions de Vergol~
+@2048 = ~L'Enchaîné, le Dieu emprisonné, les Ténèbres éternelles... Il m'appelle ! 
+Au début, mes rêves étaient confus et obscurs, mais maintenant, le voile est comme une ombre devant mes yeux. Grande nouvelle ! Notre cellule du culte a enfin une utilité. Il y a cette île solitaire, loin à l'ouest de Chessenta, notre patrie. Dans les temps anciens c'est à cet endroit que l'on vénérait notre Sombre Sombre Seigneur, Tharizdun. Au fil des générations, son culte fut interdit, et les nombreux sacrifices offerts en son nom par les écueils au large de l'île se sont taris. Les imbéciles ont même placé un phare alimenté par la magie sur l'île pour entraver notre Seigneur. La mission qu'il nous a confiée dans mes rêves est simple : retirer le cristal magique du phare, desceller l'ancienne entrée du plan de l'Ombre, profaner le phare en offrant tous les naufragés en sacrifice à l'Œil Élémentaire Ancestral, et enfin briser les liens qui l'empêchent de revenir dans ce monde.
+C'est alors, et alors seulement, que le regard de l'Œil Élémentaire Ancestral, notre Seigneur Tharizdun, se posera à nouveau sur le monde... L'enveloppant dans les ténèbres éternelles et nous... Nous, ses plus fidèles serviteurs, auront une place à ses côtés.~
+
+@2049 = ~Symbole sacré~
+@2050 = ~Symbole sacré de Vergol~
+@2051 = ~Cela semble être une sorte de symbole sacré d'un dieu que vous ne connaissez pas.~
+@2052 = ~Le symbole représente une entité appelée « Tharizdun ». De nombreuses légendes existent autour de cet être qui a été enfermé dans une prison inconnue avant la création du monde tel que vous le connaissez. Cependant, des aspects plus faibles de Tharizdun semblent toujours persister dans diverses parties du monde, essayant de tenter leurs adorateurs afin qu'ils essaient de libérer le véritable Tharizdun.~
+@2053 = ~Bol en bronze~
+@2054 = ~Ce bol est en bronze. Il y a de légères taches sur les bords, comme si une grande quantité d'eau y avait été versée un nombre incalculable de fois.~ 
+@2055 = ~Ce bol magique possède un grand pouvoir car il permet à son propriétaire d'exercer un certain contrôle sur les élémentaires d'eau. Comme c'est le cas pour toutes les forces élémentaires, ce contrôle peut être tourné vers le bien ou le mal, la loi ou le chaos. Il convient donc de faire preuve de discernement lorsqu'on a affaire à de telles créatures.
+
+STATISTICS:
+
+- Capacités spéciales : Invoque un élémentaire d'eau une fois par jour pour une durée de 5 minutes. La puissance de l'élémentaire d'eau convoqué dépend du niveau du lanceur de sorts :
+- Niveau 8 à 11 : Invoque un élémentaire d'eau mineur de 8 dés de vie.
+- Niveau 12 à 15 : Invoque un élémentaire d'eau de 12 dés de vie.
+- Niveau 16 et plus : Invoque un élémentaire d'eau majeur de 16 dés de vie.~
+@2056 = ~Cristal de lumière~
+@2057 = ~C'est le Cristal de lumière qui active la flamme magique au dernier étage du phare d'Irphong. Ses origines ont été oubliées au fil des millénaires. Il semble qu'il soit plus ancien que les premiers empires humains des Contrées du Mitan. Son utilisation comme source de lumière pour le phare d'Irphong remonte à l'époque de l'empire Shoon, où les gens essayaient de résoudre la plupart des problèmes par la magie.~
+@2058 = ~Nuage de brouillard~
+@2059 = ~Nuage de brouillard
+(Altération)
+
+Niveau : 2
+Portée : 12 mètres.
+Durée : 4 rounds
+Temps d'incantation : 2
+Zone d'effet : rayon de 4,5 mètres
+Jet de sauvegarde : Aucun
+
+Ce sort crée un brouillard dense formé d'une masse de vapeur aux volutes jaunâtres, elle n'est pas toxique mais obscurcie la vue. Les créatures présentes dans la brume sont aveuglées tant que celui-ci persiste. En outre, il y a 50 % de chances qu'elles deviennent invisibles et indétectables pendant un round.~
+@2060 = ~Lame d'eau +2~
+@2061 = ~Cette épée longue a une forme fluide et incurvée. Attachée au pommeau, une poignée carrée bleu-vert indique, comme le reste de l'apparence de la lame, son lien étroit avec l'élément de l'eau. Lorsque l'épée est tenue en main, le porteur est protégé du froid. De plus, une fois par jour, il peut projeter un jet d'eau pure à partir de la lame, infligeant 3d6 points de dégâts contondants à quiconque se trouve dans la zone d'effet, dans un rayon de 13 mètres.
+
+PARAMÈTRES :
+
+Capacités d'équipement : 
+- Résistance au froid : +50 %
+
+Capacités de charge : 
+- Peut crée une fois par jour une vague d'eau qui inflige 3d6 points de dégâts contondant dans une zone conique de 13 mètres
+
+TAC0 : +2
+Dégâts : 1d8 +2 (Tranchant)
+Facteur de vitesse : 3
+Type de compétence : Épée longue
+Type : Arme à 1 main
+
+Nécessite : 
+ 5 en Force
+
+Poids : 3
+Non utilisable par :
+ Druide
+ Clerc
+ Mage~
+@2062 = ~Protection contre les poisons ~
+@2063 = ~Protection contre les poisons 
+(Abjuration)
+
+Niveau : 2
+Portée : contact
+Durée : 10 rounds 
+Temps d'incantation : 3
+Zone d'effet : 1 créature
+Jet de sauvegarde : Aucun
+
+Ce sort permet à la créature choisie d'être immunisée contre les poisons et les venins provoqués par contact avec la peau que ce soit par absorption, par piqûre, par morsure ou par l'intermédiaire d'une arme. Les toxines de nature différente continueront d'affecter la créature normalement et les poisons déjà actifs ne seront pas affectés.~
+@2064 = ~Lame d'eau +3~
+@2065 = ~Cette épée longue a une forme fluide et incurvée. Attachée au pommeau, une poignée carrée bleu-vert indique, comme le reste de l'apparence de la lame, son lien étroit avec l'élément de l'eau. Lorsque l'épée est tenue en main, le porteur est protégé du froid. De plus, une fois par jour, il peut projeter un jet d'eau pure à partir de la lame, infligeant 4d6 points de dégâts contondants à quiconque se trouve dans la zone d'effet, dans un rayon de 13 mètres.
+
+PARAMÈTRES :
+
+Capacités d'équipement : 
+- Résistance au froid : +50 %
+
+Capacités de charge : 
+- Peut crée une fois par jour une vague d'eau qui inflige 4d6 points de dégâts contondant dans une zone conique de 12 mètres
+
+Capacités de combat : 
+- Étourdit les sahuagins pendant 1 round
+
+Enchantement : +3, +5 contre les kuo-toas et les sahuagins
+TAC0 : +3, +5 contre les kuo-toas et les sahuagins
+Dégâts : 1d8 +3 (Tranchant) +5 contre les kuo-toas et les sahuagins
+Facteur de vitesse : 3
+Type de compétence : Épée longue
+Type : Arme à 1 main
+
+Nécessite : 
+ 5 en Force
+ 
+Poids : 3
+Non utilisable par :
+ Druide
+ Clerc
+ Mage~

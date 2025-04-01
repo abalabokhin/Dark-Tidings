@@ -1,0 +1,7 @@
+IF
+	Global("Prep","ACDT30",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACDT30",1)
+END
+

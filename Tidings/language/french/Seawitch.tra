@@ -1,0 +1,14 @@
+@0 = ~Oh ! oh ! Ce spécimen <RACE> me semble magnifique et succulent ! Alors, on est venu rendre visite à Molly la ténébreuse avant que l'Obscurité Éternelle ne soit libéré et que la fin ne s'abatte sur le monde ?~ // l'Obscurité Éternelle ou l'Ombre : Sombre Seigneur // Sea witch
+@1 = ~Tu ne fais pas partie de ces fanatiques ? Non, je ne perçois pas la perversion qui les caractérise. Qui es-tu donc, minuscule <RACE> ?~ // Sea witch
+@2 = ~Quelle importance ? Cette conversation se finira dans la violence...~ // Charname GOTO @12
+@3 = ~Ce ne vous regarde pas, maudite créature ! Vous même semblez des plus perverses...~ // Charname GOTO @12
+@4 = ~Qui sont ces fanatiques dont vous parlez ?~ // Charname GOTO @5
+@5 = ~Les prédicateurs de la fin, les prophètes du malheur. Les pilleurs de lumière, Les négateurs. L'Œil élémentaire ancestral nous appelle tous. Ne l'entendez-vous pas murmurer ?~ // Sea witch
+@6 = ~Je n'entends rien de plus que les paroles insensées d'une sorcière démente !~ // Charname GOTO @10
+@7 = ~Je voudrais bien, cette voix semble des plus intrigantes, mais malheureusement je ne l'entends pas.~ // Charname GOTO @10
+@8 = ~Non, je n'entends absolument rien !~ // Charname GOTO @11
+@9 = ~Vous ne les entendez donc pas ?~
+@10 = ~Et maintenant, j'entends tes hurlements à venir... lorsque que je t'arracherais lentement les yeux !~ // Sea witch
+@11 = ~Tu n'es donc pas l'un des élus et c'est la mort qui t'attend !~~Tu n'es donc pas l'une des élues et c'est la mort qui t'attend !~ // Sea witch
+@12 = ~De la violence, de la violence, Enfin ! Venez à moi, mes précieux serpents, sortez de vos cachettes et plongez vos crocs dans cette chair si délicate. Quant à toi, Molly la ténébreuse va t'étriper, t'éviscérer et t'entendre couiner, approche, approche toi, jeune <RACE> !~ // Sea witch
+@13 = ~Abbil, j'ai déjà entendu parler de cet « Œil » durant l'époque maudite où je vivais à Menzoberranzan. Certains fous, adeptes de Ghaunadaur, utilisaient ce nom pour parvenir à leurs fins. D'après la rumeur, le véritable Œil élémentaire ancestral est un être des plus anciens. Nous devrions rester sur nos gardes...~ // Viconia From @5 GOTO @9

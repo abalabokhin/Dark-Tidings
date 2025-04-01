@@ -1,0 +1,60 @@
+// Water Sigil Tigger
+IF
+	Clicked([ANYONE])
+	Global("AirSigil","ACDT21",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1070)
+		SetGlobal("AirSigil","ACDT21",1)   
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,7)
+	Global("AirSigil","ACDT21",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,7)
+	GlobalLT("EarthSigil","ACDT21",2)
+	Global("AirSigil","ACDT21",1)  
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1071)
+		SetGlobal("AirSigil","ACDT21",0)  
+		ScreenShake([5.5],5)
+		ReallyForceSpellRES("AC#DTC2",LastTrigger) // Cloudkill, one round duration
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,7)
+	Global("FireSigil","ACDT21",2)
+	Global("WaterSigil","ACDT21",2) 
+	Global("EarthSigil","ACDT21",2) 
+	Global("AirSigil","ACDT21",1)
+THEN
+	RESPONSE #100
+		//StartCutSceneMode()	
+		DisplayString(Myself,@1072) 
+		SetGlobal("AirSigil","ACDT21",2) 
+		AmbientActivate("Airrune",FALSE)
+		AmbientActivate("Steam01",FALSE)
+		AmbientActivate("Steam02",FALSE)
+		SoundActivate("Air",FALSE)
+		TriggerActivation("Info_Air",FALSE)
+		PlaySound("EFF_M62")
+		//EndCutSceneMode()	 
+END
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1073) 
+END
+

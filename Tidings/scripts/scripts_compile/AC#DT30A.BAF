@@ -1,0 +1,107 @@
+IF
+	Global("Carry_Helmet","LOCALS",2)
+	Allegiance(Myself,NEUTRAL)
+	See([PC])
+	!HasItemEquiped("AC#DTCH2",LastSeenBy(Myself))  // Kultistenhelm
+	Range(LastSeenBy(Myself),8)
+THEN
+	RESPONSE #100
+		SetGlobal("Carry_Helmet","LOCALS",3)
+		StartDialogNoSet([PC])
+END
+
+IF
+	NumTimesTalkedTo(0)
+	See([PC])
+	HasItemEquiped("AC#DTCH2",LastSeenBy(Myself))  // Kultistenhelm
+THEN
+	RESPONSE #100
+		SetGlobal("Carry_Helmet","LOCALS",1)
+		StartDialogNoSet(LastSeenBy(Myself))
+END
+
+IF
+	NumTimesTalkedTo(0)
+	See([PC])
+	Range(LastSeenBy(Myself),15)
+THEN
+	RESPONSE #100
+		StartDialogNoSet([PC])
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Behavior","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Behavior","LOCALS",1)
+		ReallyForceSpell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (Steinhaut)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_HOLD_PERSON)  // SPWI306.SPL (Personen festhalten)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (Personen festhalten)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+	Global("Behavior","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Behavior","LOCALS",2)
+		Spell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_CONE_OF_COLD)  // SPWI503.SPL (K‰ltekegel)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_CONE_OF_COLD)  // SPWI503.SPL (K‰ltekegel)
+END
+
+IF
+	See(ThirdNearestEnemyOf(Myself))
+	HaveSpell(WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (Agannazars Hexerei)
+THEN
+	RESPONSE #100
+		Spell(ThirdNearestEnemyOf(Myself),WIZARD_AGANNAZAR_SCORCHER)  // SPWI217.SPL (Agannazars Hexerei)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+	Global("Behavior","LOCALS",2)
+THEN
+	RESPONSE #100
+		SetGlobal("Behavior","LOCALS",3)
+		Spell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoﬂ)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)  // SPWI112.SPL (Magisches Geschoﬂ)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

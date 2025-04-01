@@ -1,0 +1,61 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+	Global("Diamond","ACDT13",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1090)
+		SetGlobal("Diamond","ACDT13",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+	Global("Diamond","ACDT13",1)
+	!PartyHasItem("AC#DTDIA")
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1091)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+	Global("Diamond","ACDT13",1)
+	Global("Ritual_Warning","ACDT13",0)
+	Global("AC#DT_Ritual_done","GLOBAL",0)
+	PartyHasItem("AC#DTDIA")  // Lichtedelstein
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1093) 
+		SetGlobal("Ritual_Warning","ACDT13",1)
+		EraseJournalEntry(@18010)
+		EraseJournalEntry(@18011)
+		AddJournalEntry(@18012,QUEST)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,20)
+	Global("Diamond","ACDT13",1)
+	PartyHasItem("AC#DTDIA")
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1092)
+		TakePartyItem("AC#DTDIA")
+		AmbientActivate("Diamond01",TRUE)
+		AmbientActivate("Lightrays02",TRUE)
+		SoundActivate("Crystal-sound",TRUE)
+		TriggerActivation(Myself,FALSE)
+		AddExperienceParty(10000)
+		SetGlobal("ACDT_Towerlight","GLOBAL",1)
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,20)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)
+END
+

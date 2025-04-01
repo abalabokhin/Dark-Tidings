@@ -1,0 +1,237 @@
+// encoding utf-8
+
+@2000 = ~The Ring of Purest Blood~
+@2001 = ~Achieving lichdom is perilous, a truth well known to Arcturus of Shoonach, an aspiring lich. To safeguard against the lethal potion required for transformation, he crafted a ring, binding the blood of three storm giants within and adorning it with a ruby cut by a dwarven gemsmith. Despite his efforts, Arcturus failed, and shortly after his demise, a priest of Kelemvor claimed the ring from his lifeless hand. Although it did not save its creator, the ring proved invaluable to the Church of Ilmater, aiding in the healing of the sick and dying. Today, it remains a potent symbol of purity, health, and vitality across Faerûn, coveted by many, yet none dare use it for achieving lichdom again.
+
+STATISTICS:
+
+– Constitution: +1~
+@2002 = ~Black Cloak~
+@2003 = ~Veil of Choking Darkness~
+@2004 = ~This cloak is dark and sinister.~
+@2005 = ~This cloak is woven of thick, old linen that seems strangely frayed at its edges - much as if the outline of the cloak is fading from this world. It offers protection against many types of elemental damage and conventional attacks, but the wearer must pay a high price for it: If <PRO_HESHE> fails a Death saving throw, <PRO_HESHE> dies trying to don the cloak. If the saving throw succeeds, however, <PRO_HESHE> still loses some of his life force.
+  The cloak smells of damp, gloomy earth and seems to be very old - perhaps it dates from a time when even the gods of the realms were still young and other, more primal beings ruled over Toril. The history of the garment is as obscure as the wearer of the cloak itself.
+
+STATISTICS:
+
+Equipped abilities:
+– Armor Class: +2
+– Saving Throws: +1
+– Electricity Resistance: +30%
+– Cold Resistance: +30%
+– Fire Resistance: +30%
+– Hit points: -10
+– The wearer must succeed a Save vs. death when putting it on, otherwise <PRO_HESHE> is killed instantly.
+
+Weight: 3~
+@2006 = ~Arrows of Darkness~
+@2007 = ~When this arrow is shot at an enemy, he is blinded for one round if he fails a saving throw against spells.
+
+STATISTICS:
+
+Combat abilities:
+– Target must save vs. spell or is blinded for 1 round
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0~
+@2008 = ~Arrows of Disease~
+@2009 = ~These arrows are covered with the coagulated blood of an unknown creature. If a being is struck by this arrow, it is afflicted with a disease.
+
+STATISTICS:
+
+Combat abilities:
+– Target is diseased and therefore slowed down for 4 rounds
+
+Damage: 1d6 (missile)
+Launcher: Bow
+
+Weight: 0~
+@2010 = ~Black Pearl~
+@2011 = ~Pearls are made of several layers of aragonite that form in oysters and other molluscs around a grain of sand or other foreign object. Pearls have a magnificent silky sheen. This pearl is a black pearl, one of the rarest and therefore most precious species. It has no magical properties, but can be sold for a good price.~
+/*
+@2012 = ~Potion of Dispelling Magic~
+@2013 = ~By consumption of this potion, all magical effects on the user are instantly dispelled - no matter if they are useful or harmful magical effects.~
+*/
+@2014 = ~Poisoned Healing Potion~
+@2015 = ~This potion looks, smells and tastes like a healing potion or other beneficial potion. In reality, however, it is a poison disguised by illusion magic. An Identify spell reveals its true nature. If you drink the potion anyway, you suffer poison damage every second for three rounds.~
+@2016 = ~Shadow Brick~
+@2017 = ~This brick is imbued with deepest black. Its edges seem to melt away. It feels cold and is light as a feather.~
+@2018 = ~The Book of Rituals~
+@2019 = ~This book, its cover adorned with a bright sun, appears old yet well-preserved. It was entrusted to you by an undead lighthouse keeper, who tasked you with using it to seal a portal to the Plane of Shadow located beneath the lighthouse.
+
+The essential passage on the ritual reads:
+"To expel Tharizdun, the Elder Elemental Eye, from the world of light, a practitioner of arcane or divine magic must follow these steps at the corrupted site beneath the lighthouse. 
+
+Place the luminous crystal under the unholy altar and have the magic user stand at the room’s center, regardless of whether <PRO_HESHE> is a mage or a priest. The first spell the caster has to cast is 'Protection from Evil' to keep the evil elements away from the place. The second spell to be cast is 'True Sight' to remove the evil illusions of Tharizdun. As a final spell, the ritualist must cast 'Dispel Magic' to break the magical bonds that feed the unholy place with energy. 
+
+Performing the ritual will forever silence Tharizdun's dark whispers beneath the lighthouse. The Luminous Crystal may be destroyed in the process, but such is the sacrifice required to once again banish this dark evil from the world of light."~
+@2020 = ~The Last Age of Eternal Darkness~
+@2021 = ~This tome is marked by a peculiar jagged spiral and filled with arcane runes and words from ancient languages now forgotten.
+Only a few lines are written in a script and language understandable to you:
+
+"The Finisher, the Elder Elemental Eye, the Dark God — these and other names speak of our exalted Master who has bided His time for a thousand years, imprisoned by envious forces. Now, as lesser gods like Tyr and Lathander fear His return, it falls to us to dismantle their order and herald the final age. The end approaches - our sacred duty is clear: To bring about the reign of Eternal Darkness; to bring the constructs of the false gods to ruin."~
+@2022 = ~Cultist Helmet~
+@2023 = ~This helmet is not so much protection as the headdress of a cult unknown to you. It is elaborately decorated and has a dark purple colour. On the rim of the helmet is a fine embroidery. In common language it says: "The faithful should wear the helmet, so that the way of the Elder Elemental Eye may show itself to them."~
+@2024 = ~This helmet is not so much protection as the headdress of a cult unknown to you. It is elaborately decorated and has a dark purple colour.~
+@2025 = ~Note~
+@2026 = ~Your task is to pick up the castaways who have been charmed by the sirens. Escort them to the temple where the sacrificial servants are waiting. The sirens and trolls seem to be affected by this alternative environment and slowly turn into shadowy versions of themselves. Mayhaps they are even of more use to us this way.
+- Doomdreamer Vergol.~
+@2027 = ~Brokus's Note~
+@2028 = ~Blackseer Brokus, to you, as one of my most loyal servants, I give the most important task in our sacred mission. I am crossing over to the other side with the other Blackseers. Make sure that the trolls, the sirens and the hag remain in our favour. Surviving castaways must be charmed by the sirens as quickly as possible and brought by you to the other side as sacrifices. 
+
+Should intruders land on the island, seal the passage to prevent discovery and lead them to believe a sea hag is behind everything.
+
+  So if you have to seal the passage again, do the following: 
+  Destroy the shadow stone to close the secret passage. You can easily generate a new shadow stone in the ritual chamber later. Lock the door to the cellar and hide the key, preferably in your chest. Let the hag seal the tower from the outside with her foul magic. Don't forget to activate the traps in the tower! When the danger is over, you will have to perform the ritual again to get a new shadow stone. Remember that you must wear your cult helmet to see the outline of the secret door.
+  
+  Destroy this message after you have read it.
+  - Doomdreamer Vergol~
+@2029 = ~This is our creed, our deepest vow:
+  "The light must be extinguished, perfection destroyed, order dissolved and the spirit dismembered."
+  
+  Then, somewhere in the nowhere where neither time nor space exists, the mighty being stirs and strives to awaken. Then the time of the blackest of darkness has come.~
+@2030 = ~"When there is plenty of light, there is also plenty of shadow."~
+@2031 = ~Crab Claw~
+@2032 = ~These magically altered claws once belonged to a giant crab. With the aid of this item it should be possible to open areas closed by all kinds of marine life.~
+@2033 = ~Black Substance~
+@2034 = ~Shadow Substance~
+@2035 = ~The edges of this crumbly substance seem to melt away and get lost in the shadows.~
+@2036 = ~These fragments are the remains of shadow matter. The crumbs seem to have been part of a larger object.~
+@2037 = ~Dentures~
+@2038 = ~The Last Laughter~
+@2039 = ~These dentures appear to have been carved from animal bones.~
+@2040 = ~This is the denture of Ormond Dante, a famous pirate who roamed the Sword Coast about a hundred years ago. Severely scarred by scurvy, he commissioned these teeth, carved from whale bone, from a gnomish manufactory in his later years. His ship's magician put some enchantments on the teeth, but even the magician could do nothing against his captain's rancid breath and ghastly appearance. The pirate was known for his booming laughter in hopeless situations, so it is not surprising that his dentures have the ability to unnerve enemies within earshot for a time.
+
+STATISTICS:
+
+Equipped abilities: 
+– Charisma -2
+– The wearer gains immunity to charm and fear
+
+Charge abilities:
+– Ormond's Laughter once per day: All enemies within hearing range receive a -2 penalty to all rolls (including ThAC0 and saving throws) for 5 rounds. There is no saving throw against the effects of this spell.
+
+Weight: 1~
+@2041 = ~Brokus's Chest Key~
+@2042 = ~This key is elaborately made and appears to belong to a chest.~
+@2043 = ~Cellar Key~
+@2044 = ~A greenish key that looks like it has been exposed to moisture for a long time.~
+@2045 = ~Brokus's Diary~
+@2046 = ~
+3. Tarsak 1369
+Irphong is ours! We have landed on the island. A tribe of Sirens had taken up residence in the caves, but they swore allegiance to our dark lord after we slew two of them. They can still be useful to us. Some fools immediately went in search of treasure. As if there would be anything left of it after all the centuries the island has been uninhabited!
+
+12 Tarsak
+Doomdreamer Vergol has summoned a group of sea trolls to the island to keep pirates away. The hag has also arrived and made herself at home in the upper part of the island. We should not look at her or we will be struck by her curse of weakness. Her brew is quite useful. Most of the time she wanders the island in the form of a little girl. Everyone is desperately searching for the entrance to the other side, but we have found nothing.
+
+20. Tarsak
+We found the portal to the other side! It was there all along, right before our eyes! The old cultists took great pains to hide it from prying eyes. If you place the appropriate item in the hiding place and wear the helmet of our cult, the passageway will appear clearly before you.
+
+1 Mirtul
+The others have taken the Luminous Crystal from the socket of the lighthouse on the top floor and crossed to the other side through the portal with it. Any castaway that washes up now must be brought there by myself as a sacrifice. Every third one is for the trolls, the hag and the sirens. I am to wait here and hide. Let the ships that sail by believe that the Sea hag and the Sirens are behind it all.
+
+3. Mirtul
+Doomdreamer Vergol is still busy completing the ritual. We need more victims! The ships are avoiding the island by now, and everyone is starting to get restless....
+
+4th Mirtul
+I feel madness gripping me. Is this the touch of our longed-for God? I don't know...
+~
+@2047 = ~Vergol's Visions~
+@2048 = ~The Chained One, the Imprisoned God, the Dark One....
+... he calls me! 
+
+At first my dreams were muddled and unclear, but now it has fallen like a shadow from my eyes. How fitting! At last our cult cell has a use. There is this lonely island, far to the west of our homeland of Chessenta. There, in ancient times, they worshipped our Lord Tharizdun. 
+
+In later generations his cult was banned, and the many sacrifices offered to our Lord by the shoals off the island dried up. The fools even placed a magical lighthouse on the island to stop the Lord of Shadows. 
+
+The mission our Lord gave us in my dreams is simple: remove the magical crystal of the lighthouse, unseal the ancient entrance to our Lord's plane, offer all the stranded as sacrifices to the Elder Elemental Eye, thereby desecrating the Lighthouse, and finally break the bonds that keep our God from re-entering the world.
+
+Then, at last, the gaze of the Elder Elemental Eye, our Lord Tharizdun, will once again shroud all in eternal darkness and secure for us, his most faithful servants, a place at his side.
+
+~
+@2049 = ~Holy Symbol~
+@2050 = ~Vergol's Holy Symbol~
+@2051 = ~This seems to be some kind of holy symbol of a god unbeknownst to you.~
+@2052 = ~The symbol is a depiction of an entity called "Tharizdun". Many legends revolve around this being who was trapped in an unknown prison before the creation of the world as you know it. However, weaker aspects of Tharizdun still seem to persist in various parts of the world, trying to tempt their worshippers to free the true Tharizdun.~
+@2053 = ~Bronze Bowl~
+@2054 = ~This bowl is made of bronze. There are slight stains on the edges, as if a large amount of water has been put in it countless times before.~ 
+@2055 = ~This magical bowl holds great power in that it grants the owner a certain degree of control over magical creatures known as water elementals. As is the case with all elemental forces, this control can be turned towards either good or evil, law or chaos. One would therefore be well advised to use discretion when dealing with any such creatures.
+
+STATISTICS:
+
+Charge abilities:
+– Summons a water elemental once per day for a duration of five minutes. The power of the summoned water elemental depends on the caster's level:
+  Level 8 to 11: A lesser water elemental with 8 HD is summoned.
+  Level 12 to 15: A water elemental with 12 HD is summoned.
+  Level 16 and above: A greater water elemental with 16 HD is summoned~
+@2056 = ~Luminous Crystal~
+@2057 = ~This is the Luminous Crystal that activates the magical glow on the top floor of the Irphong Lighthouse. Its origins have been forgotten over the millennia. It seems to be older than the first empires of humans in the Heartlands. Its use as a source of light for the Irphong Lighthouse dates back to the age of the Shoon Empire, when people tried to solve most things in life through magic.~
+@2058 = ~Fog Cloud~
+@2059 = ~Fog Cloud 
+(Alteration)
+
+Level: 2
+Range: 90 ft.
+Duration: 4 rounds
+Casting Time: 2
+Area of Effect: 15-ft. radius
+Saving Throw: None
+
+This spell creates a dense mist similar in appearance to the 5th level spell "Cloudkill". However, this fog forms a a billowing mass of ghastly, yellowish-green vapours, measuring 40 feet x 20 feet x 20 feet, that are non-toxic but obscure vision. Creatures in the fog are blind for the duration of the effect. In addition, there is a 50% chance that creatures in the mist will be undetectable and become invisible for one round.~
+@2060 = ~Waterblade +2~
+@2061 = ~This longsword has a flowing, curved shape. Attached to its pommel is a blue-green square handle which, like the rest of the blade's appearance, indicates its elemental connection to the element of water. When the sword is held in the hand, the wearer is protected from cold. In addition, once per day <PRO_HESHE> can hurl a blast of pure water from the blade, dealing 3d6 points of blunt damage to anyone in the area of effect within a 50 feet range.
+
+STATISTICS:
+
+Equipped abilities:
+– Cold Resistance: +40%
+
+Charge abilities:
+– Can unleash a blast of water once per day for 3d6 points of damage in a cone-shaped area of 50 feet.
+
+THAC0: +2
+Damage: 1d8 +2 
+Damage type: Slashing
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 5 Strength
+ 
+Weight: 3~
+@2062 = ~Protection from Poison~
+@2063 = ~Protection from Poison 
+(Abjuration)
+
+Level: 2
+Range: Creature touched
+Duration: 10 rounds 
+Casting Time: 3
+Area of Effect: Creature touched
+Saving Throw: None
+
+By using this spell, the chosen creature gains immunity to poisons and venoms administered via contact with the skin, ingestion, sting, bite or weapon. Toxins of other types continue to affect the creature normally. Any poisons already in the body when the spell is cast are also unaffected by this spell.~
+@2064 = ~Waterblade +3~
+@2065 = ~This longsword has a flowing, curved shape. Attached to its pommel is a blue-green square handle which, like the rest of the blade's appearance, indicates its elemental connection to the element of water. When the sword is held in the hand, the wearer is protected from cold. In addition, once per day <PRO_HESHE> can hurl a blast of pure water from the blade, dealing 4d6 points of blunt damage to anyone in the area of effect within a 50 feet range.
+
+STATISTICS:
+
+Equipped abilities:
+– Cold Resistance: +50%
+– If a Sahuagin is hit by the blade, it is stunned for one round
+
+Charge abilities:
+– Can unleash a blast of water once per day for 4d6 points of damage in a cone-shaped area of 50 feet.
+
+THAC0: +3, +5 against Kuo-Toa and Sahuagin
+Damage: 1d8 +3, +5 against Kuo-Toa and Sahuagin 
+Damage type: Slashing
+Speed Factor: 3
+Proficiency Type: Long Sword
+Type: One-handed
+Requires:
+ 5 Strength
+ 
+Weight: 3~

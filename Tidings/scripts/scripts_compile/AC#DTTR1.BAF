@@ -1,0 +1,29 @@
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		StartTimer(77,6)
+END
+
+IF
+	Global("ACDT_Towerlight","GLOBAL",1)
+THEN
+	RESPONSE #100
+		DestroySelf()
+END
+
+IF
+	HPLT(Myself,12)
+THEN
+	RESPONSE #100
+		StartTimer(77,6)
+		ChangeAnimationNoEffect("AC#DTTRD")  // Meerestroll
+END
+
+IF
+	TimerExpired(77)
+THEN
+	RESPONSE #100
+		StartTimer(77,6)
+END
+

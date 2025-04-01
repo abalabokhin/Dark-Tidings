@@ -1,0 +1,113 @@
+IF
+	Global("Prep","ACDT22",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACDT22",1)
+		TriggerActivation("Tracdt19",FALSE)
+END
+
+IF
+	Global("Prep","ACDT22",1)
+	GlobalGT("AC#DT_Ritual_done","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACDT22",2)
+		TriggerActivation("Tracdt10",FALSE)
+		TriggerActivation("Tracdt19",TRUE)
+END
+
+IF
+	OR(4)
+		SpellCast([ANYONE],WIZARD_PROTECTION_FROM_EVIL)  // SPWI113.SPL (Schutz vor Bösem)
+		SpellCastPriest([ANYONE],CLERIC_PROTECT_FROM_EVIL)  // SPPR107.SPL (Schutz vor Bösem)
+		SpellCastPriest([ANYONE],CLERIC_PROTECTION_FROM_EVIL_10_FOOT)  // SPPR408.SPL (Schutz vor Bösem, 3 m Radius)
+		SpellCastInnate([PC],4113)// SPCL213.SPL (Schutz vor Bösem); Paladin 
+	Global("Protect_evil","ACDT22",0)
+		Contains("AC#DTDIA","Stone")  // Lichtedelstein
+THEN
+	RESPONSE #100
+		SetGlobal("Protect_evil","ACDT22",1)
+		CreateVisualEffect("AC#DTRIT",[554.580])
+		DisplayStringHead("Info_shadowstone",@1080) 
+		CreateCreature("WRAITH01",[550.601],10)  //	Todesalb
+END
+
+IF
+	OR(3)
+		SpellCast([PC],WIZARD_TRUE_SIGHT)  // SPWI609.SPL (Wahrer Blick)
+		SpellCastPriest([PC],CLERIC_TRUE_SIGHT)  // SPPR505.SPL (Wahrer Blick)
+		SpellCastInnate([PC],INQUIS_TRUE_SIGHT)  // SPCL232.SPL (Wahrer Blick)
+	Global("Protect_evil","ACDT22",1)
+	Global("True_sight","ACDT22",0)
+	Contains("AC#DTDIA","Stone")  // Lichtedelstein
+THEN
+	RESPONSE #100
+		SetGlobal("True_sight","ACDT22",1)
+		CreateVisualEffect("AC#DTRIT",[554.580])
+		DisplayStringHead("Info_shadowstone",@1081) 
+		CreateCreature("SHADFI01",[550.601],10)  //	Schattenscheusal
+END
+
+IF
+	OR(4)
+		SpellCast([PC],WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (Magie bannen)
+		SpellCast([PC],WIZARD_TRUE_DISPEL_MAGIC)  // SPWI326.SPL (Magie bannen)
+		SpellCastPriest([PC],CLERIC_DISPEL_MAGIC)  // SPPR303.SPL (Magie bannen)
+		SpellCastInnate([PC],INQUIS_DISPEL_MAGIC)  // SPCL231.SPL (Magie bannen)
+	Global("Protect_evil","ACDT22",1)
+	Global("True_sight","ACDT22",1)
+	Global("Dispel_Magic","ACDT22",0)
+	Contains("AC#DTDIA","Stone")  // Lichtedelstein
+THEN
+	RESPONSE #100
+		SetGlobal("Dispel_Magic","ACDT22",1)
+		CreateVisualEffect("AC#DTRIT",[554.580])
+		DisplayStringHead("Info_shadowstone",@1082) 
+END
+
+IF
+	Global("Protect_evil","ACDT22",1)
+	Global("True_sight","ACDT22",1)
+	Global("Dispel_Magic","ACDT22",1)
+	Global("AC#DT_Ritual_done","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AC#DT_Ritual_done","GLOBAL",1)
+		CreateVisualEffect("AMCALL",[554.580])
+		PlaySound("EFF_M17B")
+		ScreenShake([554.580],5)
+		SmallWait(15)
+		CreateVisualEffect("AMCALL",[626.537])
+		PlaySound("EFF_M17B")
+		ScreenShake([554.580],5)
+		SmallWait(15)
+		CreateVisualEffect("AMCALL",[510.524])
+		PlaySound("EFF_M17B")
+		ScreenShake([554.580],5)
+		PlaySound("EFF_M110")
+		ReallyForceSpellPointRES("AC#DT22",[554.580])  // Explosion
+		Wait(2)
+		OpenDoor("Door01")
+		ScreenShake([20.20],20)
+		Wait(2)
+		DisplayStringHead("Info_shadowstone",@1085) 
+		TriggerActivation("Info_shadowstone",FALSE)
+		Wait(2)
+		AddExperienceParty(10000)
+		EraseJournalEntry(@18010)
+		EraseJournalEntry(@18011)
+		EraseJournalEntry(@18012)
+		AddJournalEntry(@18014,QUEST)
+END
+
+IF
+	Global("Crystal_found_again","ACDT22",0)
+	GlobalGT("AC#DT_Ritual_done","GLOBAL",0)
+	PartyHasItem("AC#DTDIA")
+THEN
+	RESPONSE #100
+		SetGlobal("Crystal_found_again","ACDT22",2)
+		EraseJournalEntry(@18014)
+		AddJournalEntry(@18015,QUEST)
+END
+

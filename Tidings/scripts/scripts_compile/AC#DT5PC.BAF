@@ -1,0 +1,186 @@
+IF
+	Global("AllHostile","ACDT41",1)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See(NearestMyGroupOfType)
+	Global("prep","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_DEFENSIVE_HARMONY)  // SPPR406.SPL (Koordinierte Verteidigung)
+		ReallyForceSpell(LastSeenBy(Myself),CLERIC_STRENGTH_OF_ONE)  // SPPR312.SPL (Stärke übertragen)
+		SetGlobal("prep","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_CHAOTIC_COMMANDS)  // SPPR508.SPL (Chaotische Befehle)
+	See("AC#DTVER")  // Vergol
+THEN
+	RESPONSE #100
+		Spell("AC#DTVER",CLERIC_CHAOTIC_COMMANDS)  // Vergol
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Allegiance(Myself,GOODCUTOFF)
+	See([GOODCUTOFF])
+	Alignment(LastSeenBy(Myself),MASK_GOOD)
+	HaveSpellRES("AC#DTPG")  // Schutz vor Gutem
+THEN
+	RESPONSE #100
+		SpellRES("AC#DTPG",Myself)  // Schutz vor Gutem
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_BLESS)  // SPPR101.SPL (Segen)
+	See("AC#DTVER")  // Vergol
+THEN
+	RESPONSE #100
+		Spell("AC#DTVER",CLERIC_BLESS)  // Vergol
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_CHANT)  // SPPR203.SPL (Gesang)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_CHANT)  // SPPR203.SPL (Gesang)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See("AC#DTVER")  // Vergol
+	HPPercentLT("AC#DTVER",60)  // Vergol
+	HaveSpell(CLERIC_MASS_CURE)  // SPPR514.SPL (Massenheilung)
+THEN
+	RESPONSE #100
+		Spell("AC#DTVER",CLERIC_MASS_CURE)  // Vergol
+END
+
+IF
+	HPPercentLT(Myself,80)
+	!GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+	HasItem("POTN52",Myself)  // Konzentrierter Heiltrank
+THEN
+	RESPONSE #100
+		SetGlobalTimer("DrankPotionTimer","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,46150)  // trinkt einen Trank
+		UseItem("POTN52",Myself)  // Konzentrierter Heiltrank
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_REMOVE_PARALYSIS)  // SPPR308.SPL (Lähmung aufheben)
+	See("AC#DTVER")  // Vergol
+	StateCheck("AC#DTVER",STATE_STUNNED)  // Vergol
+THEN
+	RESPONSE #100
+		Spell("AC#DTVER",CLERIC_REMOVE_PARALYSIS)  // Vergol
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_REMOVE_PARALYSIS)  // SPPR308.SPL (Lähmung aufheben)
+	See(NearestMyGroupOfType)
+	StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_REMOVE_PARALYSIS)  // SPPR308.SPL (Lähmung aufheben)
+END
+
+IF
+	Detect(NearestEnemyOf(Myself))
+	!See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_TRUE_SIGHT)  // SPPR505.SPL (Wahrer Blick)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_TRUE_SIGHT)  // SPPR505.SPL (Wahrer Blick)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(LastSeenBy(Myself),10)
+	HaveSpell(CLERIC_CLOAK_OF_FEAR)  // SPPR416.SPL (Mantel der Furcht)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_CLOAK_OF_FEAR)  // SPPR416.SPL (Mantel der Furcht)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_MISCAST_MAGIC)  // SPPR310.SPL (Irreführung)
+	OR(2)
+		See(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+		See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_MISCAST_MAGIC)  // SPPR310.SPL (Irreführung)
+END
+
+IF
+	HaveSpell(CLERIC_SILENCE_15_FOOT)  // SPPR211.SPL (Stille, 4,5 m Radius)
+	OR(2)
+		See(NearestEnemyOfType([0.0.0.MAGE_ALL]))
+		See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+	!Range(LastSeenBy(Myself),15)
+	Range(LastSeenBy(Myself),50)
+	!StateCheck(LastSeenBy(Myself),STATE_SILENCED)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_SILENCE_15_FOOT)  // SPPR211.SPL (Stille, 4,5 m Radius)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (Personen festhalten)
+	StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_HOLD_PERSON)  // SPPR208.SPL (Personen festhalten)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See(NearestMyGroupOfType)
+	HPPercentLT(LastSeenBy(Myself),60)
+	HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)  // SPPR401.SPL (Schwere Wunden heilen)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_CURE_SERIOUS_WOUNDS)  // SPPR401.SPL (Schwere Wunden heilen)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),4)
+	HPPercentLT(Myself,60)
+	HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)  // SPPR401.SPL (Schwere Wunden heilen)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)  // SPPR401.SPL (Schwere Wunden heilen)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_ARMOR_OF_FAITH)  // SPPR111.SPL (Rüstung des Glaubens)
+	CheckStatGT(Myself,1,ARMORCLASS)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_ARMOR_OF_FAITH)  // SPPR111.SPL (Rüstung des Glaubens)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+

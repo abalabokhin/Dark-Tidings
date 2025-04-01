@@ -1,0 +1,56 @@
+// Water Sigil Tigger
+IF
+	Clicked([ANYONE])
+	Global("WaterSigil","ACDT21",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1050)
+		SetGlobal("WaterSigil","ACDT21",1)   
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,8)
+	Global("WaterSigil","ACDT21",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,8)
+	GlobalLT("FireSigil","ACDT21",2)
+	Global("WaterSigil","ACDT21",1)  
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1051)
+		SetGlobal("WaterSigil","ACDT21",0)  
+		ScreenShake([5.5],5)
+		//ReallyForceSpell(LastTrigger,WIZARD_ICE_STORM)  // SPWI404.SPL (Eissturm)
+		ReallyForceSpell(LastTrigger,MEPHIT_RAINSTORM)  // SPIN927.SPL (Tosender Regensturm)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,8)
+	Global("FireSigil","ACDT21",2)
+	Global("WaterSigil","ACDT21",1)  
+THEN
+	RESPONSE #100
+		//StartCutSceneMode()	
+		DisplayString(Myself,@1052) 
+		SetGlobal("WaterSigil","ACDT21",2) 
+		AmbientActivate("Waterrune",FALSE)
+		PlaySound("EFF_M62")
+		SoundActivate("Pool",FALSE)
+		//EndCutSceneMode()	 
+END
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1053) 
+END
+

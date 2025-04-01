@@ -1,0 +1,9 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	Global("MalaugrymChange","LOCALS",0)
+THEN
+	RESPONSE #30
+		ChangeAnimationNoEffect("AC#DT41E")  // Emmergluth
+		SetGlobal("MalaugrymChange","LOCALS",1)
+END

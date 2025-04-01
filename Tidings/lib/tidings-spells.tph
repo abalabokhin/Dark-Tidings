@@ -1,0 +1,73 @@
+ COPY ~Tidings/spl/copy~       ~override~
+
+COPY ~Tidings/spl/AC#DTT3.spl~         ~override~
+       SAY NAME1 @100
+       SAY NAME2 @100
+
+COPY ~Tidings/spl/AC#DTTC.spl~         ~override~
+       SAY NAME1 @101
+       SAY NAME2 @101
+
+COPY ~Tidings/spl/AC#DTTH.spl~         ~override~
+       SAY NAME1 @102
+       SAY NAME2 @102
+
+COPY ~Tidings/spl/AC#DTPG.spl~         ~override~
+       SAY NAME1 @103
+       SAY NAME2 @103
+
+COPY ~Tidings/spl/ac#dts1.spl~         ~override~
+       SAY NAME1 @104
+       SAY NAME2 @104
+
+COPY ~Tidings/spl/ac#dts2.spl~         ~override~
+       SAY NAME1 @105
+       SAY NAME2 @105
+
+ADD_PROJECTILE      ~Tidings/pro/AC#DTFOG.PRO~ // Fog cloud projectile
+COPY ~Tidings/spl/AC#DTFC.spl~         ~override~
+       SAY NAME1 @106
+       SAY NAME2 @106
+       SAY 0xfe @107
+       SAY 0x50 @108
+       WRITE_SHORT   0x98 ~%AC#DTFOG%~
+
+       SET %AC#DTFOG% -=1
+
+      APPEND ~ClearAir.2da~
+      ~AC#FogCloud     %AC#DTFOG%~
+      UNLESS ~AC#FogCloud~
+
+
+ADD_PROJECTILE      ~Tidings/pro/AC#DTCK1.PRO~ // Cloudkill projectile, 1 round duration
+COPY ~Tidings/spl/AC#DTC2.spl~         ~override~ // Cloudkill spell, 1 round duration
+       WRITE_SHORT   0x98 ~%AC#DTCK1%~
+       
+ADD_PROJECTILE      ~Tidings/pro/AC#DTPFB.PRO~ // Purple fireball projectile
+COPY ~Tidings/spl/AC#DT22.spl~         ~override~ 
+       SAY NAME1 @109
+       SAY NAME2 @109
+       WRITE_SHORT   0x98 ~%AC#DTPFB%~
+
+ADD_PROJECTILE      ~Tidings/pro/AC#DTFBI.PRO~ // fireball (ice) projectile #2
+COPY ~Tidings/spl/AC#DTT7.spl~         ~override~
+       SAY NAME1 @110
+       SAY NAME2 @110
+       WRITE_SHORT   0x98 ~%AC#DTFBI%~
+
+COPY ~Tidings/spl/AC#DTSS.spl~         ~override~
+       SAY NAME1 @111
+       SAY NAME2 @111
+       
+COPY ~Tidings/spl/AC#DTSM.spl~         ~override~
+       SAY NAME1 @112
+       SAY NAME2 @112
+       
+COPY ~Tidings/spl/AC#DTWS.spl~         ~override~
+       SAY NAME1 @113
+       SAY NAME2 @113
+
+COPY ~Tidings/spl/AC#SPW2.spl~         ~override~ // protection from poison
+       SAY NAME1 @114
+       SAY NAME2 @114
+       SAY 0x50 @115

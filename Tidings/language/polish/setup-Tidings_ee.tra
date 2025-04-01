@@ -1,0 +1,46 @@
+// encoding utf-8
+
+@10   = ~<PLAYER1> – cień~
+@11   = ~<PLAYER2> – cień~
+@12   = ~<PLAYER3> – cień~ 
+@13   = ~<PLAYER4> – cień~
+@14   = ~<PLAYER5> – cień~ 
+@15   = ~<PLAYER6> – cień~
+
+@108  = ~Chmura mgły
+(Przemiany)
+
+Poziom: 2
+Zasięg: 30 metrów
+Czas działania: 4 rundy
+Czas rzucania: 2
+Obszar działania: w promieniu 5 metrów
+Rzut obronny: brak
+
+Czar ten tworzy obłok gęstej mgły przypominającej wyglądem Zabójczą chmurę z 5. poziomu. Jednakże powstała w ten sposób falująca chmura zielono-żółtych oparów o średnicy 5 metrów nie jest trująca, lecz tylko uniemożliwia widzenie. Stworzenia, które znajdą się w chmurze, zostają oślepione na czas trwania zaklęcia. Istnieje też 50% szansa, że dostrzeżenie ich w chmurze stanie się na tyle utrudnione, że staną się na jedną rundę niewidzialne.~
+
+@115  = ~Ochrona przed trucizną
+(Odrzucanie)
+
+Poziom: 2
+Sfera: Ochrona
+Zasięg: dotyk
+Czas działania: 10 rund 
+Czas rzucania: 5
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Dzięki temu zaklęciu wybrana istota staje się odporna na wszelkie trucizny, które mogą przeniknąć do organizmu przez ukłucie, połknięcie lub kontakt ze skórą. Toksyny innych rodzajów oddziałują na istotę w normalny sposób. Zaklęcie nie wpływa też na trucizny, które znajdują się w ciele w momencie rzucenia czaru.~
+
+@1002 = ~*używa przedmiotu*~
+
+@1011 = ~<PLAYER1> – cień~
+@1012 = ~<PLAYER2> – cień~
+@1013 = ~<PLAYER3> – cień~
+@1014 = ~<PLAYER4> – cień~
+@1015 = ~<PLAYER5> – cień~
+@1016 = ~<PLAYER6> – cień~
+
+@1025 = ~Po tym kamieniu runicznym nieprzerwanie sączy się woda wypływająca z nieznanego źródła. Woda ma dziwny kolor i zapach – wydaje się zanieczyszczona.~
+
+@1031 = ~Zrodziło tedy Starsze Oko Żywiołów czworo dzieci. To pierworodne pragnęło wszystko pochłonąć. By je poskromić, stworzyło więc drugie, ale o niestałym kształcie. Stworzyło zatem trzecie, lecz to było niezdolne do ruchu. Wreszcie dało życie czwartemu, ale ono uleciało w nicość. Tak pojął Mroczny Bóg ułomność wszystkich rzeczy i przysiągł wrócić wszystko do prapoczątku – do niezgłębionej ciemności.~

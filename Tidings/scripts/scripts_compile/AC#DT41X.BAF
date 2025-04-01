@@ -1,0 +1,8 @@
+// Blocked Shadow Door Tigger
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1098) 
+END
+

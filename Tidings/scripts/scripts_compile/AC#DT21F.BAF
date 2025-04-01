@@ -1,0 +1,42 @@
+// Fire Sigil Tigger
+IF
+	Clicked([ANYONE])
+	Global("FireSigil","ACDT21",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1040)
+		SetGlobal("FireSigil","ACDT21",1)   
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,7)
+	Global("FireSigil","ACDT21",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,7)
+	Global("FireSigil","ACDT21",1) 
+THEN
+	RESPONSE #100
+		//StartCutSceneMode()	
+		DisplayString(Myself,@1041) 
+		SetGlobal("FireSigil","ACDT21",2) 
+		ApplyDamage(LastTrigger,7,FIRE)
+		OpenDoor("Door01")
+		PlaySound("EFF_M62")
+		TriggerActivation("Info_Fire",FALSE)
+		//EndCutSceneMode()	 
+END
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1042) 
+END
+

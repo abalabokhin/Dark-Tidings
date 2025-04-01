@@ -1,0 +1,9 @@
+// Water Info Trigger
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1025)  // 
+END
+

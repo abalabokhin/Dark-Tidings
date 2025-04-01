@@ -1,0 +1,106 @@
+IF
+	Detect([PC])
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(LastSeenBy(Myself))
+END
+
+IF
+	See([PC])
+	Global("Dispel","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell([PC],WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (Magie bannen)
+		SetGlobal("Dispel","LOCALS",1)
+END
+
+IF
+	See([PC])
+	OR(2)
+	!See("AC#DTDIG")
+	NumDead("AC#DTDIG",2)
+	Global("Fireball","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell([PC],RED_FIREBALL)  // SPWI957.SPL (Feuerball)
+		SetGlobal("Fireball","LOCALS",1)
+END
+
+IF
+	Global("DeathFight","LOCALS",0)
+	See([PC])
+THEN
+	RESPONSE #100
+		ForceSpell([PC],POWERWORD_STUN)  // SPWI959.SPL (Wort der Macht: Bet�ubung)
+		Wait(2)
+		AttackOneRound(NearestEnemyOf(Myself))
+		SetGlobal("DeathFight","LOCALS",1)
+END
+
+IF
+	Global("DeathFight","LOCALS",1)
+	See([PC])
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),POWERWORD_KILL)  // SPWI960.SPL (Wort der Macht: Tod)
+		SetGlobal("DeathFight","LOCALS",2)
+		Wait(2)
+END
+
+IF
+	Global("DeathFight","LOCALS",2)
+	See([PC])
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (Magie bannen)
+		AttackOneRound(NearestEnemyOf(Myself))
+		AttackOneRound(NearestEnemyOf(Myself))
+		Wait(1)
+		SetGlobal("DeathFight","LOCALS",3)
+END
+
+IF
+	Global("DeathFight","LOCALS",3)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell([PC],0)
+		Wait(2)
+		AttackOneRound(NearestEnemyOf(Myself))
+		AttackOneRound(NearestEnemyOf(Myself))
+		SetGlobal("DeathFight","LOCALS",4)
+END
+
+IF
+	Global("DeathFight","LOCALS",4)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell([PC],FEAR)  // SPWI956.SPL (Symbol der Furcht)
+		Wait(2)
+		AttackOneRound(NearestEnemyOf(Myself))
+		AttackOneRound(NearestEnemyOf(Myself))
+		SetGlobal("DeathFight","LOCALS",5)
+END
+
+IF
+	Global("DeathFight","LOCALS",5)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell([PC],PAIN)  // SPWI955.SPL (Symbol des Schmerzes)
+		Wait(2)
+		AttackOneRound(NearestEnemyOf(Myself))
+		AttackOneRound(NearestEnemyOf(Myself))
+		SetGlobal("DeathFight","LOCALS",6)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+

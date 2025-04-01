@@ -1,0 +1,85 @@
+DARK TIDINGS
+VERSION HISTORY:
+
+Version 2.5
+
+- fixed typos, thanks roshan!
+- Lacedons have more HP, lower AC and better THAC0
+- the Veil of Chocking Darkness no longer triggers the Cowled Wizards in Athkatla
+- removed the word "malus" from English language tra as this word doesn't exist in English AD&D terminology
+
+Version 2.4
+
+- correct version info in the tp2 file
+- updated Chinese version, by lzw104522773
+
+Version 2.3
+
+- updated English version, by dizzyorange
+- updated German version, by Shai Hulud
+- updated Chinese version, by lzw104522773
+- in area ACDT22, the Paladin spell SPCL213 now works to finish the ritual
+- in area ACDT22, the Inquisitor spell SPCL232 now works to finish the ritual
+- in area ACDT22, the Inquisitor spell SPCL231 now works to finish the ritual
+- added macOs compatibilty for non-English languages
+- arrows of darkness can now be used by Shamans
+- arrows of disease can now be used by Shamans
+- changed Nightwing's race: Switched from "undead" to "monster"
+
+Version 2.2
+
+- Traified Modification name, by Roberciiik
+- Added VERSION keyword to TP2 file for version tracking in WeiDU.log, by Roberciiik
+- Added Setup-Tidings_ee.tra and Tidings-journal_ee.tra for EE specific translations of those files, by Roberciiik
+- Items_EE.tra files are now encoded in UTF-8 for all languages, by Roberciiik
+- Fixed Irphong icon position for BP-BGT-Worldmap, by Roberciiik
+- Changed category of two books (AC#DTBK2 and AC#DTBK4) to Books instead of Scrolls, by Roberciiik
+- Updated Polish translation, by Roberciiik
+- Removed leftover Setup-Tidings.TP2 file from schinese language directory, by Roberciiik
+- repositioned worldmap icon for EET
+
+Version 2.1
+- now the worldmap works correct in oBG2
+
+Version 2.0
+- added Polish translation by Aristo; proofread by Roberciiik
+- added French translation by JohnBob and deratiseur
+- added Chinese translation by lzw104522773
+- added German version conform to Shai Hulud's textpatch by Shai Hulud
+- added worldmap feature (worldmap icon by Lava, thank you!)
+- re-formatted graphics using NI's new feature: No more lines at closed doors, better water rendering!
+- added FARAWAY areatype to prevent NPCs showing up on the remote island
+- corrected item descriptions for BG2EE
+- better description formatting of books and scrolls
+- slightly better lighting in the shadow area for better orientation
+- better searchmap in the shadow area
+- AC#DTSW2.itm now works properly
+- summoned water elementals are now controlled
+- Protection from poison scroll (AC#SCRL2): correct icon for quick item slot
+- Protection from poison scroll (AC#SCRL2): correct bam for oBG2
+- removed critical item flag for most books and scrolls
+- Thalass now takes the items presented to him
+- removed invalid string in ACDT41.are
+- revamped rest-encounters in ACDT30
+- changed AC#DTKY1 and AC#DTKY2 from misc to keys
+- AC#DT30N, AC#DT12N, AC#DT10N, AC#DT11N, AC#DTBK3 now are scrolls so they can be put into scroll cases and PCs can copy the text into their journal
+- splitted ACDT22.baf to oBG2 and BG2EE
+
+Version 1.5
+- the mod now installs correctly on macOS and Linux; many thanks to Argent and Shai Hulud!
+
+Version 1.4
+- Cromwell will no longer forge endless numbers of waterblades
+
+Version 1.3 
+-Fixed typos in the english tra-files
+
+Version 1.2
+- classic BG2-ToB or BGT: added an additional animation installation routine to a certain animation (Transcendent One from PS:T) to avoid a crash in the Vanilla version of the game when Infinity Animations is installed
+- Enhanced Editions: added Worg soundsets
+
+Version 1.1 
+- added a full English translation - thank you Sirick!
+
+Version 1.0 
+- Initial release

@@ -1,0 +1,28 @@
+@0 = ~Hahaha ! Tu oses proférer des menaces, <RACE> ? Ici même, au cœur de notre sanctuaire ?~ // Vergol  From @15 or @16
+@1 = ~Ce n'est pas en enfilant l'un de nos casques que tu pourras me duper. Tous nos ouailles ont été sélectionnés avec le plus grand soin... Par moi-même ! Je connais chacune d'entre elles. Et toi, je ne te connais pas !~ // Vergol
+@2 = ~En avant mes frères, offrons les en sacrifices sur l'autel de notre Seigneur !~ // Vergol  From @0 or @1 or @17
+
+@3 = ~Ô puissant Tharizdun, nos prières ont été entendues ! Ô puissant Tharizdun, nous sommes à ton service !~ // Vergol  From @19
+
+@4 = ~Oracles de la Destiné ! Mes frères ! Nos rêves nous ont tous conduits en ces lieux afin de libérer le Dieu Enchaîné. La cérémonie est presque terminée, nul doute que le nombre de naufragés sacrifiés sur cet autel est suffisant pour le débarrasser de ses entraves... « Seigneur de l'Obscurité, Œil élémentaire ancestral, entends notre appel, révèles-nous comment rompre les liens qui t'emprisonnes ! »~ // Vergol
+@5 = ~J'en veux plusss... Plusss de victimes.... J'ai besoin... TU as besoin d'en sssacrifier plusss pour briser mes chaînes !~ // Shadow shape
+@6 = ~Davantage de victimes ?~ // Vergol
+@7 = ~Heu, ne devrions-nous pas...~ // Adepte du Culte3
+@8 = ~Silence ! « Ô Seigneur de l'Obscurité Éternelle, quels offrandes sauront te satisfaire ? »~ // Vergol
+@9 = ~Encore plusss... Les croyants les plusss dévoués... La foi la plusss aveugle !~ // Shadow shape
+@10 = ~Vergol, ne devrions-nous pas retirer le Cristal de lumière de l'autel ?~ // Adepte du Culte 5
+@11 = ~Retirer le cristal ? Surtout pas, malheureux ! C'est la source qui guide le grand Œil jusqu'à nous.~ // Vergol
+@12 = ~Déverssser plusss... Plusss de sssang... Sssur l'autel... Alors ssseulement, le crissstal... La lumière pourra dissssparaitre...~ // Shadow shape
+@13 = ~Maître ! Des intrus !~ // Adepte du Culte 1
+@14 = ~*Malédiction* ! Qui ose ?~ // Vergol
+
+@15 = ~La fête est fini ! Déposez tous vos armes et personne ne sera blessé !~ // Charname // From @14 Goto @0
+@16 = ~J'arrive à point nommé... Juste à temps pour vous empêcher de commettre cette folie !~ // Charname // From @14 Goto @0
+@17 = ~Vos machinations diaboliques prennent fin, maintenant !~ // Charname // From @14 Goto @2
+@18 = ~Ne reconnaissez-vous pas le cabasset de l'un de vos plus fidèles disciples ? Je porte le symbole de notre foi, mes frères !~ // Charname // From @14 Goto @1
+
+// Dialogue Tharizdun's avatar
+
+@19 = ~Les derniers sssacrifices ont été accomplis... La lumière... La lumière est anéantie...~// Aspect of Tharizdun
+@20 = ~Et pourtant, je ne sssuis encore que l'ombre de moi-même... Mais avec votre sssoutien...~// Aspect of Tharizdun  From @19 et ou @20 
+@21 = ~Le temps est venu, le monde sssera de nouveau plongé dans les ténèbres... Recouvert par l'obssscurité la plus totale...~// Aspect of Tharizdun 

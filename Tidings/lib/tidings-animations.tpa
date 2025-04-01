@@ -1,0 +1,129 @@
+// Tidings animation files
+
+
+  ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
+
+// TRANSCENDENT_ONE_PST animation
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xE24B slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL ~No free creature animation slot found.~
+  END
+
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% AC#TRANSCENDENT_ONE_PST~ UNLESS ~AC#TRANSCENDENT_ONE_PST~
+  CLEAR_IDS_MAP
+
+  COPY ~%MOD_FOLDER%/animations/transcendent_one_pst_EE/exxx.ini~ ~override/%hexNumber%.ini~
+
+  ACTION_BASH_FOR ~%MOD_FOLDER%/animations/transcendent_one_pst_EE~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
+
+// SNAKE_SMALL  animation
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7f00 slotMax = slotMin + 0xff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL ~No free creature animation slot found.~
+  END
+
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% AC#SNAKE_SMALL~ UNLESS ~AC#SNAKE_SMALL~
+  CLEAR_IDS_MAP
+
+  COPY ~%MOD_FOLDER%/animations/snake_small_EE/exxx.ini~ ~override/%hexNumber%.ini~
+
+  ACTION_BASH_FOR ~%MOD_FOLDER%/animations/snake_small_EE~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
+
+// small water elemental animation
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xE000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL ~No free creature animation slot found.~
+  END
+
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% AC#ELEMENTAL_WATER_SMALL~ UNLESS ~AC#ELEMENTAL_WATER_SMALL~
+  CLEAR_IDS_MAP
+
+  COPY ~%MOD_FOLDER%/animations/water_elemental_small_EE/exxx.ini~ ~override/%hexNumber%.ini~
+
+  ACTION_BASH_FOR ~%MOD_FOLDER%/animations/water_elemental_small_EE~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
+  
+// large water elemental animation
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xE000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL ~No free creature animation slot found.~
+  END
+
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% AC#ELEMENTAL_WATER_LARGE~ UNLESS ~AC#ELEMENTAL_WATER_LARGE~
+  CLEAR_IDS_MAP
+
+  COPY ~%MOD_FOLDER%/animations/water_elemental_large_EE/exxx.ini~ ~override/%hexNumber%.ini~
+
+  ACTION_BASH_FOR ~%MOD_FOLDER%/animations/water_elemental_large_EE~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
+  
+// sea hag animation
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0x7F3D slotMax = slotMin + 0xff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL ~No free creature animation slot found.~
+  END
+
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% AC#SEA_HAG~ UNLESS ~AC#SEA_HAG~
+  CLEAR_IDS_MAP
+
+  COPY ~%MOD_FOLDER%/animations/sea_hag_ee/exxx.ini~ ~override/%hexNumber%.ini~
+
+  ACTION_BASH_FOR ~%MOD_FOLDER%/animations/sea_hag_ee~ ~^.+\.bam$~ BEGIN
+    COPY ~%BASH_FOR_FILESPEC%~ ~override~
+  END
+
+// Earth weird animation
+  COPY ~%MOD_FOLDER%/animations/earth_weird_EE/ac#ewbam.bmp~ ~override~
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xE000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL ~No free creature animation slot found.~
+  END
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% AC#EARTH_WEIRD~ UNLESS ~AC#EARTH_WEIRD~
+  CLEAR_IDS_MAP
+  COPY ~%MOD_FOLDER%/animations/earth_weird_EE/exxx.ini~ ~override/%hexNumber%.ini~
+
+// Varrdig animation
+  COPY ~%MOD_FOLDER%/animations/varrdig_ee/ac#vdbam.bmp~ ~override~
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xE000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL ~No free creature animation slot found.~
+  END
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% AC#VARRDIG~ UNLESS ~AC#VARRDIG~
+  CLEAR_IDS_MAP
+  COPY ~%MOD_FOLDER%/animations/varrdig_ee/exxx.ini~ ~override/%hexNumber%.ini~
+  COPY ~tidings/animations/feyr_EE~         ~override~
+
+// shadow mastiff animation - copy iwd's worg
+  COPY ~tidings/animations/worg_iwd_EE~         ~override~
+
+END ELSE BEGIN
+COPY ~tidings/animations/new_animations-copy~         ~override~
+COPY ~tidings/animations/oBG2-copy~         ~override~
+COPY ~Tidings/2da/oBG2-creaturesounds~         ~override~
+
+// Adding PST's Transcendent One Animation:
+APPEND ~animate.ids~ ~0x5114 TRANSCENDENT_ONE_PST~ UNLESS ~^0x5114~
+APPEND ~anisnd.ids~ ~0x5114 µKQ      CGAMEANIMATIONTYPE_TRANSCENDENT_ONE_PST~ UNLESS ~^0x5114~
+// Adding Earth weird animation (modified water weird)
+APPEND ~animate.ids~ ~0x5356 EARTH_WEIRD_ACIFER~ UNLESS ~^0x5356~
+APPEND ~anisnd.ids~ ~0x5356 µKV      CGAMEANIMATIONTYPE_EARTH_WEIRD_ACIFER~ UNLESS ~^0x5356~
+// Adding Varrdig (water grue) animation (modified smaller feyr)
+APPEND ~animate.ids~ ~0x5357 VARRDIG_ACIFER~ UNLESS ~^0x5357~
+APPEND ~anisnd.ids~ ~0x5357 µKW      CGAMEANIMATIONTYPE_VARRDIG_ACIFER~ UNLESS ~^0x5357~
+// Adding small snake
+APPEND ~animate.ids~ ~0x5fd9 SNAKE_SMALL_ACIFER~ UNLESS ~^0x5[Ff][Dd]9~
+APPEND ~anisnd.ids~ ~0x5fd9 ØDR      CGAMEANIMATIONTYPE_SNAKE_SMALL_ACIFER~ UNLESS ~^0x5[Ff][Dd]9~
+END

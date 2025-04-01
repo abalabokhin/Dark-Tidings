@@ -1,0 +1,56 @@
+// Water Sigil Tigger
+IF
+	Clicked([ANYONE])
+	Global("EarthSigil","ACDT21",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1060)
+		SetGlobal("EarthSigil","ACDT21",1)   
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,8)
+	Global("EarthSigil","ACDT21",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,8)
+	GlobalLT("WaterSigil","ACDT21",2) 
+	Global("EarthSigil","ACDT21",1)  
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1061)
+		SetGlobal("EarthSigil","ACDT21",0)  
+		ScreenShake([5.5],5)
+		ReallyForceSpellRES("AC#DTSE",LastTrigger)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,8)
+	Global("FireSigil","ACDT21",2)
+	Global("WaterSigil","ACDT21",2) 
+	Global("EarthSigil","ACDT21",1) 
+THEN
+	RESPONSE #100
+		//StartCutSceneMode()	
+		DisplayString(Myself,@1062) 
+		SetGlobal("EarthSigil","ACDT21",2) 
+		AmbientActivate("Earthrune",FALSE)
+		TriggerActivation("Info_Earth",FALSE)
+		PlaySound("EFF_M62")
+		//EndCutSceneMode()	 
+END
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1063) 
+END
+

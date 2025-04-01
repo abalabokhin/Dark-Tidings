@@ -1,0 +1,23 @@
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		DestroyItem("AC#WATW2")
+		PlayDead(40)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END
+
+

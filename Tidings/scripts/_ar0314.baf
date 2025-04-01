@@ -1,0 +1,23 @@
+IF
+  Global("AC#DT_Plot","GLOBAL",0)
+THEN
+    RESPONSE #100
+    SetGlobal("AC#DT_Plot","GLOBAL",1)
+    CreateCreature("AC#DTVY1",[405.526],8) // Mage; quest start
+    CreateCreature("AC#DTDR1",[401.612],0) // drunken sailor #1
+    CreateCreature("AC#DTDR2",[398.679],9) // drunken sailor #2
+END
+
+IF
+  Global("AC#DT_Plot","GLOBAL",10)
+THEN
+    RESPONSE #100
+    SetGlobal("AC#DT_Plot","GLOBAL",11)
+    CreateCreature("AC#DTVY2",[405.526],0) // Mage; quest finish
+END
+
+
+
+
+
+

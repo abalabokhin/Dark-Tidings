@@ -1,0 +1,21 @@
+// Shadowstone Tigger
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,15)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)  // Ihr seid zu weit entfernt, um das zu benutzen.
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,15)
+	Global("Shadowstone_Trigger","ACDT21",0) 
+THEN
+	RESPONSE #100
+		SetGlobal("Shadowstone_Trigger","ACDT21",1)
+		CreateCreatureImpassable("AC#DT21C",[565.532],13)  // Dark Voice / Dunkle Stimme
+		//ActionOverride("AC#DT21C",StartDialogNoSet([PC]))		 
+END
+
+

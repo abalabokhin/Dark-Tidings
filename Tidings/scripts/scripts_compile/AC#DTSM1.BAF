@@ -1,0 +1,9 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("bark","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("bark","LOCALS",1)
+		ReallyForceSpellRES("AC#DTSM",NearestEnemyOf(Myself))  // Heulen
+END
+

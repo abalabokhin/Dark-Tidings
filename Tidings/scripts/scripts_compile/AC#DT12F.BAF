@@ -1,0 +1,54 @@
+IF
+	HPPercentLT(Myself,60)
+	HasItem("potn52",Myself)  // Konzentrierter Heiltrank
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,46150)  // trinkt einen Trank
+		UseItem("potn52",Myself)  // Konzentrierter Heiltrank
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_HASTED)
+	HasItem("potn14",Myself)  // Schnelligkeitsöl
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,46150)  // trinkt einen Trank
+		UseItem("potn14",Myself)  // Schnelligkeitsöl
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("LightningBolt","ACDT12",1)
+	HasItem("POTN18",Myself)  // Absorbtionstrank
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,46150)  // trinkt einen Trank
+		UseItem("POTN18",Myself)  // Absorbtionstrank
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	CheckStatLT(Myself,18,STR)
+	HasItem("potn04",Myself)  // Trank der Frostriesenstärke
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,46150)  // trinkt einen Trank
+		UseItem("potn04",Myself)  // Trank der Frostriesenstärke
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),12)
+END
+

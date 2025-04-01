@@ -1,0 +1,26 @@
+IF
+	HPLT(Myself,11)
+	GlobalLT("MudForm","LOCALS",2)
+	!StateCheck(Myself,STATE_DEAD)
+THEN
+	RESPONSE #100
+		IncrementGlobal("MudForm","LOCALS",1)
+		ReallyForceSpellRES("AC#DT72",Myself)  // No such index
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Grease","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Grease","LOCALS",1)
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_GREASE)  // SPWI101.SPL (Schmieren)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+

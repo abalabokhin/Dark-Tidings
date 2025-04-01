@@ -1,0 +1,305 @@
+@2000 = ~Pierœcieñ czystej krwi~
+@2001 = ~Nie jest ³atwo staæ siê liszem, o czym przekona³o siê wielu nieumar³ych magów, których próby zapewnienia sobie wiecznej egzystencji zakoñczy³y siê klêsk¹. Mag Arcturus z Shoonach próbowa³ zapobiec takiemu niepowodzeniu poprzez stworzenie tego w³aœnie pierœcienia. W pracoch³onnym procesie jego zaklinania u¿yto krwi trzech burzowych olbrzymów, a krasnoludzki mistrz jubilerski przyozdobi³ go rubinem. Nagrod¹ za wysi³ek by³ pierœcieñ, który mia³ ochroniæ Arcturusa przed nazbyt szkodliwymi efektami truj¹cego naparu, jaki trzeba wypiæ w trakcie procesu przemiany w lisza.
+
+Kilka dni po próbie przemiany pewien kap³an Kelemvora œci¹gn¹³ pierœcieñ z palca martwego Arcturusa, zanim zosta³ on z³o¿ony do mauzoleum. Nawet jeœli pierœcieñ nie dzia³a³ tak, jak sobie ¿yczy³ jego twórca, to w kolejnych stuleciach przys³u¿y³ siê koœcio³owi Ilmatera, który przy jego u¿yciu pomaga³ chorym szybciej wróciæ do zdrowia. Od tamtej pory zadaniem pierœcienia by³o s³u¿yæ dobru mieszkañców Faerunu. Po dziœ dzieñ pozostaje on symbolem czystoœci, zdrowia oraz witalnoœci. Z rozmaitych powodów by³ te¿ przez wielu poszukiwany i po¿¹dany, choæ nikt wiêcej nie okaza³ siê na tyle nierozs¹dny, by u¿yæ go w procesie przemiany w lisza.
+
+PARAMETRY:
+
+Specjalne:
+ +1 do Kondycji
+Waga: 0
+Nie mo¿e u¿ywaæ:
+ Zabójca magów~
+@2002 = ~Czarny p³aszcz~ 
+@2003 = ~Zas³ona dusz¹cego mroku~
+@2004 = ~Ten p³aszcz jest bardzo ciemny i wygl¹da nader z³owieszczo.
+
+PARAMETRY:
+
+Waga: 3~
+@2005 = ~P³aszcz zosta³ uszyty z grubego, starego p³ótna i ma dziwnie postrzêpione brzegi - jak gdyby skraje peleryny znika³y z tego œwiata. Oferuje ochronê przed ró¿nymi ¿ywio³ami oraz zwyk³ymi atakami, ale te¿ wymaga od nosz¹cego poniesienia znacznych kosztów. Jeœli nie powiedzie mu siê rzut obronny przeciw œmierci, umrze ju¿ przy próbie za³o¿enia p³aszcza. Jeœli rzut obronny siê uda, prze¿yje, ale musi siê pogodziæ z utrat¹ czêœæ si³ ¿yciowych.
+
+Od p³aszcza da siê wyczuæ zapach wilgotnej, grobowej ziemi. Wydaje siê te¿ bardzo stary - byæ mo¿e pochodzi z czasów, gdy bogowie Krain byli jeszcze m³odzi, a Torilem rz¹dzi³y inne, starsze byty. Dzieje tego ubioru, jak równie¿ tych, którzy go nosili, pozostaj¹ ukryte w mroku historii.
+
+PARAMETRY:
+
+Specjalne:
+ +2 do Klasy Pancerza
+ +1 do rzutów obronnych
+ +30% do odpornoœci na elektrycznoœæ
+ +30% do odpornoœci na zimno
+ +30% do odpornoœci na ogieñ
+ -10 do maksymalnych punktów ¿ycia
+ U¿ytkownik musi wykonaæ udany rzut obronny przeciw œmierci przy zak³adaniu p³aszcza, inaczej natychmiast umrze
+Waga: 3
+Nie mo¿e u¿ywaæ:
+ Zabójca magów~
+@2006 = ~Strza³a ciemnoœci~
+@2007 = ~Kiedy strza³a ta trafi przeciwnika, zostanie on oœlepiony na czas jednej rundy, jeœli nie powiedzie mu siê rzut obronny przeciw czarom.
+
+PARAMETRY:
+
+Obra¿enia: 1K6
+Typ obra¿eñ: pocisk (k³ute)
+Specjalne:
+ Trafiony cel musi wykonaæ rzut obronny przeciw czarom, inaczej zostanie oœlepiony na 1 rundê
+Waga: 0
+Wyrzutnia: ³uk
+Nie mo¿e u¿ywaæ:
+ Kap³an
+ Druid
+ Mag~
+@2008 = ~Strza³a choroby~
+@2009 = ~Strza³a jest pokryta zakrzep³¹ krwi¹ nieznanego stworzenia. Trafiony ni¹ cel zostaje na cztery rundy zaka¿ony chorob¹ i spowolniony.
+
+PARAMETRY:
+
+Obra¿enia: 1K6
+Typ obra¿eñ: pocisk (k³ute)
+Specjalne:
+ Trafiony cel zostaje zaka¿ony chorob¹ i spowolniony na cztery rundy
+Waga: 0
+Wyrzutnia: ³uk
+Nie mo¿e u¿ywaæ:
+ Kap³an
+ Druid
+ Mag~
+@2010 = ~Czarna per³a~
+@2011 = ~Per³y z³o¿one s¹ z warstw aragonitu boleœnie u³o¿onego wokó³ kawa³eczka py³ku lub innej substancji dra¿ni¹cej w ostrygach lub innych miêczakach. Powstaj¹ca w ten sposób per³a daje bogate, g³êbokie lœnienie. Ta per³a jest czarna, nale¿y do jednej z najrzadszych i tym samym najcenniejszych odmian. Nie posiada magicznych w³aœciwoœci, ale mo¿na j¹ sprzedaæ po dobrej cenie.
+
+PARAMETRY:
+
+Waga: 0~
+@2014 = ~Zatruta mikstura leczenia~ 
+@2015 = ~Mikstura ta wygl¹da, pachnie i smakuje jak mikstura leczenia b¹dŸ inny leczniczy napój. Zaklêcie identyfikacji pozwala jednak poznaæ jej prawdziw¹ naturê - w rzeczywistoœci jest to trucizna zakamuflowana iluzj¹. Jeœli ktoœ mimo to zechce siê jej napiæ, bêdzie otrzymywa³ po punkcie obra¿eñ od trucizny co sekundê przez trzy rundy.
+
+PARAMETRY:
+
+Specjalne:
+ 1 pkt. obra¿eñ od trucizny co 1 sekundê przez 3 rundy
+Waga: 1~
+@2016 = ~Cienista ceg³a~ 
+@2017 = ~Ta ceg³a jest przepojona najg³êbsz¹ czerni¹. Jej krawêdzie s¹ niewyraŸne i zdaj¹ siê rozmywaæ w powietrzu. Jest zimna w dotyku, a przy tym lekka jak piórko.
+
+PARAMETRY:
+
+Waga: 1~
+@2018 = ~Ksiêga rytua³ów~
+@2019 = ~Ok³adkê tej ksiêgi zdobi jasne s³oñce. Choæ wygl¹da na bardzo star¹, jest zachowana w dobrym stanie. Da³ ci j¹ nieumar³y latarnik, który poprosi³ o odprawienie rytua³u maj¹cego na celu wy³¹czenie portalu do Planu Cieni oraz zapieczêtowanie nieœwiêtego miejsca ukrytego w piwnicach latarni. Ksiêga zawiera ustêp poœwiêcony przeprowadzeniu rytua³u:
+
+"By wp³ywy Starszego Oka ¯ywio³ów, z³ego Tharizduna, z Krainy Œwiat³a wypêdziæ, w³adaj¹cy magi¹ tajemn¹ albo objawion¹ post¹piæ musi wedle tego, co dalej siê podaje. W miejscu najni¿szym, gdzie da siê pos³yszeæ szepty Tharizduna i gdzie oddzia³ywa spaczona magia ¿ywio³ów, taki trzeba rytua³ odczyniæ.
+
+Pierwej nale¿y kryszta³ œwietlisty pod nieœwiêtym o³tarzem u³o¿yæ. Po wtóre, poœrodku izby winien siê ustawiæ bieg³y w sztuce magicznej, acz nie w tym istota rzeczy spoczywa, czy jest on magiem, czy klerykiem. Najpierwszy czar, jaki rzuciæ mu trzeba, to ochronny przed z³em, by z³e ¿ywio³y przystêpu nie mia³y. Dalej, niech wypowie zaklêcie prawdziwego widzenia, by z³e iluzje Tharizduna przejrzeæ. Na koniec wreszcie musi siê czyni¹cy rytua³ rozproszeniem magii pos³u¿yæ i zerwaæ tym sposobem magiczne wiêzy, co to splugawione miejsce energi¹ karmiæ pomagaj¹. Tako¿ siê rytua³ dope³ni i mroczne poszeptywania Tharizduna na zawsze w tym miejscu zamilkn¹. Mo¿e jednakowo¿ i tak byæ, ¿e siê kryszta³ wskutek tego w proch obróci, co nale¿y mieæ za ofiarê konieczn¹, by z³o Tharizduna, w mroku sk¹pane, raz jeszcze z Krainy Œwiat³a wypêdziæ."~
+@2020 = ~Ostatnia epoka wiecznego mroku~ 
+@2021 = ~Ta ksi¹¿ka jest ozdobiona dziwn¹, postrzêpion¹ spiral¹. Zawiera liczne, ma³o czytelne runy, znaki i s³owa w prastarych, dziœ ju¿ nieznanych jêzykach. Tylko kilka linijek napisano pismem i jêzykiem, które s¹ dla ciebie zrozumia³e:
+
+"Zakañczaj¹cy, Starsze Oko ¯ywio³ów, Mroczny Bóg, Cierpliwy, Ten Który Czeka, Przeklêtnik, Ojciec Prastarego Z³a, Autor Wystêpku, Ten z Odwiecznej Ciemnoœci, Po¿eracz Œwiatów, Pogardzany, Odwracacz - to tylko niektóre z wielu imion naszego wspania³ego Pana. Od tysiêcy lat Mroczny Bóg czeka, przyczajony poza granic¹ rzeczywistoœci, uwiêziony w krypcie wzniesionej rêkami tych zazdrosnych uzurpatorów, którzy zajmuj¹ nale¿ny Jemu tron. Nasze starania w ci¹gu ostatnich stuleci doprowadzi³y do zniszczenia, rozk³adu i strat, podczas gdy te pomniejsze moce stara³y siê nas zmyliæ i poró¿niæ ze sob¹. Bo widzicie, o wierni, Jego powrót oznacza ich koniec. Boj¹ siê Go. Tak jest, potê¿ni Tyr i Lathander, nawet smutna Beshaba, wszyscy oni dr¿¹ na myœl o Jego rych³ym przybyciu. Nadchodzi ju¿ czas, nadchodzi koniec, i naszym œwiêtym obowi¹zkiem jest wprowadziæ œwiat w ostatni¹ z epok i obróciæ w ruiny wytwory fa³szywych bogów. Tylko wtedy bêdziemy w stanie poj¹æ nieskaziteln¹ naturê tego, co przyniesie ze sob¹ Wieczny Mrok."
+    
+PARAMETRY:
+
+Waga: 3~
+@2022 = ~He³m kultysty~ 
+@2023 = ~Ten he³m nie tyle pe³ni funkcjê ochronn¹, co stanowi charakterystyczne nakrycie g³owy cz³onków nieznanego ci kultu. Ma ciemnofioletowy kolor i jest bogato zdobiony. Na obrze¿u he³mu znajduje siê drobny grawerunek. Zosta³o tam napisane we wspólnym: "Wierni powinni nosiæ he³m, by okaza³a im siê droga Starszego Oka ¯ywio³ów."
+
+PARAMETRY:
+
+Waga: 1~ 
+@2024 = ~Ten he³m nie tyle pe³ni funkcjê ochronn¹, co stanowi charakterystyczne nakrycie g³owy cz³onków nieznanego ci kultu. Ma ciemnofioletowy kolor i jest bogato zdobiony.
+
+PARAMETRY:
+
+Waga: 1~
+@2025 = ~Notatka~ 
+@2026 = ~Masz za zadanie odbieraæ od sirin zauroczonych przez nie rozbitków. ProwadŸ ich nastêpnie przed schody œwi¹tyni, gdzie bêd¹ czekaæ ofiarnicy. Siriny i trolle wydaj¹ siê ulegaæ wp³ywowi równoleg³ego œwiata i powoli przeistaczaj¹ siê w cieniste wersje samych siebie. Byæ mo¿e w takiej postaci bêd¹ nam jeszcze bardziej u¿yteczne.
+
+- Prorok Zag³ady Vergol~
+@2027 = ~Notatka Brokusa~
+@2028 = ~Zwiastunie klêski Brokusie, tobie, jako jednemu z mych najwierniejszych s³ug, powierzam najwa¿niejsze zadanie w trakcie naszej œwiêtej misji. Wraz z innymi zwiastunami przechodzê na drug¹ stronê. Ty tu zostañ i zadbaj o to, by trolle, siriny i wiedŸma pozostali nam przychylni. Pozostali przy ¿yciu rozbitkowie maj¹ zostaæ jak najszybciej zauroczeni przez siriny i dostarczani przez ciebie na drug¹ stronê, gdzie pos³u¿¹ za ofiary. Jeœli na wyspie wyl¹duj¹ intruzi, musisz zamkn¹æ przejœcie, by nie zosta³o odkryte. Przybysze powinni myœleæ, ¿e to wiedŸma jest za wszystko odpowiedzialna.
+
+Jeœli wiêc bêdziesz zmuszony znów zapieczêtowaæ przejœcie, zrób tak:
+
+Zniszcz cienisty kamieñ, ¿eby tajemne przejœcie siê zamknê³o. Nowy kamieñ mo¿na póŸniej ³atwo stworzyæ w izbie rytualnej. Zamknij wejœcie do piwnicy i ukryj klucz, najlepiej w swoim kufrze. WiedŸma niech zablokuje wejœcie do wie¿y przy pomocy swojej nieczystej magii. Nie zapomnij o aktywowaniu pu³apek w wie¿y! Kiedy niebezpieczeñstwo minie, bêdziesz musia³ ponownie odprawiæ rytua³, by pozyskaæ nowy cienisty kamieñ. Pamiêtaj, ¿e aby dostrzec kontury sekretnych drzwi, musisz mieæ na g³owie swój he³m. Zniszcz tê wiadomoœæ po jej przeczytaniu.
+
+- Prorok Zag³ady Vergol~
+@2029 = ~Oto nasz dogmat, nasza najg³êbsza przysiêga:
+
+"Œwiat³o musi zostaæ zgaszone, doskona³oœæ zniszczona, porz¹dek zniesiony, a duch rozdarty na czêœci. A wtedy gdzieœ, gdzie nie istniej¹ ani czas, ani przestrzeñ, potê¿ny byt poruszy siê i usi³uje przebudziæ. I nastan¹ czasy najczarniejszej ciemnoœci."~
+@2030 = ~Gdzie jest du¿o œwiat³a, bêdzie te¿ wiele cieni.~
+@2031 = ~Szczypce kraba~
+@2032 = ~Te chwytaki wydaj¹ siê byæ magicznie zmienionymi szczypcami wielkiego kraba. Przy ich pomocy powinno byæ mo¿liwe odblokowanie wszelkich miejsc zajêtych przez naroœla pochodzenia morskiego.
+
+PARAMETRY:
+
+Waga: 18~
+@2033 = ~Czarna substancja~
+@2034 = ~Cienista substancja~
+@2035 = ~Brzegi tej kruchej substancji zdaj¹ siê rozp³ywaæ i gin¹æ w cieniu.
+
+PARAMETRY:
+
+Waga: 1~
+@2036 = ~Te okruchy s¹ pozosta³oœci¹ cienistej materii. Drobiny te zdaj¹ siê byæ resztkami jakiegoœ wiêkszego obiektu.
+
+PARAMETRY:
+
+Waga: 1~
+@2037 = ~Sztuczna szczêka~
+@2038 = ~Rozeœmiane k³y~
+@2039 = ~Ta sztuczna szczêka wydaje siê byæ wykonana z koœci zwierz¹t.
+
+PARAMETRY:
+
+Waga: 1~
+@2040 = ~Jest to sztuczna szczêka legendarnego pirata Ormonda Dantego, który przed oko³o stu laty sia³ niepokój na Wybrze¿u Mieczy. Ciê¿ko doœwiadczony przez szkorbut, w póŸniejszych latach ¿ycia zamówi³ w gnomiej manufakturze te oto zêby z koœci wieloryba. Jego mag okrêtowy na³o¿y³ na nie pewne umagicznienia, nie móg³ jednak nic zaradziæ na cuchn¹cy oddech i odra¿aj¹cy wygl¹d swego kapitana. Pirat by³ znany ze swojego tubalnego œmiechu, nawet w sytuacjach bez wyjœcia, nie dziwne zatem, ¿e i szczêka nabra³a zdolnoœci czasowego wytr¹cania z orientacji przeciwników w zasiêgu s³uchu.
+
+PARAMETRY:
+
+Specjalne:
+ Odpornoœæ na strach i uroki
+ -2 do Charyzmy
+ Raz dziennie mo¿na rzuciæ Œmiech Ormonda: wszyscy przeciwnicy w zasiêgu s³uchu otrzymuj¹ kary do wszystkich rzutów (w tym rzutów na trafienie) na 5 rund. Przed efektem nie chroni ¿aden rzut obronny.
+Waga: 1
+Nie mo¿e u¿ywaæ:
+ Mnich
+ Zabójca magów
+ Kensai~
+@2041 = ~Klucz do skrzyni Brokusa~
+@2042 = ~Ten kunsztownie wykonany klucz wydaje siê pasowaæ do zamka którejœ ze skrzyñ.
+
+PARAMETRY:
+
+Waga: 0~
+@2043 = ~Klucz do piwnicy~
+@2044 = ~Zielonkawy, zmatowia³y klucz, który wygl¹da, jakby przez d³ugi czas by³ wystawiony na dzia³anie wilgoci.
+
+PARAMETRY:
+
+Waga: 0~
+@2045 = ~Dziennik Brokusa~
+@2046 = ~Dziennik Brokusa
+
+3. Tarsak 1369
+Wyspa Irphong jest nasza! Po wyl¹dowaniu na wyspie okaza³o siê, ¿e w jaskiniach osiedli³o siê plemiê sirin. Przyrzek³y wiernoœæ naszemu Mrocznemu Panu, po tym jak zabiliœmy dwie z nich. Mog¹ siê nam jeszcze przydaæ. Paru g³upców natychmiast ruszy³o na poszukiwania skarbów, jakby po tych wszystkich stuleciach, kiedy wyspa by³a niezamieszka³a, coœ jeszcze mia³o na niej pozostaæ!
+
+12. Tarsak
+Prorok Zag³ady Vergol przyzwa³ grupê morskich trolli, by piraci trzymali siê z dala od tego miejsca. Przyby³a równie¿ wiedŸma morska, która urz¹dzi³a siê w górnej czêœci wyspy. Nie wolno siê jej przypatrywaæ, by nie zostaæ dotkniêtym kl¹tw¹ os³abienia. Jej napar jest jednak doœæ u¿yteczny. Przez wiêkszoœæ czasu wêdruje po wyspie pod postaci¹ ma³ej dziewczynki. Wszyscy gor¹czkowo szukamy przejœcia na drug¹ stronê, ale jak dot¹d nic nie znaleŸliœmy.
+
+20. Tarsak
+ZnaleŸliœmy portal prowadz¹cy na drug¹ stronê! Ca³y czas tu by³, mieliœmy go przed oczami! Dawni kultyœci zadali sobie wiele trudu, by ukryæ go przed ciekawskimi spojrzeniami. Kiedy umieœci siê w skrytce odpowiedni przedmiot, maj¹c na g³owie he³m naszego kultu, przejœcie stanie otworem.
+
+1. Mirtul
+Braciom uda³o siê wyj¹æ œwietlny kryszta³ z gniazda na górnym piêtrze latarni, po czym przenieœli go przez portal na drug¹ stronê. Wszystkich rozbitków wyrzuconych na pla¿ê mam prowadziæ na ofiarê. Co trzeciego musimy jednak oddawaæ trollom, wiedŸmie i sirinom. Poza tym mam tu czekaæ i siê ukrywaæ. Niech marynarze z przep³ywaj¹cych obok wyspy statków wierz¹, ¿e za wszystkim stoj¹ siriny i morska wiedŸma.
+
+3. Mirtul
+Prorok Zag³ady Vergol jest ci¹gle zajêty przygotowaniami do rytua³u. Potrzebujemy wiêcej ofiar! W miêdzyczasie statki zaczê³y unikaæ wyspy i powoli wszyscy staj¹ siê niespokojni...
+
+4. Mirtul
+Czujê, jak zaczyna ogarniaæ mnie szaleñstwo. Czy to mo¿e wp³yw naszego wyczekiwanego Boga? Nie wiem...
+
+PARAMETRY:
+
+Waga: 2~
+@2047 = ~Wizje Vergola~
+@2048 = ~Bóg w £añcuchach, Przykute Zapomnienie, Mroczny Bóg...
+
+...wo³a mnie! Pocz¹tkowo moje sny by³y bez³adne i niejasne, ale teraz wydaje mi siê, jakby sprzed moich oczu opad³y zas³ony. Jak to dobrze! Wreszcie nasza komórka kultu na coœ siê przyda. Jest pewna bezludna wyspa po³o¿ona daleko na zachód od naszej ojczystej Chessenty. W pradawnych czasach oddawano tam ho³d naszemu Panu Tharizdunowi. Gdy nasta³y kolejne pokolenia, jego kult zosta³ zakazany i ta mnogoœæ ofiar, jak¹ przysporzy³y naszemu Panu mielizny wyspy, wyczerpa³a siê. G³upcy posadowili nawet na wyspie magiczn¹ latarniê morsk¹, by powstrzymaæ Pana Cieni. Misja, jak¹ w moich snach powierzy³ nam Pan, jest prosta: zabraæ z latarni magiczny kryszta³, odpieczêtowaæ prastare wejœcie do œwiata naszego Pana, wszystkich rozbitków sk³adaæ w ofierze Starszemu Oku ¯ywio³ów, bezczeszcz¹c przy tym latarniê, i w koñcu przerwaæ wiêzy, które powstrzymuj¹ naszego Boga przed ponownym wkroczeniem do tego œwiata.
+
+A wtedy wreszcie spojrzenie Starszego Oka ¯ywio³ów, naszego Pana Tharizduna, ponownie okryje wszystko wieczn¹ ciemnoœci¹, a nam, jego najwierniejszym s³ugom, zapewni miejsce u jego boku.~
+@2049 = ~Œwiêty symbol~
+@2050 = ~Œwiêty symbol Vergola~
+@2051 = ~Wygl¹da to na jakiegoœ rodzaju œwiêty symbol nieznanego ci bóstwa.
+
+PARAMETRY:
+
+Waga: 1~
+@2052 = ~Symbol jest przedstawieniem bytu zwanego "Tharizdun". Kr¹¿y wiele legend o tej istocie, która zosta³a uwiêziona w nieznanym miejscu jeszcze przed pocz¹tkiem znanego ci œwiata. W ró¿nych czêœciach Krain manifestuje siê jednak po dziœ dzieñ wiele s³abszych aspektów Tharizduna, usi³uj¹cych sk³oniæ jego czcicieli do uwolnienia w³aœciwego bóstwa.
+
+PARAMETRY:
+
+Waga: 1~
+@2053 = ~Br¹zowa czara~
+@2054 = ~Ta czara jest wykonana z br¹zu. Na jej brzegach widaæ niewyraŸne plamy, jak gdyby czêsto znajdowa³y siê w niej du¿e iloœci wody.
+
+PARAMETRY:
+
+Waga: 0~
+@2055 = ~Ta magiczna misa posiada znaczn¹ moc, z której mo¿e korzystaæ jej w³aœciciel. Pozwala mianowicie w pewnym stopniu sprawowaæ kontrolê nad magicznymi stworzeniami, jakimi s¹ ¿ywio³aki wody. Jak to bywa z wszystkimi si³ami ¿ywio³ów, ta moc mo¿e s³u¿yæ zarówno dobru, jak i z³u, zarówno porz¹dkowi, jak i chaosowi. Z tego wzglêdu nale¿y siê obchodziæ z tymi stworzeniami z du¿¹ ostro¿noœci¹.
+
+PARAMETRY:
+
+Specjalne:
+ Raz dziennie mo¿na rzuciæ Sprowadzenie ¿ywio³aka wody na 5 minut. Moc przywo³anego ¿ywio³aka zale¿y od poziomu u¿ytkownika:
+Poziom 8-11: pomniejszy ¿ywio³ak wody o wytrzyma³oœci 8 Kostek
+Poziom 12-15: ¿ywio³ak wody o wytrzyma³oœci 12 Kostek
+Poziom 16. i wy¿szy: wiêkszy ¿ywio³ak wody o wytrzyma³oœci 16 Kostek
+Waga: 0
+Nie mo¿e u¿ywaæ:
+ Zabójca magów~
+@2056 = ~Œwietlny kryszta³~
+@2057 = ~Jest to klejnot, dziêki któremu na najwy¿szym piêtrze latarni morskiej na Irphong p³onie magiczne œwiat³o. Jego pochodzenie zosta³o wraz z up³ywem tysi¹cleci zapomniane, ale wydaje siê starszy od pierwszych królestw ludzi w Œrodziemiu. Jego u¿ycie w latarni na Irphong siêga czasów imperium Shoon, kiedy ludzie próbowali wiêkszoœæ spraw w ¿yciu rozwi¹zywaæ z pomoc¹ magii.
+
+PARAMETRY:
+
+Waga: 1~
+@2058 = ~Chmura mg³y~
+@2059 = ~Chmura mg³y (Przemiany)
+Poziom: 2
+Zasiêg: 30 metrów
+Czas dzia³ania: 4 rundy
+Czas rzucania: 2
+Obszar dzia³ania: w promieniu 5 metrów
+Rzut obronny: brak
+
+Czar ten tworzy ob³ok gêstej mg³y przypominaj¹cej wygl¹dem Zabójcz¹ chmurê z 5. poziomu. Jednak¿e powsta³a w ten sposób faluj¹ca chmura zielono-¿ó³tych oparów o œrednicy 5 metrów nie jest truj¹ca, lecz tylko uniemo¿liwia widzenie. Stworzenia, które znajd¹ siê w chmurze, zostaj¹ oœlepione na czas trwania zaklêcia. Istnieje te¿ 50% szansa, ¿e dostrze¿enie ich w chmurze stanie siê na tyle utrudnione, ¿e stan¹ siê na jedn¹ rundê niewidzialne.~
+@2060 = ~Ostrze wody +2~
+@2061 = ~Ten d³ugi miecz ma p³ynne, lekko zakrzywione ostrze. Na koñcu rêkojeœci umieszczono zielono-niebieski klejnot, który podobnie jak ca³y wygl¹d miecza sugeruje jego powi¹zanie z ¿ywio³em wody. Kiedy w³aœciciel miecza trzyma go w rêku, jest w du¿ym stopniu chroniony przed zimnem. Poza tym miecz mo¿e raz dziennie wyrzuciæ z siebie strugê czystej wody, która zadaje 3K6 obra¿eñ ka¿demu na obszarze sto¿ka o zasiêgu 15 metrów.
+
+PARAMETRY:
+
+Obra¿enia: 1K8 +2
+TraK0: +2
+Typ obra¿eñ: sieczne
+Specjalne:
+ +40% do odpornoœci na zimno
+ Raz dziennie mo¿na rzuciæ Strugê wody, która zadaje 3K6 obra¿eñ obuchowych na obszarze sto¿ka o zasiêgu 15 metrów
+Waga: 3
+OpóŸnienie: 3
+Rodzaj bieg³oœci: d³ugi miecz
+Typ broni: 1-rêczna
+Wymagana si³a: 6
+Nie mo¿e u¿ywaæ:
+ Kap³an
+ Druid
+ Mag~
+@2062 = ~Ochrona przed trucizn¹~
+@2063 = ~Ochrona przed trucizn¹ (Odrzucanie)
+Poziom: 2
+Sfera: Ochrona
+Zasiêg: dotyk
+Czas dzia³ania: 10 rund 
+Czas rzucania: 5
+Obszar dzia³ania: 1 istota
+Rzut obronny: brak
+
+Dziêki temu zaklêciu wybrana istota staje siê odporna na wszelkie trucizny, które mog¹ przenikn¹æ do organizmu przez uk³ucie, po³kniêcie lub kontakt ze skór¹. Toksyny innych rodzajów oddzia³uj¹ na istotê w normalny sposób. Zaklêcie nie wp³ywa te¿ na trucizny, które znajduj¹ siê w ciele w momencie rzucenia czaru.~
+@2064 = ~Ostrze wody +3~
+@2065 = ~Ten d³ugi miecz ma p³ynne, lekko zakrzywione ostrze. Na koñcu rêkojeœci umieszczono zielono-niebieski klejnot, który podobnie jak ca³y wygl¹d miecza sugeruje jego powi¹zanie z ¿ywio³em wody. Kiedy w³aœciciel miecza trzyma go w rêku, jest w du¿ym stopniu chroniony przed zimnem. Poza tym miecz mo¿e raz dziennie wyrzuciæ z siebie strugê czystej wody, która zadaje 4K6 obra¿eñ ka¿demu w odleg³oœci do 15 metrów.
+
+PARAMETRY:
+
+Obra¿enia: 1K8 +3, +5 przeciw kuo-toa i sahuaginom
+TraK0: +3, +5 przeciw kuo-toa i sahuaginom
+Typ obra¿eñ: sieczne
+Specjalne:
+ +50% do odpornoœci na zimno
+ Raz dziennie mo¿na rzuciæ Strugê wody, która zadaje 4K6 obra¿eñ obuchowych na obszarze sto¿ka o zasiêgu 15 metrów
+ Trafiony sahuagin zostaje og³uszony na 1 rundê
+Waga: 3
+OpóŸnienie: 3
+Rodzaj bieg³oœci: d³ugi miecz
+Typ broni: 1-rêczna
+Wymagana si³a: 6
+Nie mo¿e u¿ywaæ:
+ Kap³an
+ Druid
+ Mag~

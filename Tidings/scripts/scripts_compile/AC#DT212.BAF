@@ -1,0 +1,9 @@
+// Air Info Trigger
+
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1024)  // 
+END
+

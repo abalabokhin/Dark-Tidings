@@ -1,0 +1,192 @@
+// setup-tidings tra file
+
+// creatures
+@0 = ~Sirène des ténèbres~
+@1 = ~Gardien spectral~
+@2 = ~Gueule d'argile~ // Mudform / Forme boueuse / Gelée boueuse / Vase boueuse / Face de boue / 
+@3 = ~Troll de l'ombre~
+@4 = ~Vipère~
+@5 = ~Élémentaire d'ombres~
+@6 = ~Voix d'outre tombe~
+@7 = ~~ [AC#DT21C]
+@8 = ~Varrdig~
+@9 = ~Élémentaire de Terreur~
+@10 = ~Ombre de <PLAYER1>~
+@11 = ~Ombre de <PLAYER2>~
+@12 = ~Ombre de <PLAYER3>~
+@13 = ~Ombre de <PLAYER4>~
+@14 = ~Ombre de <PLAYER5>~
+@15 = ~Ombre de <PLAYER6>~
+@16 = ~Obscurité~ //  Shadow shape // become @17
+@17 = ~L'ombre de Tharizdun~ //  Aspect of Tharizdun
+@18 = ~~ [AC#DTTH1]
+@19 = ~~ [AC#DTTH3]
+@20 = ~~ [AC#DTTH1]
+@21 = ~~ [AC#DTTH4]
+@22 = ~~ [AC#DTTH5]
+@23 = ~Jhanex~
+@24 = ~Skara~
+@25 = ~Brokus Sombreaugure~ // Blackseer Brokus
+@26 = ~Ahmer, le vieux loup de mer~
+@27 = ~Bog le marin~
+@28 = ~Chevalier funeste~
+@29 = ~Sinistre gardien~
+@30 = ~Vergol~
+@31 = ~Mastiff de l'ombre~
+@32 = ~Thalass~
+@33 = ~Aile de l'obscurité~ // Nightwing
+@34 = ~Gracie~
+@35 = ~Darius~ 
+@36 = ~Molly la ténébreuse~
+@37 = ~Myrmidon aquatique~ // Fantassin aquatique
+@38 = ~Élémentaire d'eau~
+@39 = ~Élémentaire d'eau mineur~
+@40 = ~Vase d'huile~ // Oil Ooze, Gelée huileuse
+
+// spells
+@100 = ~Domination élémentaire~ // Elemental Domination
+@101 = ~Aura glacée~ // Cold Aura
+@102 = ~Vision horrifique~ // Horrible sight
+@103 = ~Protection contre le bien~
+@104 = ~Effrayante apparition~ // Scary apparition, Apparition effrayante
+@105 = ~Regard mortel~ // Deadly stare
+@106 = ~Nuage de brouillard~ // Fog cloud
+@107 = ~Dissimulé dans la brume~ // Hidden in the mist
+@108 = ~Nuage de brouillard
+(Altération)
+
+Niveau : 2
+Portée : 12 mètres.
+Durée : 4 rounds
+Temps d'incantation : 2
+Zone d'effet : rayon de 4,5 mètres
+Jet de sauvegarde : Aucun
+
+Ce sort crée un brouillard dense formé d'une masse de vapeur non toxique aux volutes jaunâtres; elle n'est pas toxique mais obscurcie la vue. Les créatures présentes dans le brouillard sont aveuglées tant que celui-ci persiste. En outre, il y a 50 % de chances que les créatures se trouvant dans le brouillard deviennent indétectables et invisibles pendant un round.~
+@109 = ~Explosion~
+@110 = ~Aura obscure~ // Dark Aura
+@111 = ~Chant des sirènes~ // Siren Song
+@112 = ~Hurlement~ // Howl
+@113 = ~Convocation d'élémentaire d'eau~ // Summon Water Elemental
+@114  = ~Protection contre les poisons~
+@115  = ~Protection contre les poisons 
+(Abjuration)
+
+Niveau : 2
+Portée : contact
+Durée : 10 rounds 
+Temps d'incantation : 3
+Zone d'effet : 1 créature
+Jet de sauvegarde : Aucun
+
+Ce sortilège permet à la créature choisie d'être immunisée contre les poisons et les venins provoqués par contact avec la peau que ce soit par absorption, par piqûre, par morsure ou par l'intermédiaire d'une arme. Les toxines de nature différente continueront d'affecter la créature normalement et les poisons déjà actifs ne seront pas affectés.~
+
+// Script strings
+@1000 = ~La ville est en quête d'aventuriers compétents et prêts à prendre la mer.~
+@1001 = ~N'y a-t-il aucun aventurier dans cette taverne prêt à accomplir une mission pour notre ville ?~
+@1002 = ~Utilise un objet~ // Uses an item
+@1003 = ~Contrôle de l'ombre~ // Shadow control
+@1004 = ~Ce tonneau contient de l'huile inflammable. Il était apparemment utilisé dans le passé pour alimenter le signal du phare. Vous pouvez l'examiner de plus près si vous le souhaitez.~
+@1005 = ~Vous mettez un peu d'huile dans une fiole.~
+@1006 = ~Le tonneau est désormais complètement vide.~
+@1007 = ~Le tonneau est pratiquement vide. Il est impossible de l'utiliser pour allumer le signal. Cependant, cette huile inflammable peut toujours être utile au cours d'un combat. Vous pouvez la transvaser dans une fiole et l'emporter avec vous, si vous le souhaitez.~
+@1008 = ~Cette substance est composée d'ombres et se désagrège entre vos mains.~ [EFF_E03]
+@1009 = ~La pierre semble s'imbriquer parfaitement.~ // See ACDT21.tra
+@1010 = ~Cette partie du mur comporte un symbole étrange qui semble légèrement se déplacer. À l'œil nu il est difficile de se focaliser dessus.~
+
+@1011 = ~Ombre de <PLAYER1>~
+@1012 = ~Ombre de <PLAYER2>~
+@1013 = ~Ombre de <PLAYER3>~
+@1014 = ~Ombre de <PLAYER4>~
+@1015 = ~Ombre de <PLAYER5>~
+@1016 = ~Ombre de <PLAYER6>~
+
+@1017 = ~L'entrée de la tour est bloquée par de nombreuses balanes.~
+@1018 = ~Bien que vous vous efforciez d'enlever les balanes, elles semblent de plus en plus nombreuses. Il existe peut-être un outil pour dégager l'entrée.~ [AC#DT01B]
+@1019 = ~La pince de crabe rayonne brièvement d'une lueur magique, les balanes se relâchent et s'effondrent, révélant l'entrée.~ [AC#DT01C]
+@1020 = ~L'entrée de la tour est bloquée par de nombreuses balanes. La pince de crabe en votre possession s'agite soudain, comme si elle cherchait à se frayer un chemin.~ [AC#TTC]
+
+// Strings in Area ACDT21
+// Earth Info Trigger:
+@1021 = ~Une grande quantité de boue et de terre s'accumule autour de cette pierre runique. En votre qualité de druide, vous comprenez que cette terre n'est pas d'ici et qu'elle émet une aura surnaturelle.~
+@1022 = ~Une grande quantité de boue et de terre s'accumule autour de cette pierre runique. Vous réalisez que la terre en question ne vient pas d'ici.~
+@1023 = ~Une grande quantité de boue et de terre s'accumule autour de cette pierre runique.~
+
+// Air Info Trigger:
+@1024 = ~Un courant d'air impressionnant circule dans ces étranges formations rocheuses et pénètre dans la chambre. L'air semble extrêmement pur et très concentré, toutefois des émanations de pourriture et de soufre s'en dégagent par intermittence.~
+
+// Water Info Trigger
+@1025 = ~L'eau qui ruisselle autour de cette pierre runique à une couleur étrange et une odeur viciée.~
+
+// Fire Info Trigger
+@1026 = ~Une chaleur anormale émane de cette pierre runique.~
+
+// Runestone Info Trigger
+@1030 = ~Une citation en langue commune est gravée sur cette pierre runique. Vous pouvez la lire si vous le souhaitez.~
+@1031 = ~« L'Œil élémentaire ancestral engendra quatre enfants.
+Le premier voulait dévorer tout ce qui existe.
+Pour l'éradiquer, il façonna le second, mais sans parvenir à lui donner forme. 
+Il enfanta donc une troisième fois, mais l'être fut incapable de se mouvoir. 
+Enfin, il donna naissance au quatrième, mais celui-ci se volatilisa dans le néant. 
+Alors le Sombre Seigneur réalisa l'imperfection de toutes choses et se promit de restaurer la création à son état d'origine... Les ténèbres. »~
+@1032 = ~La pierre runique a tellement été endommagée par l'explosion d'énergie magique que son inscription est désormais indéchiffrable.~
+
+// Shadowstone Info Trigger
+@1035 = ~Cette curieuse pierre irradie d'une aura maléfiques, lorsque l'on s'en approche d'étranges murmures et de sinistres chuchotements se font entendre tandis que la lumière environnante semble être engloutie, sa surface ne reflétant que le noir le plus profond.~ // TO SEE
+@1036 = ~Une fois les quatre runes neutralisées, un froid glacial et une atmosphère pesante s'installent dans la chambre. Les chuchotements qui émanent de la pierre sont désormais plus que perceptible.~
+@1037 = ~L'aura de cette pierre si singulière demeure des plus inquiétantes.~ 
+
+/// Fire Sigil Tigger
+@1040 = ~Un glyphe bizarre est gravé sur cette pierre. Elle dégage une forte chaleur. Vous avez l'impression qu'il suffirait de toucher le glyphe pour en changer l'état.~
+@1041 = ~Vous touchez prudemment le glyphe. Une chaleur brûlante vous traverse, puis la rune s'éteint et la pierre se refroidit.~
+@1042 = ~La pierre runique est froide et semble ne plus avoir de fonction.~
+
+// Water Sigil Tigger
+@1050 = ~Un glyphe bizarre est gravé sur cette pierre. Elle semble très humide. Vous avez l'impression qu'il suffirait de toucher le glyphe pour en changer l'état.~
+@1051 = ~Lorsque vous touchez le glyphe, une brise humide traverse la pièce. Il semble que vous deviez toucher les pierres dans un certain ordre... Et vous avez fait le mauvais choix....~
+@1052 = ~Vous touchez prudemment le glyphe. L'eau qui imprégnait la pierre runique s'évapore. Le glyphe semble désactivé.~
+@1053 = ~La pierre runique est sèche et semble ne plus avoir de fonction.~
+
+// Earth Sigil Trigger
+@1060 = ~Un glyphe en forme de spirale dentelée est gravé sur cette pierre. Elle est recouverte d'une boue étonnamment brillante. Vous avez l'impression qu'il suffirait de toucher le glyphe pour en changer l'état.~
+@1061 = ~Lorsque vous touchez le glyphe, une forte vibration se répand dans la pièce. Il semble que vous deviez toucher les pierres dans un certain ordre... Et vous avez fait le mauvais choix....~
+@1062 = ~Vous touchez prudemment le glyphe. La boue qui recouvrait la pierre runique disparaît. Le glyphe semble désactivé.~
+@1063 = ~La pierre runique est propre et ne semble plus avoir de fonction.~
+
+// Air Sigil Trigger
+@1070 = ~Un glyphe en forme de spirale dentelée est gravé sur cette pierre. Vous avez l'impression qu'il suffirait de toucher le glyphe pour en changer l'état.~
+@1071 = ~Lorsque vous touchez le glyphes, des gaz toxiques jaunâtres jaillissent du sol. Il semble que vous deviez toucher les pierres dans un certain ordre... Et vous avez fait le mauvais choix...~
+@1072 = ~Vous touchez prudemment le glyphe. Le glyphe semble désactivé.~
+@1073 = ~La pierre runique est inactive et ne semble plus avoir de fonction.~
+
+// Ritual in Area ACDT22
+@1080 = ~Vous avez accompli le premier sort du rituel.~
+@1081 = ~Vous avez accompli le deuxième sort du rituel.~
+@1082 = ~Vous avez accompli le troisième sort du rituel.~
+
+@1085 = ~La magie que vous avez lancée se décharge dans une explosion et la pierre se brise en mille morceaux. Soudain, le silence se fait. La chambre semble beaucoup plus lumineuse à présent.~
+
+// Crystal chamber ACDT13
+
+@1090 = ~Vous repérez un socle vide au milieu de cet appareillage destiné au cristal. Il est probable qu'un objet doive y être inséré pour activer la balise.~
+@1091 = ~Aucun des objets de votre inventaire ne semble convenir pour allumer la balise.~
+@1092 = ~Vous placez le Cristal de lumière sur le socle, à travers les nombreux interstices la lumière est réfléchie mille fois avant d'être projetée vers le haut, illuminant le ciel. La lumière éclatante du cristal au sommet du toit devrait être visible de très loin.~
+@1093 = ~Si vous remettez le cristal sur son socle, vous ne pourrez plus le retirer. Réfléchissez bien à ce que vous allez faire.~
+
+@1098 = ~D'épaisses nappes de ténèbres vous bloquent la vue. Si la sortie se trouve à proximité, vous ne pouvez pas la discerner pour le moment.~
+
+//cutscene in ACDT01
+@1100 = ~Regardez ! Une enfant !~
+@1101 = ~Qu'est ce que ...!~
+@1102 = ~Par Baelros ! C'est une sorcière des mers !~
+
+// Oil barrels in ACDT15
+
+@1504 = ~Ce tonneau contient de l'huile inflammable. Il était apparemment utilisé par le passé pour alimenter le signal du phare. Vous pouvez l'examiner de plus près si vous le souhaitez.~
+@1505 = ~Vous mettez un peu d'huile dans une fiole.~
+@1506 = ~Le tonneau est désormais complètement vide.~
+@1507 = ~Le tonneau est pratiquement vide. Il est impossible de l'utiliser pour allumer le signal. Cependant, cette huile inflammable peut toujours être utile au cours d'un combat.~
+
+// New for v2.2
+
+@1510 = ~Dark Tidings~

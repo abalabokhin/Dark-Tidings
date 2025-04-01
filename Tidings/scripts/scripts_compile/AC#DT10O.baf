@@ -1,0 +1,51 @@
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("Check_Barrel","ACDT10",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1004)
+		SetGlobal("Check_Barrel","ACDT10",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("AC#DT10_Barrel","GLOBAL",0)
+	Global("Check_Barrel","ACDT10",1)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1007)
+		SetGlobal("AC#DT10_Barrel","GLOBAL",1)
+		SetGlobal("Check_Barrel","ACDT10",2)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	GlobalGT("AC#DT10_Barrel","GLOBAL",0)
+	GlobalLT("AC#DT10_Barrel","GLOBAL",4)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1005)
+		GiveItemCreate("POTN13",LastTrigger,1,1,1)
+		IncrementGlobal("AC#DT10_Barrel","GLOBAL",1)
+END
+
+IF
+	Clicked([ANYONE])
+	Range(LastTrigger,10)
+	Global("AC#DT10_Barrel","GLOBAL",4)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1006)
+END
+
+IF
+	Clicked([ANYONE])
+	!Range(LastTrigger,10)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,14702)
+END
+

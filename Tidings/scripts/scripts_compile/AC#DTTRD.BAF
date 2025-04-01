@@ -1,0 +1,9 @@
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,TROLL_SETHP1)  // SPIN700.SPL (Trolltod)
+		PlayDead(300)
+		ReallyForceSpellRES("AC#DTTR",Myself)  // No such index
+END
+

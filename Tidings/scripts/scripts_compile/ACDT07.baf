@@ -1,0 +1,21 @@
+IF
+  Global("ACDT_HelpWitch","GLOBAL",1)
+  !Global("ACDT_Coastwolf","GLOBAL",0)
+  PartyHasItem("acdtbowl")
+THEN
+    RESPONSE #100
+    SetGlobal("ACDT_HelpWitch","GLOBAL",2)
+    Wait(1)
+    CreateCreature("ACDTSEAW",[641.418],7)
+    CreateCreature("ACDTSIRE",[658.587],3)
+    CreateCreature("SIRINE01",[542.688],9)
+    CreateCreature("SIRINE01",[924.418],2)
+    ActionOverride("SIRINE01",ChangeEnemyAlly(Myself,NEUTRAL))
+    ActionOverride("SIRINE01",ChangeEnemyAlly(Myself,NEUTRAL))
+END
+
+
+
+
+
+

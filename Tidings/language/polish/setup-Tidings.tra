@@ -1,0 +1,141 @@
+@0    = ~Mroczna sirina~ 
+@1    = ~Nieumar³y stra¿nik~
+@2    = ~Forma szlamu~ 
+@3    = ~Cienisty troll~
+@4    = ~¯mija~ 
+@5    = ~¯ywio³ak cienia~
+@6    = ~Mroczny g³os~
+@7    = ~~ [AC#DT21C] 
+@8    = ~Varrdig~
+@9    = ~Ziemne dziwo~
+@10   = ~<PLAYER1> - cieñ~
+@11   = ~<PLAYER2> - cieñ~
+@12   = ~<PLAYER3> - cieñ~ 
+@13   = ~<PLAYER4> - cieñ~
+@14   = ~<PLAYER5> - cieñ~ 
+@15   = ~<PLAYER6> - cieñ~
+@16   = ~Cienisty kszta³t~
+@17   = ~Aspekt Tharizduna~
+@18   = ~~ [AC#DTTH1] 
+@19   = ~~ [AC#DTTH3]
+@20   = ~~ [AC#DTTH1] 
+@21   = ~~ [AC#DTTH4] 
+@22   = ~~ [AC#DTTH5]
+@23   = ~Jhanex~ 
+@24   = ~Skara~
+@25   = ~Zwiastun klêski Brokus~
+@26   = ~Marynarz Ahmer~
+@27   = ~Marynarz Bog~
+@28   = ~Rycerz œmierci~
+@29   = ~Ponury stra¿nik~
+@30   = ~Vergol~
+@31   = ~Mastif cienia~
+@32   = ~Thalass~
+@33   = ~Nocne skrzyd³o~
+@34   = ~Gracie~
+@35   = ~Darius~
+@36   = ~Czarna Molly~
+@37   = ~Myrmidon wody~
+@38   = ~¯ywio³ak wody~
+@39   = ~Pomniejszy ¿ywio³ak wody~
+@40   = ~Oleisty szlam~
+@100  = ~Zdominowanie ¿ywio³aka~
+@101  = ~Aura zimna~
+@102  = ~Przera¿aj¹cy widok~
+@103  = ~Ochrona przed dobrem~
+@104  = ~Straszna zjawa~
+@105  = ~Œmiercionoœne spojrzenie~
+@106  = ~Chmura mg³y~
+@107  = ~Ukrycie we mgle~
+@108  = ~Chmura mg³y (Przemiany)
+Poziom: 2
+Zasiêg: 30 metrów
+Czas dzia³ania: 4 rundy
+Czas rzucania: 2
+Obszar dzia³ania: w promieniu 5 metrów
+Rzut obronny: brak
+
+Czar ten tworzy ob³ok gêstej mg³y przypominaj¹cej wygl¹dem Zabójcz¹ chmurê z 5. poziomu. Jednak¿e powsta³a w ten sposób faluj¹ca chmura zielono-¿ó³tych oparów o œrednicy 5 metrów nie jest truj¹ca, lecz tylko uniemo¿liwia widzenie. Stworzenia, które znajd¹ siê w chmurze, zostaj¹ oœlepione na czas trwania zaklêcia. Istnieje te¿ 50% szansa, ¿e dostrze¿enie ich w chmurze stanie siê na tyle utrudnione, ¿e stan¹ siê na jedn¹ rundê niewidzialne.~
+@109  = ~Eksplozja~
+@110  = ~Aura ciemnoœci~
+@111  = ~Œpiew siriny~
+@112  = ~Wycie~
+@113  = ~Sprowadzenie ¿ywio³aka wody~
+@114  = ~Ochrona przed trucizn¹~
+@115  = ~Ochrona przed trucizn¹ (Odrzucanie)
+Poziom: 2
+Sfera: Ochrona
+Zasiêg: dotyk
+Czas dzia³ania: 10 rund 
+Czas rzucania: 5
+Obszar dzia³ania: 1 istota
+Rzut obronny: brak
+
+Dziêki temu zaklêciu wybrana istota staje siê odporna na wszelkie trucizny, które mog¹ przenikn¹æ do organizmu przez uk³ucie, po³kniêcie lub kontakt ze skór¹. Toksyny innych rodzajów oddzia³uj¹ na istotê w normalny sposób. Zaklêcie nie wp³ywa te¿ na trucizny, które znajduj¹ siê w ciele w momencie rzucenia czaru.~
+@1000 = ~Miasto poszukuje kompetentnych poszukiwaczy przygód gotowych wyruszyæ w rejs!~
+@1001 = ~Czy¿ podobna, ¿eby w tej tawernie nie by³o poszukiwaczy przygód chc¹cych zrobiæ coœ dla miasta?~
+@1002 = ~(u¿ywa przedmiotu)~
+@1003 = ~Kontrolowanie cieni~
+@1004 = ~W beczce znajdowa³a siê ³atwopalna oliwa, u¿ywana niegdyœ do rozpalania p³omienia sygna³owego na dachu. Mo¿esz zbadaæ dok³adniej pojemnik, jeœli chcesz.~
+@1005 = ~Nabierasz trochê oliwy do butelki.~
+@1006 = ~Beczka jest teraz pusta.~
+@1007 = ~W beczce prawie nie ma ju¿ oliwy i nie da siê przy jej pomocy rozpaliæ ognia na szczycie latarni. £atwopalna oliwa wci¹¿ jednak mo¿e byæ przydatna w walce. Jeœli chcesz, mo¿esz nabraæ jej w butelkê i wzi¹æ ze sob¹.~
+@1008 = ~Cienista substancja rozpada siê i w twoich rêkach nie zostaje nic.~ [EFF_E03]
+@1009 = ~Ceg³a wydaje siê idealnie pasowaæ w otwór u do³u œciany.~
+@1010 = ~Tê czêœæ muru pokrywa dziwny symbol, który wydaje siê nieznacznie poruszaæ. Patrz¹c nañ w³asnymi oczyma, trudno ci siê jednak na nim skoncentrowaæ.~
+@1011 = ~<PLAYER1> - cieñ~
+@1012 = ~<PLAYER2> - cieñ~
+@1013 = ~<PLAYER3> - cieñ~
+@1014 = ~<PLAYER4> - cieñ~
+@1015 = ~<PLAYER5> - cieñ~
+@1016 = ~<PLAYER6> - cieñ~
+@1017 = ~Wejœcie do wie¿y jest zablokowane przez niezliczone p¹kle.~
+@1018 = ~Im bardziej starasz siê rozsun¹æ nawarstwione p¹kle przy pomocy si³y, tym wiêcej tych stworzeñ wydaje siê wracaæ i blokowaæ to samo miejsce. Byæ mo¿e istnieje jakieœ narzêdzie, przy pomocy którego da³oby siê odkopaæ wejœcie.~ [AC#DT01B]
+@1019 = ~Szczypce kraba rozb³yskuj¹ na moment magicznym œwiat³em, po czym grube zasklepienie p¹kli rozpada siê, ods³aniaj¹c wejœcie.~ [AC#DT01C]
+@1020 = ~Wejœcie do wie¿y jest zablokowane przez niezliczone p¹kle. Szczypce kraba w twoim ekwipunku nagle zaczynaj¹ siê poruszaæ, jakby chcia³y wyci¹æ przejœcie.~ [AC#TTC]
+@1021 = ~Wokó³ tego kamienia runicznego le¿y mnóstwo rozrzuconego b³ota i ziemi. Jako druid zauwa¿asz, ¿e ziemia nie pochodzi z tego miejsca i emanuje nienaturaln¹ aurê.~
+@1022 = ~Wokó³ tego kamienia runicznego le¿y mnóstwo rozrzuconego b³ota i ziemi. Zauwa¿asz, ¿e ziemia nie pochodzi z tego miejsca.~
+@1023 = ~Wokó³ tego kamienia runicznego le¿y mnóstwo rozrzuconego b³ota i ziemi.~
+@1024 = ~Du¿e iloœci powietrza wydostaj¹ siê z tej dziwnej formacji skalnej i rozchodz¹ po pomieszczeniu. Powietrze wydaje siê czyste i stê¿one, ale jednoczeœnie czuæ w nim niekiedy odór siarki i zgnilizny.~
+@1025 = ~Po tym kamieniu runicznym nieprzerwanie s¹czy siê woda wyp³ywaj¹ca z nieznanego Ÿród³a. Woda ma dziwny kolor i zapach - wydaje siê zanieczyszczona.~
+@1026 = ~Ten kamieñ runiczny wydziela nienaturalne ciep³o.~
+@1030 = ~Na tej kamiennej tablicy wyryto d³ug¹ inskrypcjê we wspólnym. Jeœli chcesz, mo¿esz j¹ przeczytaæ.~
+@1031 = ~Zrodzi³o tedy Starsze Oko ¯ywio³ów czworo dzieci. To pierworodne pragnê³o wszystko poch³on¹æ. By je poskromiæ, stworzy³o wiêc drugie, ale o niesta³ym kszta³cie. Stworzy³o zatem trzecie, lecz to by³o niezdolne do ruchu. Wreszcie da³o ¿ycie czwartemu, ale ono ulecia³o w nicoœæ. Tak poj¹³ Mroczny Bóg u³omnoœæ wszystkich rzeczy i przysi¹g³ wróciæ wszystko do prapocz¹tku - do niezg³êbionej ciemnoœci.~
+@1032 = ~Kamieñ runiczny zosta³ zniszczony przez wybuch magicznej energii tak dalece, ¿e inskrypcji nie da siê ju¿ odczytaæ.~
+@1035 = ~Z tego niezwyk³ego kamienia emanuje z³owroga aura. W jego pobli¿u s³uchaæ niezrozumia³e mamrotania i szepty, a œwiat³o na jego krawêdziach za³amuje siê i ginie, staj¹c siê najg³êbsz¹ ciemnoœci¹.~
+@1036 = ~Po zgaszeniu run na wszystkich czterech kamieniach w pomieszczeniu zrobi³o siê ch³odniej i nieprzyjemnie. Od strony centralnego kamienia dobiega szmer.~
+@1037 = ~Z³owroga aura nadal emanuje z tego niezwyk³ego kamienia.~
+@1040 = ~Na ten kamieñ naniesiono przedziwny znak promieniuj¹cy wyraŸnym ciep³em. Odnosisz wra¿enie, ¿e dotkniêcie znaku mo¿e spowodowaæ zmianê jego stanu.~
+@1041 = ~Ostro¿nie dotykasz rêk¹ znaku. Przenika ciê bolesne gor¹co, ale runa pod wp³ywem dotkniêcia zgas³a i ostyg³a.~
+@1042 = ~Runa zosta³a wygaszona i nie pe³ni ju¿ ¿adnej funkcji.~
+@1050 = ~Na ten kamieñ naniesiono przedziwny znak, który wygl¹da na mokry. Odnosisz wra¿enie, ¿e dotkniêcie znaku mo¿e spowodowaæ zmianê jego stanu.~
+@1051 = ~Kiedy dotykasz znaku, przez pomieszczenie przebiega wilgotny podmuch powietrza. Wygl¹da na to, ¿e znaki musz¹ zostaæ dotkniête w odpowiedniej kolejnoœci, a twój wybór by³ b³êdny...~
+@1052 = ~Ostro¿nie dotykasz rêk¹ znaku. Woda, która nawil¿a³a runê, znika. Wygl¹da na to, ¿e znak zosta³ dezaktywowany.~
+@1053 = ~Runa zosta³a osuszona i nie pe³ni ju¿ ¿adnej funkcji.~
+@1060 = ~Na tym kamieniu wyryto znak w postaci postrzêpionej spirali. Jest pokryty szlamem i œwieci w osobliwy sposób. Odnosisz wra¿enie, ¿e dotkniêcie znaku mo¿e spowodowaæ zmianê jego stanu.~
+@1061 = ~Kiedy dotykasz znaku, przez pomieszczenie przebiega wstrz¹s. Wygl¹da na to, ¿e znaki musz¹ zostaæ dotkniête w odpowiedniej kolejnoœci, a twój wybór by³ b³êdny...~
+@1062 = ~Ostro¿nie dotykasz rêk¹ znaku, wskutek czego b³oto go pokrywaj¹ce znika. Wygl¹da na to, ¿e znak zosta³ dezaktywowany.~
+@1063 = ~Runa zosta³a oczyszczona i nie pe³ni ju¿ ¿adnej funkcji.~
+@1070 = ~Na tym kamieniu wyryto znak w postaci postrzêpionej spirali. Odnosisz wra¿enie, ¿e dotkniêcie znaku mo¿e spowodowaæ zmianê jego stanu.~
+@1071 = ~Kiedy dotykasz znaku, spod ziemi wydobywa siê ¿ó³tawy, truj¹cy gaz. Wygl¹da na to, ¿e znaki musz¹ zostaæ dotkniête w odpowiedniej kolejnoœci, a twój wybór by³ b³êdny...~
+@1072 = ~Ostro¿nie dotykasz rêk¹ znaku. Wygl¹da na to, ¿e znak zosta³ dezaktywowany.~
+@1073 = ~Runa zosta³a dezaktywowana i nie pe³ni ju¿ ¿adnej funkcji.~
+@1080 = ~Rzucono pierwsze zaklêcie rytua³u.~
+@1081 = ~Rzucono drugie zaklêcie rytua³u.~
+@1082 = ~Rzucono trzecie zaklêcie rytua³u.~
+@1085 = ~Rzucone przez ciebie zaklêcia z hukiem roz³adowuj¹ swoj¹ magiczn¹ energiê, rozbijaj¹c kamieñ na tysi¹ce czêœci, po czym nagle nastaje cisza. W pomieszczeniu robi siê o wiele jaœniej.~
+@1090 = ~Poœrodku aparatu do emisji œwiat³a dostrzegasz puste gniazdo. Przypuszczalnie trzeba w nim umieœciæ jakiœ przedmiot, by aktywowaæ latarniê.~
+@1091 = ~¯aden z przedmiotów w twoim ekwipunku nie nadaje siê, by przy jego u¿yciu rozœwietliæ latarniê.~
+@1092 = ~Umieszczasz œwietlny kryszta³ w gnieŸdzie. Poprzez jego liczne fasety œwiat³o zostaje po tysi¹ckroæ odbite, jego moc zwielokrotniona i skierowana w otwart¹ przestrzeñ ku górze. Wielki kryszta³ na szczycie latarni powinien teraz œwieciæ jasnym, widocznym z daleka œwiat³em.~
+@1093 = ~Jeœli umieœcisz kryszta³ z powrotem w gnieŸdzie, nie bêdzie mo¿na ju¿ go stamt¹d wyj¹æ. Nale¿y siê dobrze zastanowiæ nad kolejnym krokiem.~
+@1098 = ~Gêste opary ciemnoœci przes³aniaj¹ ci widok. Jeœli jest tu jakieœ wyjœcie, to w tym momencie go nie widaæ.~
+@1100 = ~Spójrzcie! Tam jest jakaœ dziewczynka!~
+@1101 = ~Co do...!~
+@1102 = ~Na Baelrosa! To morska wiedŸma!~
+@1504 = ~W tej beczce znajdowa³a siê ³atwopalna oliwa, której widocznie u¿ywano niegdyœ do rozpalania ognia sygna³owego. Jeœli chcesz, mo¿esz dok³adniej zbadaæ pojemnik.~
+@1505 = ~Nabierasz trochê oliwy do butelki.~
+@1506 = ~Beczka jest teraz pusta.~
+@1507 = ~W beczce prawie nie ma ju¿ oliwy i nie da siê przy jej pomocy rozpaliæ ognia na szczycie latarni. £atwopalna oliwa wci¹¿ jednak mo¿e byæ przydatna w walce.~
+
+// New for v2.2
+@1510 = ~Dark Tidings - mod do Baldur's Gate II~

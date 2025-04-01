@@ -1,0 +1,99 @@
+IF
+	Global("Prep","ACDT01",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACDT01",1)
+		AmbientActivate("Flare",FALSE)
+		TriggerActivation("Tracdt19",FALSE)
+		SpawnPtDeactivate("Spawn_beach_lacedon")
+		SpawnPtDeactivate("Spawn_beach_seatroll")
+END
+
+IF
+	Dead("AC#DT12M")  // Schwarzseher Brokus
+	InMyArea("AC#DT01M")  // Schwarzseher Brokus
+THEN
+	RESPONSE #100
+		ActionOverride("AC#DT01M",DestroySelf())
+END
+
+IF
+	Global("SpawnTowerTop","ACDT01",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SpawnTowerTop","ACDT01",1)
+		CreateCreature("AC#DT01M",[1047.337],15)  // Schwarzseher Brokus
+END
+
+IF
+	Global("LostOnIsland","ACDT01",0)
+	CombatCounter(0)
+	Dead("AC#DTSA1")
+	Dead("AC#DTSA2")
+	Dead("AC#DTSA3")
+THEN
+	RESPONSE #100
+		SetGlobal("LostOnIsland","ACDT01",1)
+		Wait(2)
+		EraseJournalEntry(@10000)
+		AddJournalEntry(@10001,QUEST)
+END
+
+IF
+	GlobalGT("AC#DT_Ritual_done","GLOBAL",0)
+	Global("Prep","ACDT01",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACDT01",2)
+		TriggerActivation("Tracdt19",TRUE)
+		TriggerActivation("Tracdt10",FALSE)
+END
+
+IF
+	Global("ACDT_Towerlight","GLOBAL",1)
+	Global("Door_Opened","ACDT01",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Door_Opened","ACDT01",1)
+		OpenDoor("Door01")
+		AmbientActivate("Flare",TRUE)
+END
+
+IF
+	Global("ACDT_Towerlight","GLOBAL",1)
+	Global("JhanexSpawn","ACDT01",0)
+THEN
+	RESPONSE #100
+		SetGlobal("JhanexSpawn","ACDT01",1)
+		CreateCreature("AC#DTJHA",[1088.1215],8)  // Jhanex
+		CreateCreature("AC#DTFS1",[1021.1273],9)  // Seemann
+		CreateCreature("AC#DTFS1",[1212.1204],7)  // Seemann
+		SpawnPtDeactivate("Spawn_beach_lacedon")
+		SpawnPtDeactivate("Spawn_beach_seatroll")
+		CreateCreature("AC#DTJH2",[2928.1064],0)  // Jhanex
+		CreateCreature("AC#DTFS2",[2887.888],3)  // Seemann
+		CreateCreature("AC#DTFS2",[2920.1291],6)  // Seemann
+END
+
+
+IF
+	Global("Crew_Lost","ACDT01",1)
+	!Dead("AC#DTSA1")
+	InMyArea("AC#DTSA1") 
+THEN
+	RESPONSE #100
+		Wait(3)
+		Kill("AC#DTSA1")
+END
+
+IF
+	Global("Crew_Lost","ACDT01",1)
+	!Dead("AC#DTSA3")
+	InMyArea("AC#DTSA3") 
+THEN
+	RESPONSE #100
+		Wait(3)
+		Kill("AC#DTSA3")
+END
+
+

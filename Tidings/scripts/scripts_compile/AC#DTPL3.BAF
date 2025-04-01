@@ -1,0 +1,33 @@
+IF
+	OnCreation()
+THEN
+	RESPONSE #100
+		ApplySpellRES("AC#DTPL",Myself)  // Shadow color
+		SetName(@1013)  // <Player3>'s Schatten
+		DestroyItem("AC#DTPLS")  // Unsichtbarkeitsring
+		CreateVisualEffectObject("AC#DTFLS",Myself)
+END
+
+IF
+	Die()
+THEN
+	RESPONSE #100
+		CreateVisualEffectObject("AC#DTFLS",Myself)
+		DestroySelf()
+END
+
+IF
+	See(Player3)
+THEN
+	RESPONSE #100
+		Attack(Player3)
+END
+
+IF
+	!See(Player3)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Attack(NearestEnemyOf(Myself))
+END
+

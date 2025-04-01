@@ -1,0 +1,208 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("viper_summon","LOCALS",0)
+	!DifficultyLT(NORMAL)
+THEN
+	RESPONSE #100
+		SetGlobal("viper_summon","LOCALS",1)
+		CreateCreature("AC#DTSN1",[830.1187],0)   // Viper
+		CreateCreature("AC#DTSN1",[559.1208],0)   // Viper
+		CreateCreature("AC#DTSN1",[568.1373],0)   // Viper
+		CreateCreature("AC#DTSN1",[872.1451],0)   // Viper
+		CreateCreature("AC#DTSN1",[639.1478],0)   // Viper
+		CreateCreature("AC#DTSN1",[527.1184],0)   // Viper
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Horrific","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpellRES("ac#dts1",NearestEnemyOf(Myself))  // Schauerliche Erscheinung
+		SetGlobal("Horrific","LOCALS",1)
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_STONE_SKIN)  // SPWI408.SPL (Steinhaut)
+	CheckStatLT(Myself,1,STONESKINS)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_STONE_SKIN)  // SPWI408.SPL (Steinhaut)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_IMPROVED_INVISIBILITY)  // SPWI405.SPL (Erweiterte Unsichtbarkeit)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_IMPROVED_INVISIBILITY)  // SPWI405.SPL (Erweiterte Unsichtbarkeit)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_HOLD_PERSON)  // SPWI306.SPL (Personen festhalten)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)  // SPWI306.SPL (Personen festhalten)
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+	See([PC])
+	Global("Charm","LOCALS",0)
+	GlobalTimerExpired("Cast","LOCALS")
+	!StateCheck(LastSeenBy(Myself),STATE_CHARMED)
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		FaceObject([PC])
+		ForceSpell([PC],BEHOLDER_CHARM_PERSON)  // SPIN980.SPL (Personen bezaubern)
+		SetGlobal("Charm","LOCALS",1)
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	GlobalTimerExpired("Cast","LOCALS")
+	CheckStatLT(Myself,100,RESISTMAGIC)
+	HasItem("POTN34",Myself)  // Magiewiderstandstrank
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,46150)  // trinkt einen Trank
+		UseItem("POTN34",Myself)  // Magiewiderstandstrank
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+	HaveSpell(WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+	OR(5)
+		Range([GOODCUTOFF.0.0.THIEF_ALL],10)
+		Range([GOODCUTOFF.0.0.FIGHTER_ALL],10)
+		Range([GOODCUTOFF.0.0.PALADIN],10)
+		See([GOODCUTOFF.0.0.RANGER])
+		HitBy([ANYONE],MISSILE)
+	!StateCheck(Myself,STATE_MIRRORIMAGE)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_SLOW)  // SPWI312.SPL (Verlangsamen)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_SLOW)  // SPWI312.SPL (Verlangsamen)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	GlobalTimerExpired("Cast","LOCALS")
+	!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	HasItem("potn10",Myself)  // Unsichtbarkeitstrank
+	HitBy([ANYONE],CRUSHING)
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,46150)  // trinkt einen Trank
+		UseItem("potn10",Myself)  // Unsichtbarkeitstrank
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+END
+
+IF
+	HPPercentLT(Myself,50)
+	HasItem("potn52",Myself)  // Konzentrierter Heiltrank
+THEN
+	RESPONSE #100
+		DisplayStringHead(Myself,46150)  // trinkt einen Trank
+		UseItem("potn52",Myself)  // Konzentrierter Heiltrank
+		Continue()
+END
+
+IF
+	OR(5)
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD]))
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+		See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+		See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+	!StateCheck(LastSeenBy(Myself),STATE_PANIC)
+	!StateCheck(LastSeenBy(Myself),STATE_SILENCED)
+	!HasBounceEffects(LastSeenBy(Myself))
+	HaveSpell(WIZARD_MELF_ACID_ARROW)  // SPWI211.SPL (Melfs S�urepfeil)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_MELF_ACID_ARROW)  // SPWI211.SPL (Melfs S�urepfeil)
+END
+
+IF
+	OR(5)
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.BARD]))
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.DRUID_ALL]))
+		See(NearestEnemyOfType([GOODCUTOFF.0.0.CLERIC_ALL]))
+		See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.MAGE_ALL]))
+		See(ThirdNearestEnemyOfType([GOODCUTOFF.0.0.SORCERER]))
+	!StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+	!StateCheck(LastSeenBy(Myself),STATE_STUNNED)
+	!StateCheck(LastSeenBy(Myself),STATE_PANIC)
+	!StateCheck(LastSeenBy(Myself),STATE_SILENCED)
+	!HasBounceEffects(LastSeenBy(Myself))
+	HaveSpell(WIZARD_CHROMATIC_ORB)  // SPWI118.SPL (Farbkugel)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_CHROMATIC_ORB)  // SPWI118.SPL (Farbkugel)
+END
+
+IF
+	HaveSpell(WIZARD_GHOST_ARMOR)  // SPWI317.SPL (Geisterr�stung)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_GHOST_ARMOR)  // SPWI317.SPL (Geisterr�stung)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinkende Wolke)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinkende Wolke)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_HORROR)  // SPWI205.SPL (Alp)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_HORROR)  // SPWI205.SPL (Alp)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_CHROMATIC_ORB)  // SPWI118.SPL (Farbkugel)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_CHROMATIC_ORB)  // SPWI118.SPL (Farbkugel)
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+

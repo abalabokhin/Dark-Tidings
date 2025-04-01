@@ -1,0 +1,10 @@
+@0 = ~Que faites-vous ici, <RACE> ? Les tiens sont passés de l'autre côté depuis bien longtemps. C'est notre île maintenant, ta sinistre aura n'y a pas sa place !~
+@1 = ~Je ne suis pas venu pour bavarder. Sortez votre... peu importe... et défendez-vous !~ // Charname
+@2 = ~Mais de quoi parlez-vous ?~ // Charname
+@3 = ~Vous ne faites pas partie de ses adeptes ? Hum, vous devez être sacrément solide pour être parvenus à franchir les trolls ! Mais nous sommes faits d'un autre corail que ces stupides créatures. Rendez-vous gentiment, et je vous promets une mort rapide, sans effusion de sang... par noyade !~
+@4 = ~N'y pensez même pas, je n'ai pas l'intention de me résigner !~ // Charname
+@5 = ~Et bien, je regrette mais je préfère continuer à vivre.~ // Charname
+@6 = ~Aussi tentante que soit la perspective d'une baignade en votre compagnie, je dois malheureusement décliner votre proposition !~ // Charname
+@8 = ~En des temps plus favorables, nous serions prêts à nous prêter à ce petit jeu. Mais avec les ténèbres qui se sont abattues sur l'île, nous n'avons pas envie de rire. Pour la dernière fois, rendez-vous et votre mort sera clémente !~ // unused ?
+@9 = ~À votre guise. Vous n'êtes pas le premier à nous sous-estimer, ma tribu et moi !~ ~À votre guise. Vous n'êtes pas la première à nous sous-estimer, ma tribu et moi !~
+

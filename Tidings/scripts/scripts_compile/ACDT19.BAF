@@ -1,0 +1,9 @@
+IF
+	Global("Prep","ACDT19",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACDT19",1)
+		Explore()
+		OpenDoor("DOOR01")
+END
+

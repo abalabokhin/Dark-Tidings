@@ -1,0 +1,80 @@
+IF
+	OnCreation()
+	Global("Prep","ACDT21",0)
+THEN
+	RESPONSE #100
+		SetGlobal("Prep","ACDT21",1)
+		SoundActivate("Altar_loud",FALSE)
+		TriggerActivation("Trigger_shadowstone",FALSE)
+END
+
+/*
+IF
+	Global("JaheiraEarthNode","ACDT21",1)
+	InParty("Jaheira")  // Jaheira
+	InMyArea("Jaheira")
+	InMyArea(Player1)  
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck("Jaheira",CD_STATE_NOTVALID)  // Jaheira
+THEN
+	RESPONSE #100
+		Wait(2)
+		ActionOverride("Jaheira",StartDialogNoSet(Player1)) 
+END
+*/
+
+/*
+IF
+	Global("NPCRunestoneReaction","ACDT21",1) 
+	InParty("Viconia")  
+	!Dead("Viconia")  
+	!StateCheck("Viconia",CD_STATE_NOTVALID) 
+	InMyArea("Viconia")
+	InMyArea(Player1)  
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		Wait(10)
+		ActionOverride("Viconia",StartDialogNoSet(Player1)) 
+END	
+*/
+
+IF
+	Global("FireSigil","ACDT21",2)
+	Global("WaterSigil","ACDT21",2) 
+	Global("EarthSigil","ACDT21",2) 
+	Global("AirSigil","ACDT21",2)
+	Global("ShadowStone","ACDT21",0) 
+THEN
+	RESPONSE #100
+		SoundActivate("Altar_loud",TRUE)
+		SoundActivate("Altar_quiet",FALSE)
+		AddExperienceParty(1000)
+		Wait(3)	
+		DisplayString("Info_Shadowstone",@1036) 
+		TriggerActivation("Info_Shadowstone",FALSE)
+		TriggerActivation("Trigger_shadowstone",TRUE)
+		SetGlobal("ShadowStone","ACDT21",1)  
+END
+
+IF
+	Global("Shadowstone_Trigger","ACDT21",2) 
+THEN
+	RESPONSE #100
+		SetGlobal("Shadowstone_Trigger","ACDT21",3)
+		TriggerActivation("Trigger_shadowstone",FALSE)
+		SoundActivate("Altar_loud",FALSE)
+		CreateCreature("AC#DT21X",[550.601],10)  // Shadow elemental
+		CreateCreature("AC#DT21W",[645.528],10)  // Shadow
+		CreateCreature("AC#DT21W",[491.529],10)  // Shadow
+END
+
+IF
+	GlobalLT("AC#DT_OtherSide","GLOBAL",2)
+	PartyHasItem("AC#DTSBL")
+THEN
+	RESPONSE #100
+		SetGlobal("AC#DT_OtherSide","GLOBAL",2)
+		EraseJournalEntry(@12000)
+		AddJournalEntry(@12001,QUEST)
+END

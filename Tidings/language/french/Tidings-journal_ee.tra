@@ -1,0 +1,106 @@
+// Journal Entries
+
+// Quest start
+
+@10000 = ~Sombres présages
+
+J'ai reçu l'ordre de me rendre sur l'île d'Irphong pour découvrir pourquoi le feu magique qui illuminait le phare s'est éteint. Un mage répondant au nom de Thalass m'attend au Sud-Est des Quais à proximité du petit phare avec un équipage prêt à embarquer, le voyage ne sera pas très long.~
+
+@10001 = ~Sombres présages
+
+Peu après notre arrivée sur l'île d'Irphong, nous avons été attaqués par un groupe de trolls des mers, dirigés par ce qui semble être une sorcière des mers. Comme l'équipage a été anéanti, je dois trouver un autre moyen de quitter l'île. Seul un marin expérimenté serait capable de diriger le bateau à travers les hauts-fonds de l'île et lui permettre d'atteindre Athkatla sans encombre. Rallumer la balise reste la meilleure solution, d'autres bateaux pourraient me repérer et nous faire quitter l'île. Par conséquent, je dois faire mon possible pour que le phare soit de nouveau opérationnel. En premier lieu, il faut découvrir pourquoi la flamme magique s'est éteinte.~ 
+
+@10002 = ~Sombres présages
+
+Quelle chance ! La lumière du phare a attiré l'attention d'un bateau, des marins ont débarqué sur l'île et attendent auprès de notre embarcation, il est temps de rentrer à Athkatla.~
+
+@10003 = ~Sombres présages
+
+Enfin de retour à Athkatla. Je dois maintenant me rendre à la « Taverne de la Bonté Marine » et réclamer au mage Thalass ma récompense dûment méritée.~
+
+@10004 = ~Sombres présages
+
+L'aventure sur l'île d'Irphong s'achève avec la récompense offerte par le mage Thalass. Je n'ai pas hâte de remettre les pieds sur une île maudite !~
+
+@10010 = ~Accéder au phare
+
+L'entrée du phare d'Irphong est bloquée par de nombreuses balanes. Il faut trouver un outil qui me permette d'entrer, car je ne peux pas utiliser d'armes ou la magie pour franchir ces crustacés.~
+
+@10011 = ~La pince de crabe
+
+La cheffe des sirènes avait en sa possession une pince de crabe géant. Même si je ne sais pas encore à quoi cela peut bien servir, la sirène n'a pas gardé un tel objet sans raison valable.~
+
+@10012 = ~Accéder au phare
+
+Je crois que j'ai l'outil idéal pour dégager l'entrée de la tour : la pince de crabe géant.~
+
+@12000 = ~De « l'autre côté »
+
+À l'intérieur du phare, j'ai trouvé une note écrite par un étrange adepte, elle mentionne un « autre côté » à l'intérieur de la tour, ainsi qu'une « brique d'ombre » et un rituel. Je devrais ouvrir l'œil et chercher d'autres indices afin de comprendre de quoi il retourne.~
+
+@12001 = ~De « l'autre côté »
+
+Dans le sous-sol du phare, j'ai trouvé une pierre faite d'obscurité. Elle doit probablement s'imbriquer dans une espèce de mur.~
+
+@12002 = ~De « l'autre côté »
+
+J'ai trouvé l'emplacement idéal pour la brique d'ombre. C'est un premier pas dans ma quête de « l'autre côté ».~
+
+@12003 = ~De « l'autre côté »
+
+J'ai découvert un ancien passage à l'intérieur du phare et une sorte de portail. Pourrait-il me conduire à cet « autre côté » ? Il n'y a qu'un seul moyen de le savoir.~
+
+@12004 = ~De « l'autre côté »
+
+J'ai franchi le portail et me suis retrouvé dans une espèce de monde parallèle à l'île d'Irphong, une version alternative étrange et obscure.~
+
+@13000 = ~Le Cristal de lumière
+
+Au sommet du phare, j'ai découvert un dispositif qui semble contrôler le faisceau lumineux. Mais le cristal qui l'alimente a disparu. Le retrouver permettrait de réactiver le phare d'Irphong.~
+
+@13001 = ~Le Cristal de lumière
+
+J'ai récupéré le Cristal de lumière sur un vieil autel du Plan de l'Ombre. Il faut maintenant retourner au dernier étage du phare et le raccorder au dispositif.~
+
+@13010 = ~Le Cristal de lumière
+
+Le Cristal de lumière a retrouvé sa place. Il est désormais possible d'admirer la lumière du phare depuis le toit. J'espère que les navires passants au large l'apercevront bientôt et qu'enfin je pourrai quitter cette île.~
+
+@18000 = ~Le spectre du gardien
+
+J'ai rencontré un fantôme dans une petite chambre au Nord-Est de l'île, il prétend être le dernier gardien du phare d'Irphong et répète inlassablement que je dois le rejoindre « de l'autre côté »... Limpide...~ 
+
+@18001 = ~Le spectre du gardien
+
+J'ai rencontré un fantôme dans cette sombre alternative de l'île d'Irphong. Il m'a chargé de me rendre dans un temple maudit situé à l'Est afin d'y récupérer le Cristal de lumière. Une fois ma mission accomplie je devrais retourner le voir.~ 
+
+@18002 = ~Le spectre du gardien
+
+J'ai de nouveau rencontré le fantôme du gardien du phare dans cette sombre alternative de l'île d'Irphong. Il m'a chargé de me rendre dans un temple maudit situé à l'Est afin d'y récupérer le Cristal de lumière. Une fois ma mission accomplie je devrais retourner le voir.~
+
+@18010 = ~Le rituel
+
+Après avoir récupéré le Cristal de lumière dans le temple, le spectre du gardien s'est de nouveau manifesté. Il m'a demandé d'effectuer un rituel dans le sous-sol du phare qui contient cette pierre étrange afin de stopper la magie noire émanant de ce lieu. Pour ce faire, j'ai besoin d'utiliser le cristal. Malheureusement, il est possible que le cristal soit détruit pendant le rituel. Comme le cristal est nécessaire pour remettre le phare en fonctionnement, je dois bien réfléchir... Le jeu en vaut-il la chandelle ? Après tout, la lumière du phare sera le seul moyen pour que d'autres navires me remarquent et que je puisse quitter l'île. Le fantôme m'a également indiqué que je pourrais le retrouver sur l'île d'Irphong, dans sa chambre située à l'est, car il existe simultanément sur les deux plans.~ 
+@18011 = ~Le rituel
+
+Après avoir récupéré le Cristal de lumière dans le temple, un spectre est apparu, prétendant être le dernier gardien du phare de l'île. Il m'a demandé d'effectuer un rituel dans le sous-sol du phare qui contient cette pierre étrange afin de stopper la magie noire émanant de ce lieu. Pour ce faire, j'ai besoin d'utiliser le cristal. Malheureusement, il est possible que le cristal soit détruit pendant le rituel. Comme le cristal est nécessaire pour remettre le phare en fonctionnement, je dois bien réfléchir... Le jeu en vaut-il la chandelle ? Après tout, la lumière du phare sera le seul moyen pour que d'autres navires me remarquent et que je puisse quitter l'île. Le fantôme m'a également indiqué que je pourrais le retrouver sur l'île d'Irphong, dans sa chambre située à l'est, car il existe simultanément sur les deux plans.~ 
+
+@18012 = ~Le rituel
+
+Je dois faire un choix, effectuer le rituel dans le sous-sol du phare avec l'aide du Cristal de lumière ou ne prendre aucun risque et placer le Cristal de lumière dans son socle avant de quitter l'île. Il est possible que le cristal soit détruit pendant le rituel. Comme le cristal est nécessaire pour remettre le phare en fonctionnement, je dois bien réfléchir... Le jeu en vaut-il la chandelle ? Après tout, la lumière du phare sera le seul moyen pour que d'autres navires me remarquent et que je puisse quitter l'île.~ 
+
+@18013 = ~Le rituel
+
+J'ai placé le cristal dans son socle sans avoir accompli le rituel. Désormais le cristal ne peut plus être retiré, il me sera impossible d'accomplir le rituel. Le moment est venu de chercher un moyen de quitter l'île.~ 
+
+@18014 = ~Le rituel
+
+J'ai achevé le rituel. J'espère pouvoir récupérer le Cristal de lumière pour le mettre dans son socle au dernier étage du phare.~
+
+@18015 = ~Le rituel
+
+Le Cristal de lumière semble indemne, il a survécu au rituel. Je dois maintenant le mettre dans son socle au dernier étage du phare.~
+
+@18016 = ~Le rituel
+
+J'ai pu sceller le site impie sous le phare et remettre le cristal dans son socle. Grâce à cela, les ombres qui planent sur l'île devraient disparaître une bonne fois pour toutes.~

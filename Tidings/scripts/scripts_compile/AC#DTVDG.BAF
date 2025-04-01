@@ -1,0 +1,34 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		CreateVisualEffectObject("AC#WEDEA",Myself)
+		DestroySelf()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("water_spray","LOCALS",1)
+	Delay(12)
+THEN
+	RESPONSE #100
+		ForceSpellRES("AC#DTSW",NearestEnemyOf(Myself))  // Wasserstrahl
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("water_spray","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("water_spray","LOCALS",1)
+		ForceSpellRES("AC#DTSW",NearestEnemyOf(Myself))  // Wasserstrahl
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),6)
+END

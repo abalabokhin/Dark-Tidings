@@ -1,0 +1,29 @@
+IF
+	Detect([PC])
+	Range(LastSeenBy(Myself),12)
+	Global("Has_Crystal_Ritual","ACDT30",1)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(LastSeenBy(Myself))
+END
+
+IF
+	Detect([PC])
+	Range(LastSeenBy(Myself),15)
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		StartDialogNoSet(LastSeenBy(Myself))
+END
+
+IF
+	Global("Has_Crystal_Ritual","ACDT30",0)
+	PartyHasItem("AC#DTDIA")  // Lichtedelstein
+THEN
+	RESPONSE #100
+		JumpToPoint([1229.928])
+		Wait(1)
+		MoveToPointNoInterrupt([1229.928])
+		SetGlobal("Has_Crystal_Ritual","ACDT30",1)
+END
+

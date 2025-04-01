@@ -1,0 +1,22 @@
+// Shadowstone  Info Trigger
+IF
+	Clicked([ANYONE])
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1035)
+END
+
+// NPC reaction later?
+/*
+IF
+	Clicked([ANYONE])
+	Global("ReadRunestone","ACDT21",1) 
+	Global("NPCRunestoneReaction","ACDT21",0)
+THEN
+	RESPONSE #100
+		DisplayString(Myself,@1031) 
+		SetGlobal("NPCRunestoneReaction","ACDT21",1)  
+END
+*/
+
+

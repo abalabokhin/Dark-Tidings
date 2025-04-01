@@ -1,0 +1,58 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Shadowimage","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)  // SPWI212.SPL (Spiegelbild)
+		SetGlobal("Shadowimage","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("Song","LOCALS",0)
+	Range(NearestEnemyOf(Myself),12)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_GREATER_MALISON)  // SPWI412.SPL (Größeres Unbehagen)
+		SetGlobal("Song","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See(SecondNearestEnemyOf(Myself))
+	See(ThirdNearestEnemyOf(Myself))
+	HasItem("AC#DTAR1",Myself)  // Pfeile der Dunkelheit
+THEN
+	RESPONSE #100
+		AttackOneRound(NearestEnemyOf(Myself))
+	RESPONSE #100
+		AttackOneRound(SecondNearestEnemyOf(Myself))
+	RESPONSE #100
+		AttackOneRound(ThirdNearestEnemyOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastAttackerOf(Myself),30)
+END
+

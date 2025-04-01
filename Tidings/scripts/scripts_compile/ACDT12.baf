@@ -1,0 +1,8 @@
+IF
+	Global("AC#DT_OtherSide","GLOBAL",0)
+	PartyHasItem("AC#DT12N")
+THEN
+	RESPONSE #100
+		SetGlobal("AC#DT_OtherSide","GLOBAL",1)
+		AddJournalEntry(@12000,QUEST)
+END

@@ -1,0 +1,22 @@
+IF
+	Global("Crabclaw","ACDT20",0)
+	Global("AC#DT_Crabclaw","GLOBAL",0)
+	PartyHasItem("AC#DTCRC")
+THEN
+	RESPONSE #100
+		SetGlobal("Crabclaw","ACDT20",1)
+		SetGlobal("AC#DT_Crabclaw","GLOBAL",2)
+		AddJournalEntry(@10011,QUEST)
+END
+
+IF
+	Global("Crabclaw","ACDT20",0)
+	Global("AC#DT_Crabclaw","GLOBAL",1)
+	PartyHasItem("AC#DTCRC")
+THEN
+	RESPONSE #100
+		SetGlobal("Crabclaw","ACDT20",1)
+		SetGlobal("AC#DT_Crabclaw","GLOBAL",2)
+		EraseJournalEntry(@10010)
+		AddJournalEntry(@10012,QUEST)
+END

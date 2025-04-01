@@ -1,0 +1,209 @@
+IF
+	See([PC])
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_ZONE_OF_SWEET_AIR)  // SPPR318.SPL (Bereich der frischen Luft)
+	OR(2)
+		SpellCast([GOODCUTOFF],WIZARD_CLOUDKILL)  // SPWI502.SPL (Todeswolke)
+		SpellCast([GOODCUTOFF],WIZARD_STINKING_CLOUD)  // SPWI213.SPL (Stinkende Wolke)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_ZONE_OF_SWEET_AIR)  // SPPR318.SPL (Bereich der frischen Luft)
+		ReallyForceSpell(Myself,CLERIC_ZONE_OF_SWEET_AIR)  // SPPR318.SPL (Bereich der frischen Luft)
+		ReallyForceSpell(Myself,SPECIAL_SWEET_AIR)  // SPIN601.SPL (No such index)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_REMOVE_FEAR)  // SPPR108.SPL (Furcht bannen)
+	Global("Fear","LOCALS",0)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_REMOVE_FEAR)  // SPPR108.SPL (Furcht bannen)
+		SetGlobal("Fear","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_REMOVE_FEAR)  // SPPR108.SPL (Furcht bannen)
+	OR(3)
+		SpellCast([GOODCUTOFF],WIZARD_DISPEL_MAGIC)  // SPWI302.SPL (Magie bannen)
+		SpellCast([GOODCUTOFF],WIZARD_TRUE_DISPEL_MAGIC)  // SPWI326.SPL (Magie bannen)
+		SpellCast([GOODCUTOFF],CLERIC_DISPEL_MAGIC)  // SPPR303.SPL (Magie bannen)
+	Global("Fear","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Fear","LOCALS",2)
+		Spell(Myself,CLERIC_REMOVE_FEAR)  // SPPR108.SPL (Furcht bannen)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_FREE_ACTION)  // SPPR403.SPL (Handlungsfreiheit)
+	See("AC#DTVER")  // Vergol
+THEN
+	RESPONSE #100
+		Spell("AC#DTVER",CLERIC_FREE_ACTION)  // Vergol
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_DEATH_WARD)  // SPPR409.SPL (Todesschutz)
+	See("AC#DTVER")  // Vergol
+THEN
+	RESPONSE #100
+		Spell("AC#DTVER",CLERIC_DEATH_WARD)  // Vergol
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_SLOW_POISON)  // SPPR212.SPL (Gift verlangsamen)
+	See("AC#DTVER")  // Vergol
+	StateCheck(LastSeenBy(Myself),STATE_POISONED)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_SLOW_POISON)  // SPPR212.SPL (Gift verlangsamen)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See("AC#DTVER")  // Vergol
+	HPPercentLT(LastSeenBy(Myself),60)
+	HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (Mittelschwere Wunden heilen)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (Mittelschwere Wunden heilen)
+END
+
+IF
+	See(LastAttackerOf("AC#DTVER"))  // Vergol
+	!StateCheck(LastAttackerOf("AC#DTVER"),STATE_HELPLESS)  // Vergol
+	See("AC#DTVER")  // Vergol
+	HPPercentLT("AC#DTVER",100)  // Vergol
+	HaveSpell(CLERIC_DOOM)  // SPPR113.SPL (Verderben)
+THEN
+	RESPONSE #100
+		Spell(LastAttackerOf("AC#DTVER"),CLERIC_DOOM)  // Vergol
+		Continue()
+END
+
+IF
+	See(LastAttackerOf("AC#DTVER"))  // Vergol
+	!StateCheck(LastAttackerOf("AC#DTVER"),STATE_HELPLESS)  // Vergol
+	See("AC#DTVER")  // Vergol
+	HPPercentLT("AC#DTVER",100)  // Vergol
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (Personen festhalten)
+THEN
+	RESPONSE #100
+		Spell(LastAttackerOf("AC#DTVER"),CLERIC_HOLD_PERSON)  // Vergol
+		Continue()
+END
+
+IF
+	HPPercentLT(Myself,80)
+	!GlobalTimerNotExpired("DrankPotionTimer","LOCALS")
+	HasItem("POTN52",Myself)  // Konzentrierter Heiltrank
+THEN
+	RESPONSE #100
+		SetGlobalTimer("DrankPotionTimer","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,46150)  // trinkt einen Trank
+		UseItem("POTN52",Myself)  // Konzentrierter Heiltrank
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_DOOM)  // SPPR113.SPL (Verderben)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_DOOM)  // SPPR113.SPL (Verderben)
+		Continue()
+END
+
+IF
+	See(SecondNearestEnemyOf(Myself))
+	HaveSpell(CLERIC_DOOM)  // SPPR113.SPL (Verderben)
+THEN
+	RESPONSE #100
+		Spell(SecondNearestEnemyOf(Myself),CLERIC_DOOM)  // SPPR113.SPL (Verderben)
+		Continue()
+END
+
+IF
+	See(ThirdNearestEnemyOf(Myself))
+	HaveSpell(CLERIC_DOOM)  // SPPR113.SPL (Verderben)
+THEN
+	RESPONSE #100
+		Spell(ThirdNearestEnemyOf(Myself),CLERIC_DOOM)  // SPPR113.SPL (Verderben)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_HOLD_PERSON)  // SPPR208.SPL (Personen festhalten)
+	!CheckStatGT(LastSeenBy(Myself),0,HELD)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_HOLD_PERSON)  // SPPR208.SPL (Personen festhalten)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_UNHOLY_BLIGHT)  // SPPR314.SPL (Unheiliges Verderben)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_UNHOLY_BLIGHT)  // SPPR314.SPL (Unheiliges Verderben)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_FREE_ACTION)  // SPPR403.SPL (Handlungsfreiheit)
+	See(NearestMyGroupOfType)
+	StateCheck(LastSeenBy(Myself),STATE_HELPLESS)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_FREE_ACTION)  // SPPR403.SPL (Handlungsfreiheit)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_ANIMATE_DEAD)  // SPPR301.SPL (Tote beleben)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_ANIMATE_DEAD)  // SPPR301.SPL (Tote beleben)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_CHARM_PERSON)  // SPPR204.SPL (Personen oder Säugetiere bezaubern)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),CLERIC_CHARM_PERSON)  // SPPR204.SPL (Personen oder Säugetiere bezaubern)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	See(NearestMyGroupOfType)
+	HPPercentLT(LastSeenBy(Myself),60)
+	HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (Mittelschwere Wunden heilen)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (Mittelschwere Wunden heilen)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),4)
+	HPPercentLT(Myself,60)
+	HaveSpell(CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (Mittelschwere Wunden heilen)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_CURE_MEDIUM_WOUNDS)  // SPPR315.SPL (Mittelschwere Wunden heilen)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),6)
+END
+
