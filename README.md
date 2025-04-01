@@ -26,6 +26,7 @@ There is only one way to uncover the mystery: **Sail to Irphong** and discover w
 - [License](#license)
 - [Credits](#credits)
 - [Feedback & Support](#feedback--support)
+- [Screenshots](#Screenshots)
 
 ---
 
@@ -133,3 +134,9 @@ This mod and all its contents may not be copied, modified, distributed, or used 
 If you encounter issues or have suggestions, please visit the official discussion thread:  
 [**G3 Forums – Dark Tidings (Quest Mod for BG2)**](https://www.gibberlings3.net/forums/topic/36739-mod-dark-tidings-a-quest-mod-for-bg2/)
 
+---
+
+## Screenshots
+
+![seatower_screenshot](https://github.com/AciferBG/Dark-Tidings/blob/main/pics/seatower_screenshot.png)
+![ship](https://github.com/AciferBG/Dark-Tidings/blob/main/pics/ship.png)
