@@ -10,6 +10,8 @@ For thousands of years, the magical beacon of the Sea Tower of Irphong has burne
 
 There is only one way to uncover the mystery: **Sail to Irphong** and discover what extinguished the light of the Sea Tower.
 
+![Irphong](https://github.com/AciferBG/Dark-Tidings/blob/main/pics/Irphong.png)
+
 ---
 
 ## Features
