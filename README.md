@@ -2,7 +2,7 @@
 
 ![Dark Tidings Logo](https://github.com/AciferBG/Dark-Tidings/blob/main/pics/dark_tidings_logo.png)
 
-**"Don't depend too much on anyone in this world, because even your own shadow leaves you when you are in darkness."**
+>"Don't depend too much on anyone in this world, because even your own shadow leaves you when you are in darkness."
 
 Far off the coast of Amn lies the isolated island of **Irphong**. Its only notable feature is the **Sea Tower**, a magical lighthouse that marks the northern end of Asavir's Channel and guides sailors through treacherous waters.
 
