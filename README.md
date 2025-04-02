@@ -60,8 +60,6 @@ This mod is inspired by:
 
 ---
 
----
-
 ## Language
 
 Available in: 
@@ -70,6 +68,8 @@ Available in:
 - French
 - Polish
 - Chinese
+
+---
 
 ## Download
 
