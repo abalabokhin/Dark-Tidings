@@ -23,6 +23,7 @@ There is only one way to uncover the mystery: **Sail to Irphong** and discover w
 - [Installation](#installation)
 - [Readme (PDF)](#readme-pdf)
 - [Walkthrough](#walkthrough)
+- [Reviews](#Reviews)
 - [License](#license)
 - [Credits](#credits)
 - [Feedback & Support](#feedback--support)
@@ -108,6 +109,14 @@ Need help completing the mod or exploring all optional paths?
 Check out the detailed walkthrough written by **Ineth** on the BG Wiki:
 
 [**Dark Tidings Walkthrough at the BG Wiki**](https://baldursgate.fandom.com/wiki/Dark_Tidings_walkthrough)
+
+---
+
+## Reviews
+
+For an external perspective on the mod, check out this article at **The Smoldering Mods Bar**:
+
+[**Review of Dark Tidings – Smoldering Mods Bar**](https://smolderingmodsbar.com/dark-tidings-bg2-ee/)
 
 ---
 
