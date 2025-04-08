@@ -1,6 +1,11 @@
 DARK TIDINGS
 VERSION HISTORY:
 
+Version 2.6
+
+- fixed the display problem of Chinese installation options, by Esceen-cn
+- Two minor text fixes in German, by Ychap
+
 Version 2.5
 
 - fixed typos, thanks roshan!
