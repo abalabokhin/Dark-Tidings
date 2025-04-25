@@ -104,6 +104,11 @@ LANGUAGE ~Deutsch - konform zu Shai Huluds Text-Patch (by Shai Hulud)~
          ~Tidings/language/german-sh/setup-Tidings.tra~
          ~Tidings/language/german-sh/Tidings-journal.tra~
 
+LANGUAGE ~Russian (by Origanum8 and scheele)~
+         ~russian~
+         ~Tidings/language/russian/setup-Tidings.tra~
+         ~Tidings/language/russian/Tidings-journal.tra~
+
 ///////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////
 // Dark Tidings V 2.6
